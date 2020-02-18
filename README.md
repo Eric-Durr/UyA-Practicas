@@ -1,10 +1,14 @@
-# PRÁCTICAS GRUPO MARTES XX
+# PRÁCTICAS - GRUPO MARTES 02
 ***
 
 ## Integrantes del grupo:
-
     Alejandro Martín de León.
 >   ( alu0101015941 )
     
     Eric Dürr Sierra.
 >   ( alu0101027005 )
+
+    Oscar Cigala Álvarez.
+
+## Documentos de práctica:
+ - [Informe de protocolos](./INFORME-PROTOCOLOS.md)
