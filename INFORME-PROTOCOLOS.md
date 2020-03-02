@@ -15,11 +15,11 @@
 
 -  **¿Qué tipo de petición se realiza?** 
 
-    La única petición que se detecta es la de tipo GET, dado que se solicita al servidor un acceso a la página web que se quiere localizar. Sucede de igual maner apara ambas web.
+    La única petición que se detecta es la de tipo GET, dado que se solicita al servidor un acceso a la página web que se quiere localizar. Sucede de igual manera para ambas webs.
 
 -  **¿Qué código de estatus devuelve?** 
 
-    En la primera web  (http://www.gobiernodecanarias.org/istac/api/) devuelve el tipo de estatus 2xx lo cual implica que las consultas han concluido de manera correcta. Por otro lado se localizan también los estatus 302 (encontrado) y 304 (no modificado).
+    En la primera web  (http://www.gobiernodecanarias.org/istac/api/) devuelve el tipo de estatus 2xx lo cual implica que las consultas han concluído de manera correcta. Por otro lado se localizan también los estatus 302 (encontrado) y 304 (no modificado).
 
     En la segunda página (http://www3.gobiernodecanarias.org/sanidad/scs/gc/18/Cita_Previa/index.html) únicamente aparecen los estatus 304 (No modificado) y 404 (no encontrado), sucede de esta manera debido a un cambio en la dirección del servicio.
 
