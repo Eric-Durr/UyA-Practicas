@@ -9,6 +9,7 @@
 >   ( alu0101027005 )
 
     Oscar Cigala Álvarez.
+>   ( alu0101038230 )
 
 ## Documentos de práctica:
  - [Informe de protocolos](./INFORME-PROTOCOLOS.md)
