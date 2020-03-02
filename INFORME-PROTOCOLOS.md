@@ -13,11 +13,11 @@
     La consulta que se investiga es una solicitud a la página. De este modo se emplea una serie de peticiones HTTP. Concretamente se emplea HTTP versión 1.1
     Es así para ambas páginas.
 
-- ¿Qué tipo de petición se realiza?
+- * ¿Qué tipo de petición se realiza? *
 
     La única petición que se detecta es la de tipo GET, dado que se solicita al servidor un acceso a la página web que se quiere localizar. Sucede de igual maner apara ambas web.
 
-- ¿Qué código de estatus devuelve?
+- * ¿Qué código de estatus devuelve? *
 
     En la primera web  (http://www.gobiernodecanarias.org/istac/api/) devuelve el tipo de estatus 2xx lo cual implica que las consultas han concluido de manera correcta. Por otro lado se localizan también los estatus 302 (encontrado) y 304 (no modificado).
 
