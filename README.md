@@ -2,14 +2,18 @@
 ***
 
 ## Integrantes del grupo:
-    *Alejandro Martín de León.*
+    Alejandro Martín de León.
 >   ( alu0101015941 )
     
-    *Eric Dürr Sierra.*
+    Éric Dürr Sierra.
 >   ( alu0101027005 )
 
-    *Oscar Cigala Álvarez.*
+    Óscar Cigala Álvarez.
 >   ( alu0101038230 )
 
 ## Documentos de práctica:
  - [Informe de protocolos](./INFORME-PROTOCOLOS.md)
+ 
+´´´
+    #include <iostream>
+´´´
