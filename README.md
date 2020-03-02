@@ -14,6 +14,6 @@
 ## Documentos de práctica:
  - [Informe de protocolos](./INFORME-PROTOCOLOS.md)
  
-´´´
+```
     #include <iostream>
-´´´
+```
