@@ -84,8 +84,13 @@
 
     web 1:
     ```
+    <div id="footer" class="section">
+        <div class="izq"> Gobierno de Canarias</div>
+    </div>
     ```
-
+    
     web 2:
     ```
+    <div class="container" style="padding-top:10px;">
+    </div>
     ```
