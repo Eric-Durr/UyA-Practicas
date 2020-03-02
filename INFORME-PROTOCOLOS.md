@@ -31,6 +31,8 @@
 - ¿Qué IP tiene el servidor?
 
     IP web 1 -> 93.188.136.129 : 80
+
+    
     IP web 2 -> 93.188.137.126 : 80
 
     Como se puede apreciar ambas IP están haciendo escucha en el puerto 80 del servidor en el que se ubica la web. Probablemente la similitud entre ambas
