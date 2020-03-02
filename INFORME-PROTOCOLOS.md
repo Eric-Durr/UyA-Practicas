@@ -23,12 +23,12 @@
 
     En la segunda página (http://www3.gobiernodecanarias.org/sanidad/scs/gc/18/Cita_Previa/index.html) únicamente aparecen los estatus 304 (No modificado) y 404 (no encontrado), sucede de esta manera debido a un cambio en la dirección del servicio.
 
-- ¿Qué DNS tiene el servidor?
+- **¿Qué DNS tiene el servidor?**
 
     Ambas webs presentan DNS similares, donde su localización es el "gobiernodecanaria.org", sin embargo algunas discrepancias separan sus ámbitos. Tales discrepancias son notables en la ruta final del directiorio donde se localizan  ("/isatc/api" y "/sanidad/scs/gc/18/Cita_Previa/index.html") y en el host 
     o subdominio ("wwww" y "www3").
 
-- ¿Qué IP tiene el servidor?
+- **¿Qué IP tiene el servidor?**
 
     IP web 1 -> 93.188.136.129 : 80
 
@@ -38,16 +38,16 @@
     Como se puede apreciar ambas IP están haciendo escucha en el puerto 80 del servidor en el que se ubica la web. Probablemente la similitud entre ambas
     se deba a que estas dos páginas pertenecen a la misma organización.
 
-- ¿La página tiene alguna cookie? ¿Cuáles?
+- **¿La página tiene alguna cookie? ¿Cuáles?**
 
     Si ambas webs, tienen cookies y presentan la misma
 >   cookie: -ga: GA 1.2.1600357602.1570390872
 
-- ¿Qué idioma acepta?
+- **¿Qué idioma acepta?**
 
     Ambas páginas aceptan tanto español como inglés estadounidense (es y en-us)
 
-- ¿Alguna línea de código JavaScript?
+- **¿Alguna línea de código JavaScript?**
 
     En la primera web no se localiza ninguna línea en JS. Por otro lado en la segunda si, todas relativas al código de Bootstrap.
 
@@ -61,7 +61,7 @@
     }
     ```
 
-- ¿Alguna línea de código CSS que se aplique?
+- **¿Alguna línea de código CSS que se aplique?**
 
     Para ambas web existen estructuras HTML que requieren de CSS:
 
@@ -78,7 +78,7 @@
     </div>
     ```
 
-- ¿Alguna línea de código HTML que se aplique?
+- **¿Alguna línea de código HTML que se aplique?**
 
     Para ambas web existen estructuras HTML:
 
