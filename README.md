@@ -2,13 +2,13 @@
 ***
 
 ## Integrantes del grupo:
-    Alejandro Martín de León.
+    *Alejandro Martín de León.*
 >   ( alu0101015941 )
     
-    Eric Dürr Sierra.
+    *Eric Dürr Sierra.*
 >   ( alu0101027005 )
 
-    Oscar Cigala Álvarez.
+    *Oscar Cigala Álvarez.*
 >   ( alu0101038230 )
 
 ## Documentos de práctica:
