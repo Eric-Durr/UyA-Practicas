@@ -1,7 +1,8 @@
 # PRÁCTICAS - GRUPO MARTES 02
-    ``` 
-    En este repositorio se incluirán los informes y otros ficheros de la asignatura de Usabilidad y Accesibilidad. 
-    ```
+    
+    En este repositorio se incluirán los informes y otros ficheros de 
+    la asignatura de Usabilidad y Accesibilidad. 
+    
 ***
 
 ## Integrantes del grupo:
