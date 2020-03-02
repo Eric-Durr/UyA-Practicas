@@ -9,18 +9,22 @@
 > Se ha de tener en cuenta que se ha empleado el navegador Firefox aunque también se ha probado Chrome. Aún así la única diferencia entre ambos es el user agent
 
 - ¿Qué peticiones desencadena la consulta?
+
     La consulta que se investiga es una solicitud a la página. De este modo se emplea una serie de peticiones HTTP. Concretamente se emplea HTTP versión 1.1
     Es así para ambas páginas.
 
 - ¿Qué tipo de petición se realiza?
+
     La única petición que se detecta es la de tipo GET, dado que se solicita al servidor un acceso a la página web que se quiere localizar. Sucede de igual maner apara ambas web.
 
 - ¿Qué código de estatus devuelve?
+
     En la primera web  (http://www.gobiernodecanarias.org/istac/api/) devuelve el tipo de estatus 2xx lo cual implica que las consultas han concluido de manera correcta. Por otro lado se localizan también los estatus 302 (encontrado) y 304 (no modificado).
 
     En la segunda página (http://www3.gobiernodecanarias.org/sanidad/scs/gc/18/Cita_Previa/index.html) únicamente aparecen los estatus 304 (No modificado) y 404 (no encontrado), sucede de esta manera debido a un cambio en la dirección del servicio.
 
 - ¿Qué DNS tiene el servidor?
+
     Ambas webs presentan DNS similares, donde su localización es el "gobiernodecanaria.org", sin embargo algunas discrepancias separan sus ámbitos. Tales discrepancias son notables en la ruta final del directiorio donde se localizan  ("/isatc/api" y "/sanidad/scs/gc/18/Cita_Previa/index.html") y en el host 
     o subdominio ("wwww" y "www3").
 
@@ -33,6 +37,7 @@
     se deba a que estas dos páginas pertenecen a la misma organización.
 
 - ¿La página tiene alguna cookie? ¿Cuáles?
+
     Si ambas webs, tienen cookies y presentan la misma
 >   cookie: -ga: GA 1.2.1600357602.1570390872
 
