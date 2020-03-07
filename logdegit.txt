@@ -1,0 +1,159 @@
+commit d20e8b5f0f5e713be8a4d22a5b78b5b363d78cae
+Author: Eric Durr <eric.d.s.info@gmail.com>
+Date:   Tue Mar 3 11:02:52 2020 +0000
+
+    aded basic html page
+
+commit 42cfe57417f5fd91bbf585aa0fad13ded2733cf9
+Merge: 15aa480 022f98d
+Author: Eric Durr <eric.d.s.info@gmail.com>
+Date:   Tue Mar 3 11:02:17 2020 +0000
+
+    Merge branch 'develop' of github.com:EricDS-INFO/UyA-Practicas into develop
+
+commit 15aa480f4ea41e6bf2279f61053325d11c505358
+Author: Eric Durr <eric.d.s.info@gmail.com>
+Date:   Tue Mar 3 11:01:33 2020 +0000
+
+    aded basic html page
+
+commit 022f98d9326dc6f90256a2bf6cda78e3b37d8e13
+Author: Alejandro <alejandromlgranadilla@gmail.com>
+Date:   Mon Mar 2 11:44:30 2020 +0000
+
+    Some improves v.3
+
+commit dc032dede5ed15335afca55ee6d4129961db7441
+Author: Alejandro <alejandromlgranadilla@gmail.com>
+Date:   Mon Mar 2 11:35:52 2020 +0000
+
+    Some improves v.2
+
+commit d54407945ab89b00f5a129f74c5a3cfebee6c90e
+Author: Alejandro <alejandromlgranadilla@gmail.com>
+Date:   Mon Mar 2 11:32:50 2020 +0000
+
+    Some improves
+
+commit 3f0628e59a06c57fb6835496cc2e3f6133dcdff1
+Author: Alejandro <alejandromlgranadilla@gmail.com>
+Date:   Mon Mar 2 11:27:51 2020 +0000
+
+    Some fixes
+
+commit 678185ac03b2fd888a02b07448577d9a140a6ab9
+Author: Eric Durr <eric.d.s.info@gmail.com>
+Date:   Mon Mar 2 10:56:29 2020 +0000
+
+    left 2 codecopies and format
+
+commit 4ff7a4c2de6b8df2cd7f602306ec1a32aa6f6639
+Author: Eric Durr <eric.d.s.info@gmail.com>
+Date:   Mon Mar 2 10:55:12 2020 +0000
+
+    left 2 codecopies and format
+
+commit 2c0afbae90ebf2608307dc650fb14a361137bc69
+Author: Eric Durr <eric.d.s.info@gmail.com>
+Date:   Mon Mar 2 10:54:06 2020 +0000
+
+    left 2 links and format
+
+commit 1725bd1ef0c95717cb3dd8ee4f629046e6892f38
+Author: Eric Durr <eric.d.s.info@gmail.com>
+Date:   Mon Mar 2 10:49:48 2020 +0000
+
+    almost done
+
+commit 379425f5760f9d794db73274437bc1b8c73b4481
+Author: Eric Durr <eric.d.s.info@gmail.com>
+Date:   Mon Mar 2 10:48:36 2020 +0000
+
+    almost done
+
+commit a30ad9508c0d886221c708c6199669566974b58a
+Author: Eric Durr <eric.d.s.info@gmail.com>
+Date:   Mon Mar 2 10:47:03 2020 +0000
+
+    almost done
+
+commit 7e1fe9beee74ee0eb85fbb6f6732482d69b8e67a
+Author: Eric Durr <eric.d.s.info@gmail.com>
+Date:   Mon Mar 2 10:01:29 2020 +0000
+
+    added description and fixed format
+
+commit f2df19c489ec5c9071e321f9e7ce8a5b2b875710
+Author: Eric Durr <eric.d.s.info@gmail.com>
+Date:   Mon Mar 2 09:49:26 2020 +0000
+
+    alu form Oscar added
+
+commit ebe28de7f827b14ef216009707a6ed4e7cca34c8
+Author: Eric Durr <eric.d.s.info@gmail.com>
+Date:   Mon Mar 2 09:48:46 2020 +0000
+
+    alu form Oscar added
+
+commit d82640993cbb39cbe85321356ed478874f6dfdca
+Author: Eric Durr <eric.d.s.info@gmail.com>
+Date:   Mon Mar 2 09:46:53 2020 +0000
+
+    alu form Oscar added
+
+commit 2cbee3b48aad7f9de9a7c3aaa4e4b2953e05e0ea
+Author: Eric Durr <eric.d.s.info@gmail.com>
+Date:   Mon Mar 2 09:31:15 2020 +0000
+
+    alu form Oscar added
+
+commit 3f7d5938d13f4d8ae5465371dfdcfa8cf1373ed3
+Author: Eric Durr <alu0101027005@ull.edu.es>
+Date:   Tue Feb 18 11:31:10 2020 +0000
+
+    just void content
+
+commit f97b7d0f228580f9ff431f5651ae65ed06e2208b
+Merge: d4c09e7 9836572
+Author: Eric Dürr Sierra <alu0101027005@ull.edu.es>
+Date:   Tue Feb 18 11:28:31 2020 +0000
+
+    Merge pull request #1 from EricDS-INFO/readmeModif
+    
+    Readme modif
+
+commit 983657232daf0fe339f66c203a06f9ea3142c52a
+Author: Eric Durr <alu0101027005@ull.edu.es>
+Date:   Tue Feb 18 11:25:14 2020 +0000
+
+    added link
+
+commit 28b90c5d8811c91a2273bf21701d6b4191d3105e
+Author: Eric Durr <alu0101027005@ull.edu.es>
+Date:   Tue Feb 18 11:17:16 2020 +0000
+
+    added correct sintax
+
+commit 8a99817e237ffa2bbe8859b2ed85a12b8d3a33d4
+Author: Eric Durr <alu0101027005@ull.edu.es>
+Date:   Tue Feb 18 11:09:54 2020 +0000
+
+    adding colaborators
+
+commit d4c09e701702b983193be1ab3758bb9691072f92
+Author: Eric Durr <alu0101027005@ull.edu.es>
+Date:   Tue Feb 18 11:07:01 2020 +0000
+
+    basic readme structure
+
+commit 74a8d2027f15d741a97685c60cc67a7a0313fc07
+Author: Eric Durr <alu0101027005@ull.edu.es>
+Date:   Tue Feb 18 09:34:35 2020 +0000
+
+    added seccond file
+
+commit 171c86ffee9d4a62b3176658378b30d6a14c958e
+Author: Eric Durr <alu0101027005@ull.edu.es>
+Date:   Tue Feb 18 09:26:19 2020 +0000
+
+    first commit
