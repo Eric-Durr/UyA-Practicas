@@ -6,6 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: lightsalmon;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .main {
@@ -48,11 +49,14 @@ footer {
     text-decoration: none;
 }
 
+.nav-menu {
+}
+
 .navi-ul {
     color: black;
     background-color: darkgrey;
     text-decoration: none;
-
+    padding-top: 0%;
 }
 
 .navi-li:hover{
@@ -60,4 +64,48 @@ footer {
     background-color: grey;
     text-decoration: none;
     width: 340px;
+}
+
+.col-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    padding-bottom: 0%;
+}
+
+.img-wrap {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.title{
+    padding: 0%;
+}
+
+.latest-news{
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+
+.latest-news h2{
+    padding-left: 10px;
+}
+.new{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 10px;
+    background-color: honeydew;
+    margin: 5px;
+}
+
+.new h3{
+    width: 100%;
+    background-color: grey;
+    text-align: center;
 }
