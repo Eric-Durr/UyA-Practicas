@@ -10,6 +10,7 @@ body {
 }
 
 .main {
+    
 }
 
 .secondary-c {
@@ -26,12 +27,31 @@ body {
 }
 
 .content {
+   display: flex;
+   width: 100%;
+   height: 100%;
+   justify-content: center;
+   align-items: stretch;
+   
 }
 
 .main-text {
+    
+    background-color: palegreen;
 }
 
 .main-link {
+    /*background-image: url('../img/cabecera.jpg');*/
+    background-size: cover;
+    background-color: paleturquoise;
+}
+
+.table-text {
+   
+}
+
+.links-ul {
+
 }
 
 #main {
