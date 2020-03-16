@@ -1,7 +1,9 @@
 body {
+    
 }
 
 .main {
+    
 }
 
 .secondary-c {
@@ -14,12 +16,25 @@ body {
 }
 
 .content {
+   display: flex;
+   width: 100%;
+   height: 100%;
+   justify-content: center;
+   align-items: stretch;
+   width: 770 px;
 }
 
 .main-text {
+    
+    background-color: palegreen;
+    width: 340 px;
 }
 
 .main-link {
+    
+    width: 430 px;
+    height: 100 px;
+    background-image: url('/media/img/cabecera.jpg');
 }
 
 #main {
