@@ -1,5 +1,12 @@
 body {
-     
+
+    display: flex;
+    width: 770px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: lightsalmon;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .main {
@@ -7,10 +14,13 @@ body {
 }
 
 .secondary-c {
+    background-color: aquamarine;
+    width: 340px;
+    height: 100%;
 }
 
 .main-c {
-    width: 430 px;
+    
 }
 
 .nav {
@@ -46,7 +56,91 @@ body {
 }
 
 #main {
+    width: 770px;
+    min-height: 80%;
+    background-color: lightseagreen;
 }
 
 footer {
+}
+
+.navi-li {
+    color: black;
+    background-color: darkgrey;
+    text-decoration: none;
+}
+
+.nav-menu {
+}
+
+.navi-ul {
+    padding: 1em ;
+    height: 8em;
+    display: flex;
+    color: black;
+    text-decoration: none;
+    
+    flex-flow: column;
+    justify-content: space-around;
+    background-color: black;
+    
+}
+
+.navi-li {
+
+    text-decoration: none;
+    padding: 0.3em;
+    margin-bottom: 0.7em;
+}
+
+.navi-li:hover{
+    color: white;
+    background-color: grey;
+    text-decoration: none;
+    width: 50.7em;
+    margin-bottom: 0.7em;
+}
+
+.col-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    padding-bottom: 0%;
+}
+
+.img-wrap {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.title{
+    padding: 0%;
+}
+
+.latest-news{
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+
+.latest-news h2{
+    padding-left: 10px;
+}
+.new{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 10px;
+    background-color: honeydew;
+    margin: 5px;
+}
+
+.new h3{
+    width: 100%;
+    background-color: grey;
+    text-align: center;
 }
