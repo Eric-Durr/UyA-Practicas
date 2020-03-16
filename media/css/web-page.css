@@ -34,7 +34,7 @@ a:visited {
 .nav {
     display: flex;
     justify-content: flex-end;
-    background-color: #ABABAB;
+    background-color: lightgrey;
     text-align: end;
     font-weight: bold;
     padding-top: 20px;
