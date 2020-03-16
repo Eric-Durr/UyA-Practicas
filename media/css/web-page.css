@@ -53,17 +53,31 @@ footer {
 }
 
 .navi-ul {
+    padding: 1em ;
+    height: 8em;
+    display: flex;
     color: black;
-    background-color: darkgrey;
     text-decoration: none;
-    padding-top: 0%;
+    
+    flex-flow: column;
+    justify-content: space-around;
+    background-color: black;
+    
+}
+
+.navi-li {
+
+    text-decoration: none;
+    padding: 0.3em;
+    margin-bottom: 0.7em;
 }
 
 .navi-li:hover{
     color: white;
     background-color: grey;
     text-decoration: none;
-    width: 340px;
+    width: 50.7em;
+    margin-bottom: 0.7em;
 }
 
 .col-head {
