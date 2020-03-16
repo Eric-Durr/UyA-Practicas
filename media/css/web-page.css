@@ -1,4 +1,7 @@
 body {
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 1,5mm;
 }
 
 .main {
@@ -10,8 +13,41 @@ body {
 .main-c {
 }
 
-.nav {
+a{
+    text-decoration: none;
+    color: blue;
 }
+
+a:link {
+    color: blue;
+}
+
+a:hover {
+    color: red;
+    transition: 0.5s;
+}
+
+a:visited {
+    color: red;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #ABABAB;
+    text-align: end;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+}
+
+.links {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
 
 .content {
 }
