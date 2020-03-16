@@ -26,12 +26,13 @@ body {
 }
 
 .main-text {
-    
+    padding: 3em;
     background-color: palegreen;
 }
 
 .main-link {
     /*background-image: url('../img/cabecera.jpg');*/
+    padding: 3em;
     background-size: cover;
     background-color: paleturquoise;
 }
