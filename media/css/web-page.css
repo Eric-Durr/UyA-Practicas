@@ -1,29 +1,24 @@
 body {
 
     display: flex;
+    flex-flow: column ;
     width: 770px;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    background-color: lightsalmon;
-    font-family: 'Courier New', Courier, monospace;
     color: black;
     font-family: Arial, sans-serif;
     font-size: 1,5mm;
 }
 
-.main {
-    
-}
 
 .secondary-c {
     background-color: aquamarine;
     width: 340px;
-    height: 100%;
 }
 
 .main-c {
-    
+    width: 430px;
+    display: flex;
+    flex-flow: column;
+
 }
 
 a{
@@ -46,17 +41,17 @@ a:visited {
 
 .nav {
     display: flex;
+    width: 100%;
     justify-content: flex-end;
     background-color: #ABABAB;
     text-align: end;
-    font-weight: bold;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 10px;
+    padding-top: 3em;
+    padding-bottom: 2em;
 }
 
 .links {
-    width: 40%;
+    padding-right: 1em;
+    width: 70%;
     display: flex;
     justify-content: space-around;
 }
@@ -66,38 +61,44 @@ a:visited {
    display: flex;
    width: 100%;
    height: 100%;
-   justify-content: center;
-   align-items: stretch;
+   flex-flow: row;
    
 }
 
+.img-content  {
+    width: 100%;
+  background-image: url('../img/texto-ejemplo.jpg');
+  background-size: cover;
+ }
+ 
 .main-text {
-    padding: 3em;
+    width: 70%;
     background-color: palegreen;
 }
 
 .main-link {
     /*background-image: url('../img/cabecera.jpg');*/
-    padding: 3em;
+
+    width: 30%;
     background-size: cover;
     background-color: paleturquoise;
 }
 
-.table-text {
-   
-}
-
-.links-ul {
-
-}
 
 #main {
-    width: 770px;
-    min-height: 80%;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
     background-color: lightseagreen;
 }
 
 footer {
+    width: 100%;
+    background-color: lightgray;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navi-li {
@@ -106,8 +107,6 @@ footer {
     text-decoration: none;
 }
 
-.nav-menu {
-}
 
 .navi-ul {
     padding: 1em ;
@@ -174,9 +173,37 @@ footer {
     background-color: honeydew;
     margin: 5px;
 }
-
+.table-text {
+    font-size: 0.5em;
+}
+.table-text a{
+    
+    text-decoration: none;
+    color: green;
+}
 .new h3{
     width: 100%;
     background-color: grey;
     text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+.social img{
+    width: 40%;
+}
+
+.cookies {
+    
+    margin: 1em;
+}
+
+.privacy {
+    
+    margin: 1em;
 }
