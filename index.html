@@ -11,6 +11,15 @@
     <link rel="stylesheet" href="media/css/materialize.min.css" 
           media="screen, projection"/>
 
+   <!-- Personal CSS files  -->
+
+    <link rel="stylesheet" href="media/css/mat-header.css" 
+          media="screen, projection"/>
+
+          <link rel="stylesheet" 
+                type="text/css" 
+                href="https://csshake.surge.sh/csshake.min.css">
+   
    <!-- Materialize JS file -->
     <script defer type="text/javascript" src="media/js/materialize.min.js"></script>
    
@@ -29,12 +38,13 @@
 <body>
      
   <!-- inicio de sesión + registro  -->    
-  <section id="hook"></section>
+  
     <!-- Navegación en la web -->    
+    <div class="navbar-fixed hoverable ">
       <nav>
-        <div class="nav-wrapper">
+        <div class="nav-wrapper teal lighten-1">
           <div class="container">
-            <a href="#" class="brand-logo">Logo</a>
+            <a href="#" class="brand-logo">TRADAY</a>
             <a href="#" data-target="traday-nav"
                         class="sidenav-trigger">
               <i class="material-icons">menu</i>          
@@ -50,7 +60,8 @@
           </div>
         </div>
       </nav>
-
+    </div>
+      
       <!-- responsive menu - hidden in desktop -->
       <ul class="sidenav" id="traday-nav">
 
@@ -61,15 +72,72 @@
         <li><a href="#">Grupos</a></li>
       </ul>
       <!-- --- -->
-    
-      <section id="que-puedes-hacer"></section>
-      <section id="valoraciones"></section>
-      <section id="estadisticas"></section>
-      <section id="nuestro-equipo"></section>
+
+    <section id="hook" style="height: 100%;">
+      <div class=" teal lighten-1" >
+        
+        <div class="row">
+          <div class="col s3 offset-s6 center-align">
+            <a class="waves-effect blue-grey lighten-1 btn">login</a>
+          </div>
+          <div class="col s3 center-align">
+            <a class="waves-effect waves-light green accent-2 btn">sign in</a>
+          </div>
+        
+          <div class="col s12 " >
+            <h1 class="center-align white-text ">Comparte tu tiempo antes de perderlo</h1>
+          </div>
+          <div class="col s4  offset-s4 center-align">
+            <div class="container">
+              <!-- 
+              <canvas class="zdog-canvas" >
+              </canvas>
+               -->
+            </div>
+          </div>
+        </div>  
+      </div>
+    </section>
+
+
+    <section id="que-puedes-hacer" class="container">
+    </section>
+    <section id="valoraciones"></section>
+    <section id="estadisticas"></section>
+    <section id="nuestro-equipo"></section>
  
       <!-- --- -->    
-  <footer>
-  </footer>
+  
+    <footer class="page-footer blue-grey darken-4">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Has llegado al final. Pero hay más</h5>
+            <p class="grey-text text-lighten-4">Traday tiene un duro trabajo detrás y un método que no puede pasar desapercibido.</p>
+            <p class="grey-text text-lighten-4">No olvides apoyarnos en las redes sociales y compartir la aplicación con tus amigos.</p>
+            
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Otros</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Más sobre traday</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Encuéntranos</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Contacta</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © TRADAY 2020 - all rights reserved
+        <a class="grey-text text-lighten-4 right" href="#!">cookies</a>
+        </div>
+      </div>
+    </footer>
+        
  
+  <!-- Z dog scripts CDNs -->
+  <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
+  <script src="media/js/cloud.js"></script>
 </body>
 </html>
