@@ -11,5 +11,13 @@
   "license": "ISC",
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EricDS-INFO/UyA-Practicas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EricDS-INFO/UyA-Practicas/issues"
+  },
+  "homepage": "https://github.com/EricDS-INFO/UyA-Practicas#readme"
 }
