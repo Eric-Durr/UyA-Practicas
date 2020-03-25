@@ -25,7 +25,16 @@
    
    <!-- Personal JS file -->
     <script defer type="text/javascript" src="media/js/index.js"></script>
-  
+
+    <!-- Chart JS file-->
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    <!-- Personal JS file-->
+    <script defer type="text/javascript" src="media/js/chart.js"></script>
+
+    <!-- Personal CSS file -->
+    <script defer type="text/css" src="media/css/index.css"></script>
+
     <!-- browser info -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
@@ -283,15 +292,17 @@
       </section>
       <section id="estadisticas">
 
-        <ul id="tabs-swipe" class="tabs">
-          <li class="tab col s3"><a href="#swipe-1">Test 1</a></li>
-          <li class="tab col s3"><a href="#swipe-2">Test 2</a></li>
-          <li class="tab col s3"><a href="#swipe-3">Test 3</a></li>
-        </ul>
-        <div id="swipe-1" class="col s12 blue">Test 1</div>
-        <div id="swipe-2" class="col s12 red">Test 2</div>
-        <div id="swipe-3" class="col s12 green">Test 3</div>
-
+      <h3>Estadísticas</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m6">
+            <canvas id="radarChart" height="30vh" width="50vw"></canvas>
+          </div>
+          <div class="col s12 m6">
+            <canvas id="polarChart" height="30vh" width="50vw"></canvas>
+          </div>
+        </div>
+      </div>
       </section>
 
       <!-- --- -->    
