@@ -48,7 +48,7 @@
     
     <title>TRADAY - HOME</title>
 </head>
-<body>
+<body class="teal lighten-1">
      
   <!-- inicio de sesión + registro  -->    
   
@@ -89,39 +89,38 @@
       <!-- --- -->
 
     <section id="hook" style="height: 100%;">
-      <div class=" teal lighten-1" >
+        <br>
         
         <div class="row">
-          <div class="col s3 offset-s6 center-align">
+          <div class="col s3 m2 l1 offset-s6 offset-m8 offset-l10 center-align">
             <a class="waves-effect blue-grey lighten-1 btn">login</a>
           </div>
-          <div class="col s3 center-align">
+          <div class="col s3 m2 l1  center-align">
             <a class="waves-effect waves-light green accent-2 btn">sign in</a>
           </div>
-        
+        </div>
+        <div class="row">
           <div class="col s12 " >
             <h1 class="center-align white-text ">Dale una vuelta a tu tiempo</h1>
           </div>
           <div class="col s4  offset-s4 center-align">
             <div class="container">
               
-              <canvas class="zdog-canvas" >
+              <canvas class="zdog-canvas " >
               </canvas>
               
             </div>
           </div>
         </div>  
-      </div>
+      
     </section>
 
-
-    
           
-    <section id="que-puedes-hacer"container class="">
+    <section id="que-puedes-hacer"container class="blue-grey lighten-1">
       <div class="row">
         <div class="col s12">
           <div class="container center-align">
-            <h3 class="teal-text text-darken-3">Qué puedes hacer aquí:</h3>
+            <h3 class="white-text text-darken-3">¿Qué puedes hacer aquí?</h3>
           </div>
         </div>
       </div>
@@ -207,10 +206,11 @@
 
         </div>
       </div>
+      <br>
     </section>
 
     
-    <section id="valoraciones" class=" blue-grey lighten-1">
+    <section id="valoraciones" class=" ">
       
       <div class="row ">
         <div class="col s12">
@@ -220,24 +220,25 @@
           </div>
         </div>
         <div class="col s12">
-          <div class="container">
             <div class="carousel ">
               <a class="carousel-item" href="#one!"><img  src="media/img/valoracion1.jpg"></a>
               <a class="carousel-item" href="#two!"><img src="media/img/valoracion2.jpg"></a>
               <a class="carousel-item" href="#three!"><img src="media/img/valoracion3.jpg"></a>
               <a class="carousel-item" href="#four!"><img src="media/img/valoracion4.jpg"></a>
-              <a class="carousel-item" href="#five!"><img src="media/img/valoracion5.jpg"></a>
+              <a class="carousel-item" href="#five!">
+                <div class="container">
+
+                </div>
+              </a>
             </div>
-          </div>
         </div>
       </div>
     </section>
-  
-      <section id="nuestro-equipo" class="container">
+      <section id="nuestro-equipo" class="blue-grey lighten-1">
       <div class="row">
           <div class="col s12">
             <div class="container center-align">
-              <h3 class="teal-text text-darken-3">Nuestro Equipo</h3>
+              <h3 class="white-text text-darken-3">Nuestro Equipo</h3>
             </div>
           </div>
       </div>
@@ -290,17 +291,36 @@
           <div class="col s12 m6 l4"></div>
         </div>
       </section>
+
       <section id="estadisticas">
 
-      <h3>Estadísticas</h3>
-      <div class="container">
-        <div class="row">
-          <div class="col s12 m6">
+      <div class="row">
+        <div class="col s12">
+          <div class="container center-align">
+            <h3 class="white-text text-darken-3">Nuestras estadísticas</h3>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="container">
+            <br>
+            <br>
             <canvas id="radarChart" height="30vh" width="50vw"></canvas>
+            <br>
+            <br>
           </div>
-          <div class="col s12 m6">
-            <canvas id="polarChart" height="30vh" width="50vw"></canvas>
+        </div>
+        <div class="col s12 m6">
+          <div class="container">
+            <br>
+            <br>
+            <canvas id="polarChart" height="40vh" width="60vw"></canvas>
+            <br>
+            <br>
           </div>
+          <br>
+          <br>
         </div>
       </div>
       </section>
