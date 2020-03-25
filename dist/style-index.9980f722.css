@@ -1,26 +1,2 @@
 
-body {
-    font-family: Arial, sans-serif;
-}
-
-h4 {
-    font-weight: bold;
-    color: #263238;
-    padding-top: 20px;
-    margin-left: 30px;
-}
-
-.card-title {
-    font-weight: bold;
-    color: #009688;
-}
-
-.card-image > img {
-    height: 300px;
-}
-
-.carousel a img {
-    height: 100px;
-}
-
 /*# sourceMappingURL=/style-index.9980f722.css.map */
