@@ -1,0 +1,15 @@
+{
+  "name": "uya-practicas",
+  "version": "1.0.0",
+  "description": "En este repositorio se incluirán los informes y otros ficheros de      la asignatura de Usabilidad y Accesibilidad.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
