@@ -9,6 +9,12 @@
    <!-- Materialize CSS file -->
     <link rel="stylesheet" href="/materialize.min.6e899e91.css" media="screen, projection">
 
+   <!-- Personal CSS files  -->
+
+    <link rel="stylesheet" href="/mat-header.eeb383a8.css" media="screen, projection">
+
+          <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+   
    <!-- Materialize JS file -->
     <script defer="" type="text/javascript" src="/materialize.min.1da06977.js"></script>
    
@@ -20,20 +26,25 @@
 
    <!-- ICON -->
     <link rel="icon" href="/2.64aedc94.ico">
+
+    <!-- Personal CSS file -->
+    <link rel="stylesheet" type="text/css" href="/css.34435bbb.css">
     
-    <link rel="stylesheet" href="/style-index.9980f722.css">
     
     <title>TRADAY - HOME</title>
-<script src="/materialize.min.6e899e91.js"></script><script src="/style-index.9980f722.js"></script></head>
+<script src="/materialize.min.6e899e91.js"></script><script src="/mat-header.eeb383a8.js"></script><script src="/css.34435bbb.js"></script></head>
 <body>
      
   <!-- inicio de sesión + registro  -->    
-  <section id="hook"></section>
+  
     <!-- Navegación en la web -->    
+    <div class="navbar-fixed hoverable ">
       <nav>
-        <div class="nav-wrapper">
+        <div class="nav-wrapper teal lighten-1">
           <div class="container">
-            <a href="#" class="brand-logo">Logo</a>
+            <a href="#" class="brand-logo">
+              TRADAY
+            </a>
             <a href="#" data-target="traday-nav" class="sidenav-trigger">
               <i class="material-icons">menu</i>          
             </a>
@@ -48,7 +59,8 @@
           </div>
         </div>
       </nav>
-
+    </div>
+      
       <!-- responsive menu - hidden in desktop -->
       <ul class="sidenav" id="traday-nav">
 
@@ -59,78 +71,148 @@
         <li><a href="#">Grupos</a></li>
       </ul>
       <!-- --- -->
+
+    <section id="hook" style="height: 100%;">
+      <div class=" teal lighten-1">
+        
+        <div class="row">
+          <div class="col s3 offset-s6 center-align">
+            <a class="waves-effect blue-grey lighten-1 btn">login</a>
+          </div>
+          <div class="col s3 center-align">
+            <a class="waves-effect waves-light green accent-2 btn">sign in</a>
+          </div>
+        
+          <div class="col s12 ">
+            <h1 class="center-align white-text ">Dale una vuelta a tu tiempo</h1>
+          </div>
+          <div class="col s4  offset-s4 center-align">
+            <div class="container">
+              
+              <canvas class="zdog-canvas">
+              </canvas>
+              
+            </div>
+          </div>
+        </div>  
+      </div>
+    </section>
+
+
+    <section id="que-puedes-hacer" class="container">
+    </section>
+    <section id="valoraciones"></section>
+    <section id="estadisticas"></section>
+    <section id="nuestro-equipo"></section>
     
-      <section id="que-puedes-hacer">
-        <div class="row">
-          <h4>¿Qué puedes hacer?</h4>
-        </div>
-        <div class="row">
-          <div class="col s12 m4">
-            <div class="card">
-              <div class="card-image">
-                <img src="/buscar_gente.65cba064.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title">Buscar gente</span>
-                <p>Busca a familiares y amigos que tengan tiempo disponible
-                  para intercambiar tiempo.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m4">
-            <div class="card">
-              <div class="card-image">
-                <img src="/chatear.4f028b42.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title">Chatea</span>
-                <p>Chatea con tus amigos y familiares y crea grupos para 
-                  organizaros entre todos.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m4">
-            <div class="card">
-              <div class="card-image">
-                <img src="/ayudar_a_otros.eb424b92.png">
-              </div>
-              <div class="card-content">
-                <span class="card-title">Ayuda a otros</span>
-                <p>Cada cierto tiempo puedes devolver los favores o 
-                  comenzar a ayudar a otras personas.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      
-      <section id="valoraciones">
-        <h4>Valoraciones</h4>
-        <div class="carousel">
-          <a class="carousel-item" href="#one!"><img src="/valoracion1.ce8b0d28.jpg"></a>
-          <a class="carousel-item" href="#two!"><img src="/valoracion2.bbf959c5.jpg"></a>
-          <a class="carousel-item" href="#three!"><img src="/valoracion3.d06834da.jpg"></a>
-          <a class="carousel-item" href="#four!"><img src="/valoracion4.5e605986.jpg"></a>
-          <a class="carousel-item" href="#five!"><img src="/valoracion5.c6127d5e.jpg"></a>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-      </section>
+      <section id="que-puedes-hacer"></section>
+      <section id="valoraciones"></section>
       <section id="estadisticas"></section>
-      <section id="nuestro-equipo"></section>
+      
+      <section id="nuestro-equipo" class="container">
+      <div class="row">
+          <h3 class="titulo">Nuestro Equipo</h3>
+      </div>
+      <div class="row">
+      
+        <div class="col  s12 m4 ">
+          <div class="card">
+            <div class="card-image">
+              <img src="/equipo1.a61ba789.jfif">
+              <span class="card-title"><h6>ERIC DÜRR SIERRA</h6></span>
+            </div>
+            <div class="card-content">
+              <p>Es nuestro Product Manager, responsable de la estrategia, planificación y ejecución del proyecto.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Contacto</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col  s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="/equipo2.1235d043.png">
+              <span class="card-title"><h6>ÓSCAR CIGALA ÁLVAREZ</h6></span>
+            </div>
+            <div class="card-content">
+              <p>Frontend Developer, encargado de programar el del diseño y estilo visual del navegador de la web</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Contacto</a>
+            </div>
+          </div>
+        </div>
+                  
+        <div class="col  s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img class="img-ale" src="/equipo3.8f30c446.jpeg">
+              <span class="card-title"><h6>ALEJANDRO MARTÍN DE LEÓN</h6></span>
+            </div>
+            <div class="card-content">
+              <p>Backend Developer, encargado de las interacciones con las bases de datos.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Contacto</a>
+            </div>
+          </div>
+          </div>
+          <div class="col s12 m6 l4"></div>
+        </div>
+      </section>
  
       <!-- --- -->    
-  <footer>
-  </footer>
+  
+    <footer class="page-footer blue-grey darken-4">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Has llegado al final. Pero hay más</h5>
+            <p class="grey-text text-lighten-4">Traday tiene un duro trabajo detrás y un método que no puede pasar desapercibido.</p>
+            <p class="grey-text text-lighten-4">No olvides apoyarnos en las redes sociales y compartir la aplicación con tus amigos.</p>
+            
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Otros</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Más sobre traday</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Encuéntranos</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Contacta</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col s2 m1 offset-s1 offset-m1 offset-l2">
+          <a href="#">
+            <img src="/twitter.4baf5353.png" alt="" class="responsive-img">
+          </a>
+        </div>
+        <div class="col s2 m1 ">
+          <a href="#">
+            <img src="/instagram.77313f6a.png" alt="" class="responsive-img">
+          </a>
+        </div>
+        <div class="col s2 m1 ">
+          <a href="#">
+            <img src="/youtube.4d08a431.png" alt="" class="responsive-img">
+          </a>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © TRADAY 2020 - all rights reserved
+          <a class="grey-text text-lighten-4 right" href="#!">cookies</a>
+          <a class="grey-text text-lighten-4 right" href="#!">privacy</a>
+        </div>
+      </div>
+    </footer>
+        
  
+  <!-- Z dog scripts CDNs -->
+  <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
+  <script src="/cloud.add31d0a.js"></script>
 </body>
 </html>
