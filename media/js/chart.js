@@ -8,8 +8,8 @@ var chart = new Chart(ctx, {
         labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
         datasets: [{
             label: 'My First dataset',
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
+            backgroundColor: 'rgb(0, 150, 136, 0.7)',
+            borderColor: 'rgb(0, 77, 64)',
             data: [20, 35, 42, 0, 0, 0, 0, 0, 0, 0, 0, 0]
         }]
     },
@@ -27,13 +27,16 @@ var chart = new Chart(ctx, {
     data: {
         labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
         datasets: [{
-            label: 'My First dataset',
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
+            label: 'Enero',
+            backgroundColor: 'rgb(0, 150, 136, 0.7)', 
+            borderColor: 'rgb(0, 77, 64)',
             data: [20, 35, 42, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            
         }]
-    },
+    }, 
 
     // Configuration options go here
-    options: {}
+    options: {
+        
+    }
 });
