@@ -1,5 +1,5 @@
 # PRÁCTICA 5 : INTRODUCCIÓN A JAVASCRIPT
-    Ejercicios para la compresnsión de JavaScript y la 
+    Ejercicios para la comprensión de JavaScript y la 
     Composición del DOM y su estructura en arbol.
 
 ## TABLA DE LAS FUNCIONES JAVASCRIPT PARA EL DOM.  
