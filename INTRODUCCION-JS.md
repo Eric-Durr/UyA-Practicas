@@ -7,22 +7,89 @@
 ## ESQUEMA DEL ARBOL DOM DEL [FICHERO ENLAZADO](https://campusvirtual.ull.es/1920/pluginfile.php/258285/mod_assign/intro/dom.html).
 
 ```
-project
-│   README.md
-│   file001.txt    
+html
 │
-└───folder1
-│   │   file011.txt
-│   │   file012.txt
+└───head
 │   │
-│   └───subfolder1
-│       │   file111.txt
-│       │   file112.txt
-│       │   ...
+│   └───title
+|       |
+│       └───DOM
 │   
-└───folder2
-    │   file021.txt
-    │   file022.txt
+└───body
+    │
+    └───h1
+    |   |
+    │   └───Introducción al árbol DOM
+    │
+    └───p
+    |   |
+    │   └───El DOM es una interfaz de objeto de un documento HTML, 
+    │       representa de forma estructurada el documento y proporciona 
+    │       interfaces para su manipulación.
+    │
+    └───p
+    |   │
+    |   └───Puedes consultar información en la 
+    |   │
+    |   └───a---href=https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n
+    |       |
+    │       └───Documnetación de Mozilla
+    └───p
+    |   |
+    │   └───Algunos tipos de datos:
+    │
+    └───ul
+    |   │
+    |   └───li
+    |   |   |
+    |   |   └───document
+    |   │
+    |   └───li
+    |   |   |
+    |   |   └───element
+    |   │
+    |   └───li
+    |       |
+    |       └───attribute
+    │
+    └───p
+    |   |
+    │   └───Introduce tu correo si quieres más información 
+    │
+    └───form---action=https://www.ull.es
+        │   ---method=post
+        │
+        └───h2
+        |   │
+        |   └───Ejemplo para el árbol DOM
+        │
+        └───p
+        |   │
+        |   └───Puedes introducir tu correo, si quieres suscribirte
+        │
+        └───div
+            │
+            └───div
+            |    │
+            |    └───label---for=newsletterEmailInput
+            |    |   │
+            |    |   └───E-mail
+            |    │
+            |    └───input---id=newsletterEmailInput
+            │             ---type=email
+            │             ---name=email
+            │             ---required=
+            │             ---placeholder=you@example.com
+            │             ---size=30
+            |
+            └───div
+                 │
+                 └───button---id=newsletter-submit
+                     │     ---class=button neutral newsletter-submit
+                     │     ---type=submit
+                     |
+                     └───Sign up now 
+
 ```
 
 
