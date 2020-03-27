@@ -3,11 +3,20 @@
     Composición del DOM y su estructura en arbol.
 
 ## TABLA DE LAS FUNCIONES JAVASCRIPT PARA EL DOM. 
-| Tables        | Are           | Cool  |
+| Métodos DOM      | Are           | Cool  |
 | ------------- |:-------------:| -----:|
-| col 3 is esto es una prueba una prueba     | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 | 
+| document.getElementById(id) | right-aligned        | $1600 |
+| document.getElementsByTagName(name)      | centered      |   $12 |
+| element.innerHTML = new html content | are neat      |    $1 | 
+| element.attribute = new value | are neat      |    $1 | 
+| element.style.property = new style | are neat      |    $1 | 
+| element.setAttribute(attribute, value) | are neat      |    $1 | 
+| document.createElement(element) | are neat      |    $1 | 
+| document.removeChild(element) | are neat      |    $1 | 
+| document.appendChild(element) | are neat      |    $1 | 
+| document.replaceChild(new, old) | are neat      |    $1 | 
+| document.write(text) | are neat      |    $1 |
+| document.getElementById(id).onclick = function(){code} | are neat      |    $1 |
 
 ## ESQUEMA DEL ARBOL DOM DEL [FICHERO ENLAZADO]().
 
