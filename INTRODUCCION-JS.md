@@ -2,7 +2,8 @@
     Ejercicios para la comprensión de JavaScript y la 
     Composición del DOM y su estructura en arbol.
 
-## TABLA DE LAS FUNCIONES JAVASCRIPT PARA EL DOM.  
+## TABLA DE LAS FUNCIONES JAVASCRIPT PARA EL DOM. 
+
 
 ## ESQUEMA DEL ARBOL DOM DEL [FICHERO ENLAZADO]().
 
