@@ -7,8 +7,8 @@
 | ------------- |:-------------:| 
 | **document.getElementById(id)** | Selecciona un **elemento** del documento por medio del **valor id**.       | 
 | **document.getElementsByTagName(name)**      | Se selecciona una **lista de nodos** cuyo elemento es el especificado como parametro **name**      |   
-| **element.innerHTML = new html content** | Establece la sintaxis HTML     |  
-| **element.attribute = new value** |     |   
+| **element.innerHTML = new html content** | Introduce HTML en el elemento elegido.     |  
+| **element.attribute = new value** |    |   
 | **element.style.property = new style** | Establece una propiedad de estilo para el **elemento**      |   
 | **element.setAttribute(attribute, value)** | Establece el valor de un atributo en el elemento insdicado. Si el atributo ya existe, el valor es actualizado.   | 
 | **document.createElement(element)** | Crea un elemento HTML especificado por "element".     | 
@@ -16,7 +16,7 @@
 | **document.appendChild(element)** | Crea el nodo **element** como último hijo del nodo    | 
 | **document.replaceChild(new, old)** | Reemplaza el nodo **old** por el nodo **new**.     |  
 | **document.write(text)** | Escribe una cadena de texto **text** dentro del hilo de **document**.  |  
-| **document.getElementById(id).onclick = function(){code}** | are neat      |
+| **document.getElementById(id).onclick = function(){code}** |     |
 
 Esta información ha sido revisada en el siguiente [link](https://developer.mozilla.org/es/docs/Web/JavaScript)
 
