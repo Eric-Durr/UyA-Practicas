@@ -97,7 +97,7 @@ html
     etiqueta. Sin embargo los atributos están posicionados al mismo nivel. Tal y como
     muestra el siguiente esquema:
 
-    ![DOM-diagram](media/img/DOM-model.svg.png)
+![DOM-diagram](media/img/DOM-model.svg.png)
 
 
 ## FUNCIÓN JAVASCRIPT PARA CALCULAR EL CAMBIO ENTRE DIFERENTES MONEDAS
