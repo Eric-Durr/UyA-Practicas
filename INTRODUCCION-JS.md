@@ -92,6 +92,13 @@ html
 
 ```
 
+    Las etiquetas HTML hijas de otras etiquetas html son nodos hijos en la jerarquía.
+    El texto que encierra dicha etiqueta es así mismo un nodo hijo de la propia 
+    etiqueta. Sin embargo los atributos están posicionados al mismo nivel. Tal y como
+    muestra el siguiente esquema:
+
+    ![DOM-diagram](media/img/DOM-model.svg.png)
+
 
 ## FUNCIÓN JAVASCRIPT PARA CALCULAR EL CAMBIO ENTRE DIFERENTES MONEDAS
 
