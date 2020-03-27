@@ -3,20 +3,20 @@
     Composición del DOM y su estructura en arbol.
 
 ## TABLA DE LAS FUNCIONES JAVASCRIPT PARA EL DOM. 
-| Métodos DOM      | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| document.getElementById(id) | right-aligned        | $1600 |
-| document.getElementsByTagName(name)      | centered      |   $12 |
-| element.innerHTML = new html content | are neat      |    $1 | 
-| element.attribute = new value | are neat      |    $1 | 
-| element.style.property = new style | are neat      |    $1 | 
-| element.setAttribute(attribute, value) | are neat      |    $1 | 
-| document.createElement(element) | are neat      |    $1 | 
-| document.removeChild(element) | are neat      |    $1 | 
-| document.appendChild(element) | are neat      |    $1 | 
-| document.replaceChild(new, old) | are neat      |    $1 | 
-| document.write(text) | are neat      |    $1 |
-| document.getElementById(id).onclick = function(){code} | are neat      |    $1 |
+| Métodos DOM      | Are           | 
+| ------------- |:-------------:| 
+| document.getElementById(id) | right-aligned        | 
+| document.getElementsByTagName(name)      | centered      |   
+| element.innerHTML = new html content | are neat      |  
+| element.attribute = new value | are neat      |   
+| element.style.property = new style | are neat      |   
+| element.setAttribute(attribute, value) | are neat      | 
+| document.createElement(element) | are neat      | 
+| document.removeChild(element) | are neat      | 
+| document.appendChild(element) | are neat      | 
+| document.replaceChild(new, old) | are neat      |  
+| document.write(text) | are neat      |  
+| document.getElementById(id).onclick = function(){code} | are neat      |  
 
 ## ESQUEMA DEL ARBOL DOM DEL [FICHERO ENLAZADO]().
 
