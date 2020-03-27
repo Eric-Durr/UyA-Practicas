@@ -6,16 +6,16 @@
 | Funciones JavaScript     | Propósito           | 
 | ------------- |:-------------:| 
 | document.getElementById(id) | Selecciona un elemento del documento por medio del valor id.       | 
-| document.getElementsByTagName(name)      | centered      |   
-| element.innerHTML = new html content | are neat      |  
-| element.attribute = new value | are neat      |   
-| element.style.property = new style | are neat      |   
-| element.setAttribute(attribute, value) | are neat      | 
-| document.createElement(element) | are neat      | 
-| document.removeChild(element) | are neat      | 
-| document.appendChild(element) | are neat      | 
-| document.replaceChild(new, old) | are neat      |  
-| document.write(text) | are neat      |  
+| document.getElementsByTagName(name)      | Se selecciona una lista de nodos cuyo elemento es el especificado como parametro (name)      |   
+| element.innerHTML = new html content | Establece la sintaxis HTML     |  
+| element.attribute = new value |     |   
+| element.style.property = new style | Establece una propiedad de estilo para el elemnto      |   
+| element.setAttribute(attribute, value) | Establece el valor de un atributo en el elemento insdicado. Si el atributo ya existe, el valor es actualizado.   | 
+| document.createElement(element) | Crea un elemento HTML especificado por "element".     | 
+| document.removeChild(element) | Elimina un nodo hijo del DOM y puede devolver el nodo eliminado.      | 
+| document.appendChild(element) | Crea el nodo "element" como último hijo del nodo    | 
+| document.replaceChild(new, old) | Reemplaza el nodo "old" por el nodo "new".     |  
+| document.write(text) | Escribe una cadena de texto (text) dentro del hilo de "document".  |  
 | document.getElementById(id).onclick = function(){code} | are neat      |  
 
 ## ESQUEMA DEL ARBOL DOM DEL [FICHERO ENLAZADO]().
