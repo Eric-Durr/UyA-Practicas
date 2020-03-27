@@ -99,6 +99,7 @@ html
 
 ![DOM-diagram](media/img/DOM-model.svg.png)
 
+> más información en este [link](https://en.wikipedia.org/wiki/Document_Object_Model)
 
 ## FUNCIÓN JAVASCRIPT PARA CALCULAR EL CAMBIO ENTRE DIFERENTES MONEDAS
 
