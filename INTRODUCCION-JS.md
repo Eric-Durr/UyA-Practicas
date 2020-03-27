@@ -6,6 +6,13 @@
 
 ## ESQUEMA DEL ARBOL DOM DEL [FICHERO ENLAZADO](https://campusvirtual.ull.es/1920/pluginfile.php/258285/mod_assign/intro/dom.html).
 
+```sequence
+Alice->Bob: hello
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good
+```
+
+
 ## FUNCIÓN JAVASCRIPT PARA CALCULAR EL CAMBIO ENTRE DIFERENTES MONEDAS
 
 ## FUNCIÓN JAVASCRIPT PARA CALCULAR EDAD Y SUELDO
