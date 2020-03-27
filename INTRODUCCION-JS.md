@@ -3,9 +3,9 @@
     Composición del DOM y su estructura en arbol.
 
 ## TABLA DE LAS FUNCIONES JAVASCRIPT PARA EL DOM. 
-| Métodos DOM      | Are           | 
+| Funciones JavaScript     | Propósito           | 
 | ------------- |:-------------:| 
-| document.getElementById(id) | right-aligned        | 
+| document.getElementById(id) | Selecciona un elemento del documento por medio del valor id.       | 
 | document.getElementsByTagName(name)      | centered      |   
 | element.innerHTML = new html content | are neat      |  
 | element.attribute = new value | are neat      |   
