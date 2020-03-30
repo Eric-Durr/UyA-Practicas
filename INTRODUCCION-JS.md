@@ -29,7 +29,7 @@ A continuación se muestra una tabla que describe el propósito de las funciones
 ## FUNCIÓN JAVASCRIPT PARA CALCULAR EDAD Y SUELDO
 
 ## FUNCIÓN JAVASCRIPT PARA INFORME DE LA CÁNTIDAD DE ELEMENTOS EN EL INICIO
-El código mostrado a continuación se encuentra almacenado dentro de la carpetas /media/js, en el fichero llamado contador.js
+El código mostrado a continuación se encuentra almacenado dentro de la carpetas **/media/js**, en el fichero llamado **contador.js**
 
 ```js
 //Cuenta número de párrafos
