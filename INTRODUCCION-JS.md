@@ -3,6 +3,7 @@
     Composición del DOM y su estructura en arbol.
 
 ## TABLA DE LAS FUNCIONES JAVASCRIPT PARA EL DOM. 
+A continuación se muestra una tabla que describe el propósito de las funciones javascript vistas en los documentos de la asignatura.
 
 | Funciones JavaScript     | Propósito           | 
 | ------------- |:-------------:| 
