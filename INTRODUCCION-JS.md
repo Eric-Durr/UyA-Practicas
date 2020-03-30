@@ -118,12 +118,12 @@ html
 > más información en este [link](https://en.wikipedia.org/wiki/Document_Object_Model)
 
 ## FUNCIÓN JAVASCRIPT PARA CALCULAR EL CAMBIO ENTRE DIFERENTES MONEDAS
+Se ha creado un archivo javascript *cambio-monedas.js* para realizar la conversión entre monedas
+de distintos paises.
 
-## FUNCIÓN JAVASCRIPT PARA CALCULAR EDAD Y SUELDO
+Este viene acompañado por la página *exchange.html* que es accesible desde un link en el
+*footer* de la página. 
+     
 
 ## FUNCIÓN JAVASCRIPT PARA INFORME DE LA CÁNTIDAD DE ELEMENTOS EN EL INICIO
-
-```
-Esto es un bloque de código.
-```
 
