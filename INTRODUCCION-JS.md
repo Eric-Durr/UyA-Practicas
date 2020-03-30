@@ -180,7 +180,7 @@ Este viene acompañado por la página *exchange.html* que es accesible desde un 
 ```
      
 ## FUNCIÓN JAVASCRIPT PARA CALCULAR EL SUELDO Y LA EDAD DE CADA EMPLEADO
-> Se puede visualizar ejecutando *node media/js/edad-sueldo.js*
+> Se puede visualizar ejecutando *node media/js/EdadSueldo.js*
 
 ## FUNCIÓN JAVASCRIPT PARA INFORME DE LA CÁNTIDAD DE ELEMENTOS EN EL INICIO
 El código mostrado a continuación se encuentra almacenado dentro de la carpetas **/media/js**, en el fichero llamado **contador.js**
