@@ -19,8 +19,9 @@ function calcularEdad()
   for (let i = 0; i < 3; i++)
   {
     var añoNacimiento = obj.empleado[i].AñoDeNacimiento;
+    var dni = obj.empleado[i].DNI;
     edad = 2020 - añoNacimiento;
-    console.log(edad);
+    console.log("La edad de",dni,"es:",edad);
   }
 }
 
@@ -32,11 +33,12 @@ function calcularSueldo()
     var plusProductividad = parseFloat(obj.empleado[i].PlusDeProductividad);
     var plusAntiguedad = parseFloat(obj.empleado[i].PlusDeAntiguedadBruto);
     var sueldoBase = parseInt(obj.empleado[i].SueldoBase);
+    var dni = obj.empleado[i].DNI;
 
     sueldo1 = sueldoBase * plusProductividad;
     sueldo2 = sueldoBase * plusAntiguedad;
     sueldoTotal = sueldoBase + sueldo1 + sueldo2;
 
-    console.log(sueldoTotal);
+    console.log("El sueldo total sumando los plus de productividad y antigüedad de",dni,"es:",sueldoTotal);
   }
 }
