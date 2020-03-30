@@ -20,3 +20,4 @@
  - [Fichero HTML de banco de tiempo](./bdt_home.html)
  - [Fichero CSS de la 2ª práctica](./media/css/web-page.css)
  - [Despliegue de la página de la 2ª práctica](https://ericds-info.github.io/UyA-Practicas/)
+ - [Sobre los aspectos básicos de JS](./INTRODUCCION-JS.md)
