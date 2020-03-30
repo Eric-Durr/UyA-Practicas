@@ -125,6 +125,59 @@ de distintos paises.
 
 Este viene acompañado por la página *exchange.html* que es accesible desde un link en el
 *footer* de la página. 
+
+```js
+        // obtención del elemento padre donde se mostrará el resultado
+        const result = document.getElementById("coin_result") 
+
+        // función de calculo de moneda
+        function convertCurrency(form) {
+            // campturamos los elementos del formulario en variables
+            const from = form.from_coin.value
+            const to = form.to_coin.value
+            const amount = form.coin_val.value
+            
+            // dependiendo de la selección se hace una cosa u otra
+            if(from === to )
+            {
+                letter = from == "E" ? " €" : (from == "D" ? " $": " ¥") 
+                result.innerHTML = amount + letter
+            }
+            if(from == "E" && to == "D")
+            {
+                // se introduce el resultado como texto html
+                result.innerHTML = (amount*1.11).toFixed(2) + " $"
+            }
+            if(from == "E" && to == "Y")
+            {
+                result.innerHTML = (amount*119.40).toFixed(2) + " ¥"
+            }
+            if(from == "D" && to == "E")
+            {
+                result.innerHTML = (amount*0.90).toFixed(2) + " €"
+            }
+
+            if(from == "D" && to == "Y")
+            {
+                result.innerHTML = (amount*107.91).toFixed(2) + " ¥"
+            }
+            
+            if(from == "Y" && to == "D")
+            {
+                result.innerHTML = (amount*0.0093).toFixed(2) + " $"
+            }
+
+
+            if(from == "Y" && to == "E")
+            {
+                result.innerHTML = (amount*0.90).toFixed(2) + " €"
+            }
+
+            // mensaje de depuración de selectores
+            console.log(from)
+            console.log(to)
+        }
+```
      
 
 ## FUNCIÓN JAVASCRIPT PARA INFORME DE LA CÁNTIDAD DE ELEMENTOS EN EL INICIO
