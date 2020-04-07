@@ -11,8 +11,9 @@ de cada aspecto de la operabilidad de la web. Así mismo se señalan que rango i
 
 
 ## Página web de la [ONCE](https://www.once.es/)
-    En este apartado se va a analizar el sitio web principal de la ONCE (Organización Nacional de 
-    Ciegos Españoles) y aquellos aspectos que se cumplen o no del criterio Operable.
+    En este apartado se va a analizar el sitio web principal de la ONCE 
+    (Organización Nacional de Ciegos Españoles) y aquellos aspectos que 
+    se cumplen o no del criterio Operable.
 
 A continuación se listan aquellos criterios que se cumplen
 *** 
@@ -28,6 +29,7 @@ A continuación se listan aquellos criterios que se cumplen
     En esta página todos los elementos donde se sitúa el foco pueden ser usados mediante el teclado. Tanto barras de búsqueda como menús de navegación y enlaces se han puesto a prueba (AAA).
 
 - **2.1.4**
+
 
 ***
 ### 2.2 Tiempo suficiente para la lectura y uso del contenido
