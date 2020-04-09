@@ -1,5 +1,4 @@
 import $ from "jquery";
-import sol_button from './api-solitude.js'
 
 // Estas lineas de código inicializa las 
 // funciones javascript de Materialize.
@@ -10,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+const sol_button = document.getElementById("solitude")
 
 sol_button.onclick = function solicitudJSON() {
   $.ajax({url: "https://jsonplaceholder.typicode.com/comments?postId=1"  

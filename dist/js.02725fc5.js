@@ -10929,20 +10929,19 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{"process":"../../../../usr/local/lib/node_modules/parcel-bundler/node_modules/process/browser.js"}],"media/js/api-solitude.js":[function(require,module,exports) {
+},{"process":"../../../../usr/local/lib/node_modules/parcel-bundler/node_modules/process/browser.js"}],"media/js/index.js":[function(require,module,exports) {
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.sol_button = void 0;
 
 var _jquery = _interopRequireDefault(require("jquery"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// Estas lineas de código inicializa las 
+// funciones javascript de Materialize.
+document.addEventListener('DOMContentLoaded', function () {
+  M.AutoInit();
+});
 var sol_button = document.getElementById("solitude");
-exports.sol_button = sol_button;
 
 sol_button.onclick = function solicitudJSON() {
   _jquery.default.ajax({
@@ -10976,54 +10975,7 @@ function parsearObjeto(result) {
     (0, _jquery.default)("#contenedorInformacion").append("</tr>");
   }
 }
-},{"jquery":"node_modules/jquery/dist/jquery.js"}],"media/js/index.js":[function(require,module,exports) {
-"use strict";
-
-var _jquery = _interopRequireDefault(require("jquery"));
-
-var _apiSolitude = _interopRequireDefault(require("./api-solitude.js"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-// Estas lineas de código inicializa las 
-// funciones javascript de Materialize.
-document.addEventListener('DOMContentLoaded', function () {
-  M.AutoInit();
-});
-
-_apiSolitude.default.onclick = function solicitudJSON() {
-  _jquery.default.ajax({
-    url: "https://jsonplaceholder.typicode.com/comments?postId=1",
-    success: function success(result) {
-      console.log(result);
-      (0, _jquery.default)("#contenedorTitulos").html(" ");
-      parsearTitulo(result);
-      (0, _jquery.default)("#contenedorInformacion").html(" ");
-      parsearObjeto(result);
-    }
-  });
-};
-
-function parsearTitulo(result) {
-  var fields = Object.keys(result[0]);
-
-  for (var i = 0; i < fields.length; i++) {
-    (0, _jquery.default)("#contenedorTitulos").append("<th>" + fields[i] + "</th>");
-  }
-}
-
-function parsearObjeto(result) {
-  for (var i = 0; i < result.length; i++) {
-    (0, _jquery.default)("#contenedorInformacion").append("<tr>");
-    (0, _jquery.default)("#contenedorInformacion").append("<td>" + result[i].postId + "</td>");
-    (0, _jquery.default)("#contenedorInformacion").append("<td>" + result[i].id + "</td>");
-    (0, _jquery.default)("#contenedorInformacion").append("<td>" + result[i].name + "</td>");
-    (0, _jquery.default)("#contenedorInformacion").append("<td>" + result[i].email + "</td>");
-    (0, _jquery.default)("#contenedorInformacion").append("<td>" + result[i].body + "</td>");
-    (0, _jquery.default)("#contenedorInformacion").append("</tr>");
-  }
-}
-},{"jquery":"node_modules/jquery/dist/jquery.js","./api-solitude.js":"media/js/api-solitude.js"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"jquery":"node_modules/jquery/dist/jquery.js"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -11051,7 +11003,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43919" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36049" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
