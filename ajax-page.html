@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="media/css/mat-header.css" 
           media="screen, projection"/>
 
-          <link rel="stylesheet" 
-                type="text/css" 
-                href="https://csshake.surge.sh/csshake.min.css">
+    <link rel="stylesheet" 
+        type="text/css" 
+        href="https://csshake.surge.sh/csshake.min.css">
    
    <!-- Materialize JS file -->
     <script defer type="text/javascript" src="media/js/materialize.min.js"></script>
@@ -26,8 +26,14 @@
    <!-- Personal JS file -->
     <script defer type="text/javascript" src="media/js/index.js"></script>
 
+    <!-- Solicitud de API JS file -->
+
     <!-- Chart JS file-->
     <script defer src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+
+    <!-- JQuery js file -->
+    <script defer src="media/js/jquery.min.js"></script>
 
     <!-- Personal CSS file -->
     <script defer type="text/css" src="media/css/index.css"></script>
@@ -35,7 +41,7 @@
     <!-- browser info -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-   <!-- ICON -->
+     <!-- ICON -->
     <link rel="icon" href="media/img/2.ico">
 
     <!-- Personal CSS file -->
@@ -97,21 +103,31 @@
                     class="col s12 m6 ">
                 <br>
                 <div class="row">
-                    <div class="col s12 m6">
+                    <div class="col s12 m6 center-align">
                         <button class="btn waves-effect waves-light" 
                                 value="click"
                                 type="button"
                                 id="solitude"
-                                onclick="">Cambiar
+                                onclick="solicitudJSON();">Solicitar
                                 
                             <i class="material-icons right">send</i>
                         </button>
                     </div>
                 </div>
             </form>
-            <div class="col s12 m6" id="result">
-                <h5 class="center-align teal-text">Resultado:</h5>
-                <h2 class="center-align" id="coin_result">----</h2>
+            <div class="col s12 m6" >
+              <table class="highlight" id="contenedorSolicitud">
+                <thead>
+                  <tr id="contenedorTitulos">
+
+                  </tr>
+                </thead>
+                <tbody id="contenedorInformacion">
+                  
+                </tbody>
+
+              </table>
+                
             </div>
         </div>
     </section>  
@@ -162,5 +178,9 @@
         </div>
       </div>
     </footer>
+
+
+    <script  type="text/javascript" src="media/js/api-solitude.js"></script>
+
   </body>
 </html>
