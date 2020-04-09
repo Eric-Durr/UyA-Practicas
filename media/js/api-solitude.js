@@ -1,4 +1,6 @@
-const $ = require("jquery");
+
+import $ from "jquery";
+
 
 const sol_button = document.getElementById("solitude")
 
