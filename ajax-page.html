@@ -25,7 +25,6 @@
    
    <!-- Personal JS file -->
     <script defer type="text/javascript" src="media/js/index.js"></script>
-    <script defer type="text/javascript" src="media/js/cambio-monedas.js"></script>
 
     <!-- Chart JS file-->
     <script defer src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
@@ -44,7 +43,7 @@
     
     <link rel="stylesheet" href="media/css/style-index.css">
     
-    <title>TRADAY - HOME</title>
+    <title>TRADAY - AJAX</title>
 </head>
 <body class="teal lighten-1">
      
@@ -86,41 +85,23 @@
       </ul>
       <!-- --- -->
 
-    <section id="coin-exchange " onload="init()">
+    <section id="coin-exchange ">
         
         <div class="row white">
             
             <div class="col s12">
-                <h1 class="center-align">Cambio entre monedas</h1>
+                <h1 class="center-align">Peticiones con AJAX</h1>
             </div>
             
-              <form   id="currencyConv"
+              <form   id="ajaxQuery"
                     class="col s12 m6 ">
                 <br>
                 <div class="row">
-                    <div class="input-field col s12 m6" id="fromCoin">
-                        <select name="from_coin">
-                          <option value="" disabled selected>Elige una moneda</option>
-                          <option value="E">Euros</option>
-                          <option value="D">Dolares</option>
-                          <option value="Y">Yenes</option>
-                        </select>
-                        <label>Moneda base</label>
-                    </div>
-                    <div class="input-field col s12 m6" id="toCoin">
-                        <select name="to_coin">
-                          <option value="" disabled selected>Elige una moneda</option>
-                          <option value="E">Euros</option>
-                          <option value="D">Dolares</option>
-                          <option value="Y">Yenes</option>
-                        </select>
-                        <label>Moneda al cambio</label>
-                    </div>
                     <div class="input-field col s12 m6">
-                        <input  placeholder="10" id="coin_value" 
+                        <input  placeholder="10"  
                                 type="text" class="validate"
                                 name="coin_val">
-                        <label for="coin_value">Valor a determinar</label>
+                        <label for="coin_value">Etiqueta de campo</label>
                     </div>
                     <div class="col s12 m6">
                         <button class="btn waves-effect waves-light" 
@@ -187,51 +168,5 @@
         </div>
       </div>
     </footer>
-     <script>
-        const result = document.getElementById("coin_result") 
-        function convertCurrency(form) {
-            const from = form.from_coin.value
-            const to = form.to_coin.value
-            const amount = form.coin_val.value
-            
-            if(from === to )
-            {
-                letter = from == "E" ? " €" : (from == "D" ? " $": " ¥") 
-                result.innerHTML = amount + letter
-            }
-            if(from == "E" && to == "D")
-            {
-                result.innerHTML = (amount*1.11).toFixed(2) + " $"
-            }
-            if(from == "E" && to == "Y")
-            {
-                result.innerHTML = (amount*119.40).toFixed(2) + " ¥"
-            }
-            if(from == "D" && to == "E")
-            {
-                result.innerHTML = (amount*0.90).toFixed(2) + " €"
-            }
-
-            if(from == "D" && to == "Y")
-            {
-                result.innerHTML = (amount*107.91).toFixed(2) + " ¥"
-            }
-            
-            if(from == "Y" && to == "D")
-            {
-                result.innerHTML = (amount*0.0093).toFixed(2) + " $"
-            }
-
-
-            if(from == "Y" && to == "E")
-            {
-                result.innerHTML = (amount*0.90).toFixed(2) + " €"
-            }
-
-
-            console.log(from)
-            console.log(to)
-        }
-     </script>   
   </body>
 </html>
