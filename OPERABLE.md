@@ -13,7 +13,7 @@
 
 A continuación se mostrará de forma detallada un análisis individual de cada uno de los criterios pertenecientes a WCAG 2.1
 
-. **Pauta 2.1**
+- **Pauta 2.1**
 
 - Criterio 2.1.1: Toda la interfaz se puede usar desde teclado, mediante el uso del tabulador y enter. Se puede llegar mediante este método a todos los elementos de interacción de la web, incluso en los desplegables.
 
@@ -26,7 +26,7 @@ A continuación se mostrará de forma detallada un análisis individual de cada 
 
 - Criterio 2.1.4: 
 
-. **Pauta 2.2**
+- **Pauta 2.2**
 
 - Criterio 2.2.1: 
 
@@ -38,7 +38,7 @@ A continuación se mostrará de forma detallada un análisis individual de cada 
 
 - Criterio 2.2.5: 
 
-. **Pauta 2.3**
+- **Pauta 2.3**
 
 - Criterio 2.3.1: 
 
@@ -46,7 +46,7 @@ A continuación se mostrará de forma detallada un análisis individual de cada 
 
 - Criterio 2.3.3: 
 
-. **Pauta 2.4**
+- **Pauta 2.4**
 
 - Criterio 2.4.1:
 
@@ -68,4 +68,4 @@ A continuación se mostrará de forma detallada un análisis individual de cada 
 
 - Criterio 2.4.10:
 
-. **Pauta 2.5**
+- **Pauta 2.5**
