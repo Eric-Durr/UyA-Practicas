@@ -40,3 +40,6 @@ function parsearObjeto(result) {
   }
   
 }
+
+
+export {sol_button}
