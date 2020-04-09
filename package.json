@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/EricDS-INFO/UyA-Practicas/issues"
   },
-  "homepage": "https://github.com/EricDS-INFO/UyA-Practicas#readme"
+  "homepage": "https://github.com/EricDS-INFO/UyA-Practicas#readme",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
 }
