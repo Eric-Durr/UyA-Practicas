@@ -1,4 +1,4 @@
-
+const $ = require("jquery");
 
 const sol_button = document.getElementById("solitude")
 
@@ -39,6 +39,3 @@ function parsearObjeto(result) {
   }
   
 }
-
-
-export {sol_button}
