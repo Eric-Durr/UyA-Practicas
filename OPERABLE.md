@@ -28,13 +28,13 @@ de cada aspecto de la operabilidad de la web. Así mismo se señalan que rango i
 - **2.1.3**
     En esta página todos los elementos donde se sitúa el foco pueden ser usados mediante el teclado. Tanto barras de búsqueda como menús de navegación y enlaces se han puesto a prueba (AAA).
 
-- **2.1.4**
+
 
 
 ***
 ### 2.2 Tiempo suficiente para la lectura y uso del contenido
 
-- **2.2.1**
+
 
 - **2.2.2**
     En el inicio hay un carrousel cuyo contenido se va mostrando con una duración entre imagen
@@ -74,17 +74,16 @@ con una visión más reducida.
 ***
 ### 2.4 Proporcionar medios para ayudar al usuario en la navegación y la localización de contenido
 
-- **2.4.1**
 
 
 - **2.4.2**
-    En este portal web casa sección tiene un título facilmente identificable al igual que posee dos 
+    En este portal web cada sección tiene un título facilmente identificable al igual que posee dos 
     barras de navegación (idioma y secciones) perfectamente distinguibles, cuyo tamaño indica el propósito y cuyas subsecciones son expresadas dentro de cada apartado. Al igual, la temática e iconografía permite identificar cada apartado con claridad.
 
-    > imagen de secciones por iconos  
-   
-    > imagen de títulos y navegación.
+![imagen-iconos-once](media/img/iconos-once.png "Se muestra una imagen que ejemplifica el correcto uso de este criterio mediante una iconografía") 
 
+![imagen-titulos-once](media/img/encabezado-titulos.png "Se muestra una imagen que ejemplifica el correcto uso de los títulos y el contexto") 
+   
 
 - **2.4.3**
     El orden en la secuencia de navegación es intuitivo y correcto, no desorienta el curso del uso del 
