@@ -89,13 +89,11 @@ con una visión más reducida.
     El orden en la secuencia de navegación es intuitivo y correcto, no desorienta el curso del uso del 
     portal.
 
-    > imagen editada de la secuencia
 
 - **2.4.4**
     Este criterio de pauta también se cumple. Los enlaces se destacan e indican cada sección y/o salida 
     de manera intuitiva mediante una palabra clave o un icono característico.
     
-    > Imagen de enlaces
 
 - **2.4.5**
     Se puede acceder a diversos sitios por más de un solo camino.
@@ -107,7 +105,8 @@ con una visión más reducida.
 - **2.4.7**
     El foco es marcado por un recuadro negro, verde o blanco altamente contrastado a lo largo de la navegación de la página y dependiendo de la figura a la que engloba. Este puede ser un borde inferior, una masa de color que indica el elemento o un bordeado que lo subre
 
-    > imágenes de ejemplo de lo anteriormente mencionado
+![imagen-foco-once](media/img/foco.png "Se muestra una imagen que muestra el foco altamente contrastado") 
+  
 
 - **2.4.8**
     El usuario puede saber en todo momento donde está en la página, ya sea por las migas de pan, el 
