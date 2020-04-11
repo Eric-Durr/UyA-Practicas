@@ -1,5 +1,4 @@
-
-import $ from '../../node_modules/jquery/dist/jquery';
+let $ = require("jquery");
 
 console.log("api file loaded")
 const sol_button = document.getElementById("solitude")
@@ -21,7 +20,7 @@ function parsearTitulo(result) {
   let fields = Object.keys(result[0]);
 
     for (let i = 0; i < fields.length; i++) {
-     $("#contenedorTitulos").append("<th>" + fields[i] + "</th>");
+      $("#contenedorTitulos").append("<th>" + fields[i] + "</th>");
     }
 }
 
