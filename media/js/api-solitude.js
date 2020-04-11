@@ -1,7 +1,7 @@
 
 import $ from 'jquery';
 
-
+console.log("api file loaded")
 const sol_button = document.getElementById("solitude")
 
 sol_button.onclick = function solicitudJSON() {
