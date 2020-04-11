@@ -23,3 +23,5 @@
  - [Sobre los aspectos básicos de JS](./INTRODUCCION-JS.md)
  - [Análisis de criterio Perceptible](./PERCEPTIBLE.md)
  - [Análisis de criterio Operable](./OPERABLE.md)
+ - [Página html sobre el manejo de AJAX con JQuery](./ajax-page.html)
+ - [Archivo JavaScript sobre el manejo de AJAX](./media/js/api-solitude.js)
