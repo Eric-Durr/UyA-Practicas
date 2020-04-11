@@ -1,9 +1,10 @@
-let $ = require("jquery");
+import  $  from '../../node_modules/jquery/dist/jquery'
 
 console.log("api file loaded")
 const sol_button = document.getElementById("solitude")
 
 sol_button.onclick = function solicitudJSON() {
+  
   $.ajax({url: "https://jsonplaceholder.typicode.com/comments?postId=1"  
   , success: function(result){
     console.log(result);
