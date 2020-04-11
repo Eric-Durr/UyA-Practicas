@@ -1,5 +1,4 @@
-import  $  from '../../node_modules/jquery/dist/jquery'
-
+import $ from 'jquery'
 console.log("api file loaded")
 const sol_button = document.getElementById("solitude")
 
