@@ -25,6 +25,7 @@ A continuación se mostrará de forma detallada un análisis individual de cada 
 
 - Criterio 2.1.3: Podemos comprobar que este criterio se cumple, debido a que todo el contenido resulta operable con el teclado.  
 
+***
 ### **Pauta 2.2: Tiempo suficiente**
 
 - Criterio 2.2.1: Al tratarse de un aweb destinada a un inicio de sesión, contiene un límite de tiempo interiorizado para expirar la sesión por motivos de seguridad. Aparentemente no se encuentra ninún elemento que permita eliminar esta condición.
@@ -37,6 +38,7 @@ A continuación se mostrará de forma detallada un análisis individual de cada 
 
 - Criterio 2.2.5: No se aprecia a simple vista ningún aviso al usuario de que debido a la inactividad durante un tiempo determinado puede causar pérdidas de datos. Es por esto que este criterio no se cumple.
 
+***
 ### **Pauta 2.3: Contenido sin destellos**
 
 ![Pauta 2.3](/media/img/criterio-web-ULL.png "No aparecen elementos móviles ni destellantes")
@@ -47,6 +49,7 @@ A continuación se mostrará de forma detallada un análisis individual de cada 
 
 - Criterio 2.3.3: Al no encontrarse elementos que realicen movimientos, realmente no existe ninguna interacción para ser deshabilitada, por tanto este criterio ha se cumple.
 
+***
 ### **Pauta 2.4: Navegable**
 
 - Criterio 2.4.2: La temática de la página no está del todo bien detallada, lo que puede llevar a confusiones en algunos usuarios. Sin embargo, al tener pocos elementos, no resulta una tarea demasiada ardua.
@@ -70,4 +73,5 @@ A continuación se mostrará de forma detallada un análisis individual de cada 
 
 - Criterio 2.4.10:  No se encuentra organizado mediante encabezados de sección, debido a la sencillez de la propia web.
 
+***
 ### **Pauta 2.5: Uso de otros modalidades input a demás del teclado**
