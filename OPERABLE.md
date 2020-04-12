@@ -2,7 +2,6 @@
     El objetivo de este documento es localizar el cumplimiento del 
     criterio operable de tres páginas web propuestas.
 
-
 ## Página web de la [ONCE](https://www.once.es/)
 
 
@@ -63,7 +62,6 @@ A continuación se mostrará de forma detallada un análisis individual de cada 
 - Criterio 2.4.6: Este criterio se cumple, los encabezados y etiquetas describen el tema o propósito.
 
 - Criterio 2.4.7: El foco es visible y es marcado con un ligero sombreado. Se muestra en la siguiente imagen:
-
 
 ![Criterio 2.4.7](/media/img/criterio-sombreado-ull.png "Se muestra la sombra que establece el foco")
 
