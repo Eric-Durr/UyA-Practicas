@@ -61,6 +61,7 @@ A continuación se mostrará de forma detallada un análisis individual de cada 
 
 - Criterio 2.4.7: El foco es visible y es marcado con un ligero sombreado. Se muestra en la siguiente imagen:
 
+
 ![Criterio 2.4.7](/media/img/criterio-sombreado-ull.png "Se muestra la sombra que establece el foco")
 
 - Criterio 2.4.8: EL usuario puede saber donde se encuentra gracias al foco o algún programa de voz que dicte los idferentes elementos dentro de la web.
