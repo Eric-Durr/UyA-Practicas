@@ -5,9 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+<<<<<<< HEAD
     "dev": "parcel index.html --port 8080 ",
     "predeploy": "rm -rf dist && parcel build index.html --public-url /UyA-Practicas",
     "deploy": "gh-pages -d dist -r git@github.com:EricDS-INFO/UyA-Practicas.git"
+=======
+    "dev": "parcel index.html --port 8080"
+>>>>>>> develop
   },
   "author": "",
   "license": "ISC",
