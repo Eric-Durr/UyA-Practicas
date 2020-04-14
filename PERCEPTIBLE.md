@@ -4,6 +4,7 @@
 ## Enlaces a las web analizadas 
 https://sede.ull.es/
 
+[titsa](https://titsa.com/index.php)
 
 ## Ejemplos de inclumplimiento de verificación A y AA
     Pauta 1.1:En la imagen del banner, omiten el atributo alt en img.
@@ -17,7 +18,16 @@ https://sede.ull.es/
     Pauta 1.4.10: No reajustan contenidos usandos grids.
     Pauta 1.4.11: No hay suficiente contraste entre elementos no textuales y el texto.
 
+- Criterio 1.3.1: La estructura de encabezados no es del todo intuitiva, los diferentes apartados de la web se encuentran poco diferenciados entre ellos.
+
+![criterio 1.3.1](/media/img/perceptible-encabezado.png "Se puede comprobar de que la estructura es muy caotica")
+
+- Criterio 1.4.1: En la parte multimedia de la web, el foco no está bien definido y es fácil perder la señal del foco.
+
+- Criterio 1.4.2: No incorpora sistema de audio
+
 ## Ejemplos de cumplimiento de verificación A y AA
+<<<<<<< HEAD
     Pauta 1.1: Usan elementos label para los controles y formularios.
     Pauta 1.3: El contenido puede ser percibido en diferentes dispositivos.
     Pauta 1.3.1: Relaciones transmitidas en la presentación están presentes en el código. Uso de scope, id o header.
@@ -67,3 +77,10 @@ https://sede.ull.es/
 >   blanco.
 
 ![contrast-example-image](media/img/criterio-contraste-cumplido.png "imagen de demostración de cumplimiento del criterio 1.4.3 sobre el contraste en la página") 
+=======
+- Criterio 1.1.1: Cada uno de los elementos multimedia, tiene una alternativa de texto.
+
+![criterio 1.1.1](/media/img/perceptible-titsa.png "Se puede comprobar de que además contiene texto")
+
+- Criterio 1.4.4: Todo el texto puede ser ampliado hasta un 200%.
+>>>>>>> WCAG-Perceptible-Ale
