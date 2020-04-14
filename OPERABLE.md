@@ -211,7 +211,7 @@ y destinos tienen descripciones diferentes.
 Organizar una página usando encabezados.
 
 ***
-## Página web de incio de sesión de la [ULL ONCE](https://login.ull.es/cas-1/login)
+## Página web de incio de sesión de la [ULL](https://login.ull.es/cas-1/login)
 ***
 
 A continuación se mostrará de forma detallada un análisis individual de cada uno de los criterios pertenecientes a WCAG 2.1
@@ -221,7 +221,8 @@ A continuación se mostrará de forma detallada un análisis individual de cada 
 
 - Criterio 2.1.1: Toda la interfaz se puede usar desde teclado, mediante el uso del tabulador y enter. Se puede llegar mediante este método a todos los elementos de interacción de la web, incluso en los desplegables.
 
-![Criterio 2.1.1](/media/img/CriterioULL2.1.1.png "Se muestra marcada el elemento seleccionado mediante tabulador")
+![Criterio 2.1.1](./media/img/CriterioULL2.1.1.png "Se muestra marcada el elemento seleccionado mediante tabulador")
+
 - Criterio 2.1.1: Se muestra marcado el elemento seleccionado mediante tabulador.
 
 
@@ -245,7 +246,7 @@ A continuación se mostrará de forma detallada un análisis individual de cada 
 ***
 ### **Pauta 2.3: Contenido sin destellos**
 
-![Pauta 2.3](/media/img/criterio-web-ULL.png "No aparecen elementos móviles ni destellantes")
+![Pauta 2.3](./media/img/criterio-web-ULL.png "No aparecen elementos móviles ni destellantes")
 
 - Criterio 2.3.1: No existen elementos que realice movimientos ni destellos. Por tanto, indirectamente se cumple este criterio.
 
@@ -267,10 +268,11 @@ A continuación se mostrará de forma detallada un análisis individual de cada 
 - Criterio 2.4.6: Este criterio se cumple, los encabezados y etiquetas describen el tema o propósito.
 
 - Criterio 2.4.7: El foco es visible y es marcado con un ligero sombreado. Se muestra en la siguiente imagen:
+
 <div style="display: flex; justify-content: center;">
 <img src="./media/img/criterio-sombreado-ull.png">
 </div>
-![Criterio 2.4.7](/media/img/criterio-sombreado-ull.png "Se muestra la sombra que establece el foco")
+
 
 - Criterio 2.4.8: EL usuario puede saber donde se encuentra gracias al foco o algún programa de voz que dicte los idferentes elementos dentro de la web.
 
