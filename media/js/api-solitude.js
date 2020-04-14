@@ -1,10 +1,9 @@
-
-import $ from "jquery";
-
-
+import $ from 'jquery'
+console.log("api file loaded")
 const sol_button = document.getElementById("solitude")
 
 sol_button.onclick = function solicitudJSON() {
+  
   $.ajax({url: "https://jsonplaceholder.typicode.com/comments?postId=1"  
   , success: function(result){
     console.log(result);
@@ -21,7 +20,7 @@ function parsearTitulo(result) {
   let fields = Object.keys(result[0]);
 
     for (let i = 0; i < fields.length; i++) {
-     $("#contenedorTitulos").append("<th>" + fields[i] + "</th>");
+      $("#contenedorTitulos").append("<th>" + fields[i] + "</th>");
     }
 }
 
