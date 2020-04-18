@@ -28,6 +28,7 @@
   "homepage": "https://github.com/EricDS-INFO/UyA-Practicas#readme",
   "dependencies": {
     "canvas": "^2.6.1",
+    "firebase": "^7.2.3",
     "jquery": "^3.4.1",
     "jsdom": "^16.2.2"
   }
