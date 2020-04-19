@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel index.html --port 8080 ",
-    "predeploy": "rm -rf dist && parcel build index.html --public-url /UyA-Practicas",
-    "deploy": "gh-pages -d dist -r git@github.com:EricDS-INFO/UyA-Practicas.git"
+    "dev": "firebase serve --port 8080 ",
+    "deploy": "firebase deploy"
   },
   "author": "",
   "license": "ISC",
