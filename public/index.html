@@ -39,16 +39,15 @@
 
 
     <!-- FIREBASE HEAD -->
+      <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
 
-        <!-- update the version number as needed -->
-        <script defer src="/__/firebase/7.14.1/firebase-app.js"></script>
-        <!-- include only the Firebase features as you need -->
-        <script defer src="/__/firebase/7.14.1/firebase-auth.js"></script>
-        <script defer src="/__/firebase/7.14.1/firebase-database.js"></script>
-        <script defer src="/__/firebase/7.14.1/firebase-messaging.js"></script>
-        <script defer src="/__/firebase/7.14.1/firebase-storage.js"></script>
-        <!-- initialize the SDK after all desired features are loaded -->
-        <script defer src="/__/firebase/init.js"></script>
+      <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+      <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+
+      <!-- Add Firebase products that you want to use -->
+      <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+
     <!-- ------------- -->
 
     <!-- Personal CSS file -->
@@ -111,11 +110,14 @@
         <br>
         
         <div class="row">
-          <div class="col s3 m2 l1 offset-s6 offset-m8 offset-l10 center-align">
+          <div class="col s3 m2 l1 offset-s3 offset-m6 offset-l9 center-align">
             <a class="waves-effect blue-grey lighten-1 btn modal-trigger" href="#loginModal">signup</a>
           </div>
           <div class="col s3 m2 l1  center-align">
             <a class="waves-effect waves-light green accent-2 btn modal-trigger" href="#signInModal">signin</a>
+          </div>
+          <div class="col s3 m2 l1  center-align">
+            <button class="waves-effect waves-light red accent-2 btn modal-trigger" id="logout">salir</button>
           </div>
         </div>
         
@@ -178,13 +180,13 @@
               <form id="signIn"class="col s12 m6 ">
                 <br>
                 <div class="row">
-                  <div class="input-field col s12 m6" id="signEmail">
-                    <input id="email" type="email" class="validate">
-                    <label for="email">User email</label>
+                  <div class="input-field col s12 m6" >
+                    <input id="signEmail" type="email" class="validate">
+                    <label for="signEmail">User email</label>
                   </div>
                   <div class="input-field col s12 m6" id="signPass">
-                    <input id="password" type="password" class="validate">
-                    <label for="password">Password</label>
+                    <input id="signPassword" type="password" class="validate">
+                    <label for="signPassword">Password</label>
                   </div>
                 </div>
 
@@ -491,7 +493,21 @@
 
 
     <!-- Config -->
-    
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyCoG_bLk_nf5NANQFEZUMm3afDyBchQqw8",
+        authDomain: "traday-362aa.firebaseapp.com",
+        databaseURL: "https://traday-362aa.firebaseio.com",
+        projectId: "traday-362aa",
+        storageBucket: "traday-362aa.appspot.com",
+        messagingSenderId: "21208239294",
+        appId: "1:21208239294:web:9ef96f415affe9f730a2ef",
+        measurementId: "G-BR9CEK41TT"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const auth = firebase.auth();
+    </script>
     <script src="media/js/firebase-auth.js"></script>
 
   <!-- Z dog scripts CDNs -->
