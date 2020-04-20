@@ -87,8 +87,11 @@
         <li><a href="#">Grupos</a></li>
       </ul>
       <!-- --- -->
+      <h2 class ="center-align text-white">Página de contactos</h1>
       <section  id="userpage">        
-
+        <div class="collection" id="contactList">
+            <a href="#!" class="collection-item text-grey center-align">No hay contactos aún</a>        
+        </div>
       </section>
       <section id="add" class="center-align">
           <br>
@@ -108,7 +111,7 @@
                             <br>
                             <div class="row">
                                 <div class="input-field col 12 " id="userName">
-                                    <input type="text" class="validate">
+                                    <input type="text" class="validate" id="nameToAdd">
                                     <label>Nombre del usuario</label>
                                 </div>     
                                 <div class="input-field col 12 " id="send">
@@ -122,10 +125,11 @@
                                     </button>
                                 </div>
                             </div>
+                        </form>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <a href="!#" class="modal-close waves-effect waves-grey btn-flat">cerrar</a>
+                    <a  class="modal-close waves-effect waves-grey btn-flat">cerrar</a>
                 </div>
             </div>
       </section>
