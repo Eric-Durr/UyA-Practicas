@@ -37,15 +37,15 @@ Como usamos Firebase Hosting, podemos configurar nuestra app para cargar las bib
 
 1. Para implementar Firebase, debemos usar [Firebase CLI](https://firebase.google.com/docs/cli?hl=es-419). Esto es una herramienta de línea de comandos. Deberemos ejecutar el siguiente comando npm en la terminal.
 
-     npm install -g firebase-tools
+        npm install -g firebase-tools
 
 2. Conectamos nuestra máquina local a Firebase y le otorgamos acceso a nuestros proyectos de Firebase:
 
-     firebase login
+        firebase login
 
 3. Inicializamos el proyecto de firebase. Consulta más información en este [enlace](https://firebase.google.com/docs/hosting/quickstart?hl=es-419#initialize).
 
-     firebase init
+        firebase init
 
 4. Implementamos la configuración de hosting y el contenido en Firebase Hosting.
 
