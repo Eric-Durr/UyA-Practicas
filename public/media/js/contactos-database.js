@@ -1,11 +1,28 @@
 
-// Referencia a la base de datos
+document.addEventListener("DOMContentLoaded", event => {
 
-const referencia = database.ref('/');
+    const contacto1 = database.collection("contactos").doc("contacto1");
+    contacto1.onSnapshot(doc => {
 
-//Consultar datos en la raiz
+        const data = doc.data();
+        const list = document.querySelector("#contactList");
+        list.innerHTML = "";
+        list.innerHTML = `<a href="#!" class="collection-item text-grey center-align">` + data.nombre + data.Apellidos + `</a>`; 
+        console.log(data); 
 
-referencia = database.ref('/');
-referencia.once('value', snapshot => {
-    console.log(snapshot.val());
+    });
+
 });
+
+
+const formulario = document.querySelector("#addContact");
+formulario.addEventListener("submit", (e) => {
+
+    const database = firebase.firestore();
+    const name = formulario["nameToAdd"].value;
+    const contacto1 = database.collection("contactos").doc("contacto1");
+    contacto1.update({nombre: name});
+ 
+});
+
+   
