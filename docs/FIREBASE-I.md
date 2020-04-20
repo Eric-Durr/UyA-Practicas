@@ -77,7 +77,9 @@ Por otro lado se prepararán varios formularios *html* bajo algunos ID que nos p
 
 _Por ejemplo:_
 ```html
-
+<form id="signIn"class="col s12 m6 ">
+    ···
+</form>
 
 ```
 
