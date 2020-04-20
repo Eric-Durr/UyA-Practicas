@@ -26,6 +26,9 @@
    <!-- Personal JS file -->
     <script defer type="text/javascript" src="media/js/index.js"></script>
 
+    <!-- Chart JS file-->
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
     <!-- Personal CSS file -->
     <script defer type="text/css" src="media/css/index.css"></script>
 
@@ -39,6 +42,14 @@
     <link rel="stylesheet" type="text/css" href="media/css/index.css">
     
     <link rel="stylesheet" href="media/css/style-index.css">
+
+    <!-- firebase database JS file-->
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
+
+
+
     
     <title>TRADAY - CONTACTOS</title>
 </head>
@@ -91,13 +102,13 @@
           <br>
             <div class="row">
                 <div class="col s12 m12 l12">
-                    <a href="#addContact" class="btn-floating btn-large waves-effect waves-light grey modal-trigger">
+                    <a href="#modalContact" class="btn-floating btn-large waves-effect waves-light grey modal-trigger">
                         <i class="material-icons">add</i>
                     </a>
                 </div>
             </div>
 
-            <div id="addContact" class="modal">
+            <div id="modalContact" class="modal">
                 <div class="modal-content">
                     <div class="row white">
                         <form   id="addContact"
@@ -176,6 +187,25 @@
       </div>
     </footer>
         
+    <script>
+    
+    var firebaseConfig = {
+        apiKey: "AIzaSyCoG_bLk_nf5NANQFEZUMm3afDyBchQqw8",
+        authDomain: "traday-362aa.firebaseapp.com",
+        databaseURL: "https://traday-362aa.firebaseio.com",
+        projectId: "traday-362aa",
+        storageBucket: "traday-362aa.appspot.com",
+        messagingSenderId: "21208239294",
+        appId: "1:21208239294:web:9ef96f415affe9f730a2ef",
+        measurementId: "G-BR9CEK41TT"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const database = firebase.firestore();
+    </script>
  
+    <!-- firebase-database JS file-->
+    <script defer type="text/javascript" src="media/js/contactos-database.js"></script>
+    
 </body>
 </html>
