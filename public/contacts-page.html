@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="media/css/mat-header.css" 
           media="screen, projection"/>
 
-    <link rel="stylesheet" 
-        type="text/css" 
-        href="https://csshake.surge.sh/csshake.min.css">
+          <link rel="stylesheet" 
+                type="text/css" 
+                href="https://csshake.surge.sh/csshake.min.css">
    
    <!-- Materialize JS file -->
     <script defer type="text/javascript" src="media/js/materialize.min.js"></script>
@@ -26,15 +26,11 @@
    <!-- Personal JS file -->
     <script defer type="text/javascript" src="media/js/index.js"></script>
 
-
-
     <!-- Chart JS file-->
     <script defer src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
-
-    <!-- JQuery js file -->
-    <script defer src="media/js/jquery.min.js"></script>
-
+    <!-- Personal JS file-->
+    <script defer type="text/javascript" src="media/js/chart.js"></script>
 
     <!-- Personal CSS file -->
     <script defer type="text/css" src="media/css/index.css"></script>
@@ -42,7 +38,7 @@
     <!-- browser info -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-     <!-- ICON -->
+   <!-- ICON -->
     <link rel="icon" href="media/img/2.ico">
 
     <!-- Personal CSS file -->
@@ -50,7 +46,7 @@
     
     <link rel="stylesheet" href="media/css/style-index.css">
     
-    <title>TRADAY - AJAX</title>
+    <title>TRADAY - CONTACTOS</title>
 </head>
 <body class="teal lighten-1">
      
@@ -70,9 +66,9 @@
             </a>
           
             <ul class="right hide-on-med-and-down">
-              <li><a href="profile.html">Perfil</a></li>
+              <li><a href="profile.html" class="active">Perfil</a></li>
               <li><a href="#">Notificaciones</a></li>
-              <li><a href= "contacts-page.html">Mis contactos</a></li>
+              <li class="active"><a href= "contacts-page.html">Mis contactos</a></li>
               <li><a href="#">Tareas</a></li>
               <li><a href="#">Grupos</a></li>
             </ul>
@@ -84,56 +80,61 @@
       <!-- responsive menu - hidden in desktop -->
       <ul class="sidenav" id="traday-nav">
 
-        <li><a href="profile.html" >Perfil</a></li>
+        <li ><a href="profile.html" class="active">Perfil</a></li>
         <li><a href="#">Notificaciones</a></li>
-        <li><a href= "contacts-page.html">Mis contactos</a></li>
+        <li class="active"><a href= "contacts-page.html">Mis contactos</a></li>
         <li><a href="#">Tareas</a></li>
         <li><a href="#">Grupos</a></li>
       </ul>
       <!-- --- -->
-
-    <section id="coin-exchange ">
-        
-        <div class="row white">
-            
-            <div class="col s12">
-                <h1 class="center-align">Peticiones con AJAX</h1>
+      <h2 class ="center-align text-white">Página de contactos</h1>
+      <section  id="userpage">        
+        <div class="collection" id="contactList">
+            <a href="#!" class="collection-item text-grey center-align">No hay contactos aún</a>        
+        </div>
+      </section>
+      <section id="add" class="center-align">
+          <br>
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <a href="#addContact" class="btn-floating btn-large waves-effect waves-light grey modal-trigger">
+                        <i class="material-icons">add</i>
+                    </a>
+                </div>
             </div>
-            
-              <form   id="ajaxQuery"
-                    class="col s12 m6 ">
-                <br>
-                <div class="row">
-                    <div class="col s12 m6 center-align">
-                        <button class="btn waves-effect waves-light" 
-                                value="click"
-                                type="button"
-                                id="solitude"
-                                onclick="">Solicitar
+
+            <div id="addContact" class="modal">
+                <div class="modal-content">
+                    <div class="row white">
+                        <form   id="addContact"
+                                class="col s12 m6 ">
+                            <br>
+                            <div class="row">
+                                <div class="input-field col 12 " id="userName">
+                                    <input type="text" class="validate" id="nameToAdd">
+                                    <label>Nombre del usuario</label>
+                                </div>     
+                                <div class="input-field col 12 " id="send">
+                                    <button class="btn waves-effect waves-light" 
+                                            value="click"
+                                            type="submit"
+                                            id="myButton"
+                                            >solicitar
                                 
-                            <i class="material-icons right">send</i>
-                        </button>
+                                    <i class="material-icons right">send</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-            </form>
-            <div class="col s12 m6" >
-              <table class="highlight" id="contenedorSolicitud">
-                <thead>
-                  <tr id="contenedorTitulos">
-
-                  </tr>
-                </thead>
-                <tbody id="contenedorInformacion">
-                  
-                </tbody>
-
-              </table>
-                
+                <div class="modal-footer">
+                    <a  class="modal-close waves-effect waves-grey btn-flat">cerrar</a>
+                </div>
             </div>
-        </div>
-    </section>  
-
-        
+      </section>
+      <!-- --- -->    
+  
     <footer class="page-footer blue-grey darken-4">
       <div class="container">
         <div class="row">
@@ -146,11 +147,12 @@
           <div class="col l4 offset-l2 s12">
             <h5 class="white-text">Otros</h5>
             <ul>
-                <li><a class="grey-text text-lighten-3" href="#!">Más sobre traday</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">Encuéntranos</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">Contacta</a></li>
-                <li><a class="grey-text text-lighten-3" href="exchange.html">cambia monedas</a></li>
-                <li><a class="grey-text text-lighten-3" href="ajax-page.html">peticiones AJAX</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Más sobre traday</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Encuéntranos</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Contacta</a></li>
+              <li><a class="grey-text text-lighten-3" href="exchange.html">cambia monedas</a></li>
+              <li><a class="grey-text text-lighten-3" href="ajax-page.html">peticiones AJAX</a></li>
+            
             </ul>
           </div>
         </div>
@@ -179,9 +181,7 @@
         </div>
       </div>
     </footer>
-
-        <!-- Solicitud de API JS file --> 
-        <script  defer type="text/javascript" src="./media/js/api-solitude.js"></script>
-
-  </body>
+        
+ 
+</body>
 </html>
