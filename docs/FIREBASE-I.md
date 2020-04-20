@@ -49,7 +49,7 @@ Como usamos Firebase Hosting, podemos configurar nuestra app para cargar las bib
 
 4. Implementamos la configuración de hosting y el contenido en Firebase Hosting.
 
-    - Realizamos la implementación con el comando:
+    - Realizamos la implemenRegistrotación con el comando:
 
             firebase deploy
 
@@ -58,7 +58,106 @@ Como usamos Firebase Hosting, podemos configurar nuestra app para cargar las bib
 
 ## Registro de usuarios para añadir entradas a la base de datos
     Se explicará los cambios en la web y las configuraciones realizadas para
-    implementar esta parte de la base de datos. (Login y sign up)
+    implementar esta parte de la base de datos. (Login, sign up y logout)
+
+### Configuración
+
+El primer paso para poder realizar cambios en la web y emplear las bases de datos es
+poder manejar la autenticación de los usuarios. 
+
+Para poder manejar el estado de las sesiones de usuarios necesitamos instanciar una 
+variable que contenga los métodos necesarios. Debemos entonces añadir la siguiente 
+linea tras el script de configuración:
+
+```js
+    const auth = firebase.auth();
+```
+
+Por otro lado se prepararán varios formularios *html* bajo algunos ID que nos permitirán capturar sus valores a posteriori en un programa JavaScript.
+
+_Por ejemplo:_
+```html
+<form id="signIn"class="col s12 m6 ">
+    ···
+</form>
+```
+
+El código se escribirá en el fichero *firebase-auth.js* que se incluye
+en el  ```<head>``` del fichero principal.
+
+Para capturar los formularios usamos:
+
+```js
+const signupForm = document.querySelector('#signUp');
+```
+
+### Registro (*Sign Up*)
+
+Para llevar a cabo el registro el formulario captura los siguientes valores:
+- Nombre de Usuario
+- Email
+- Contraseña
+- Confirmación de contraseña
+
+Usa las *querySelectors* para capturar el formulario, donde podremos volcar cada uno de los valores en variables tras hacer el *submit*.
+
+Para ejecutar bajo el submit usamos:
+```js
+signupForm.addEventListener('submit', (e)=> {
+···
+}
+```
+
+El si ambas contraseñas coinciden, el *email* y la *contraseña* son añadidos a la base de datos de firebase por medio de la orden:
+
+```js
+auth.createUserWithEmailAndPassword(email, password).then(cred => {
+
+    const modal = document.querySelector('#loginModal')
+    M.Modal.getInstance(modal).close();
+    signupForm.reset();
+})
+```
+Con el *then* lo que indicamos es que solo ejecute lo que contiene si la solicitud se ha cumplido con éxito.
+
+### Inicio de sesión (*Login*)
+El proceso para manejar el inicio de sesión en la página es similar al registro. Sin embargo en esta ocasión estamos capturando únicamente el email y la contraseña en el formulario.
+
+Cabe destacar que usa valores ID distintos en este formulario.
+
+En este caso debemos sencillamente enviar los valores capturados a la orden de firebase:
+
+```js
+auth.signInWithEmailAndPassword(email, password).then( cred => {
+    ...
+}
+```
+
+Lo cual en caso de ser correcto capturará el estado activo del usuario. De no ser así informará del error concreto.
+
+### Cierre de sesión (*Logout*)
+El cierre de sesión del usuario se procesa por medio de la interacción del botón. Cuando el usuario lo pulsa ejecuta la orden para reflejar este cambio en Firebase. La orden es la siguiente:
+
+```js
+logOut.addEventListener('click', (e) => {
+···
+}
+```
+
+### Puntos en común
+- Todos los formularios son cerrados y limpiados ante un *input* correcto.
+- Todos los formularios están dentro de un modal que se activa al pulsar el botón.
+- Todos los campos de email usan la validación del campo por defecto.
+### Resultados en Firebase
+A continuación se puede apreciar como se guardan los usuarios en firebase tras la consulta de registro:
+
+![user-stack-image](../public/media/img/auth-console.png "Imagen que ilustra la base de datos de usuarios del proyecto en firebase")
+
+Esta consola informa de:
+- Identificador (*email*)
+- Proveedor (*email + contraseña*)
+- Fecha
+- UID
 
 ## Registro de entradas en la base de datos del servidor Firebase
     Se procede a indicar los pasos seguidos en la implementación de la base de datos
