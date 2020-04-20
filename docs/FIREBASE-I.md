@@ -80,7 +80,15 @@ _Por ejemplo:_
 <form id="signIn"class="col s12 m6 ">
     ···
 </form>
+```
 
+El código se escribirá en el fichero *firebase-auth.js* que se incluye
+en el  ```<head>``` del fichero principal.
+
+Para capturar los formularios usamos:
+
+```js
+const signupForm = document.querySelector('#signUp');
 ```
 
 ### Registro (*Sign Up*)
@@ -93,11 +101,24 @@ Para llevar a cabo el registro el formulario captura los siguientes valores:
 
 Usa las *querySelectors* para capturar el formulario, donde podremos volcar cada uno de los valores en variables tras hacer el *submit*.
 
+Para ejecutar bajo el submit usamos:
+```js
+signupForm.addEventListener('submit', (e)=> {
+···
+}
+```
+
 El si ambas contraseñas coinciden, el *email* y la *contraseña* son añadidos a la base de datos de firebase por medio de la orden:
 
 ```js
-```
+auth.createUserWithEmailAndPassword(email, password).then(cred => {
 
+    const modal = document.querySelector('#loginModal')
+    M.Modal.getInstance(modal).close();
+    signupForm.reset();
+})
+```
+Con el *then* lo que indicamos es que solo ejecute lo que contiene si la solicitud se ha cumplido con éxito.
 
 ### Inicio de sesión (*Login*)
 El proceso para manejar el inicio de sesión en la página es similar al registro. Sin embargo en esta ocasión estamos capturando únicamente el email y la contraseña en el formulario.
@@ -107,6 +128,9 @@ Cabe destacar que usa valores ID distintos en este formulario.
 En este caso debemos sencillamente enviar los valores capturados a la orden de firebase:
 
 ```js
+auth.signInWithEmailAndPassword(email, password).then( cred => {
+    ...
+}
 ```
 
 Lo cual en caso de ser correcto capturará el estado activo del usuario. De no ser así informará del error concreto.
@@ -115,6 +139,9 @@ Lo cual en caso de ser correcto capturará el estado activo del usuario. De no s
 El cierre de sesión del usuario se procesa por medio de la interacción del botón. Cuando el usuario lo pulsa ejecuta la orden para reflejar este cambio en Firebase. La orden es la siguiente:
 
 ```js
+logOut.addEventListener('click', (e) => {
+···
+}
 ```
 
 ### Puntos en común
