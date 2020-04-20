@@ -15,9 +15,7 @@ signupForm.addEventListener('submit', (e)=> {
     const passTrue = signupForm['passwordTrue'].value;
 
     if (password == passTrue){
-
         auth.createUserWithEmailAndPassword(email, password).then(cred => {
-
             const modal = document.querySelector('#loginModal')
             M.Modal.getInstance(modal).close();
             signupForm.reset();
