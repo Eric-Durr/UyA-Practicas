@@ -29,9 +29,6 @@
     <!-- Chart JS file-->
     <script defer src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
-    <!-- Personal JS file-->
-    <script defer type="text/javascript" src="media/js/chart.js"></script>
-
     <!-- Personal CSS file -->
     <script defer type="text/css" src="media/css/index.css"></script>
 
@@ -45,6 +42,14 @@
     <link rel="stylesheet" type="text/css" href="media/css/index.css">
     
     <link rel="stylesheet" href="media/css/style-index.css">
+
+    <!-- firebase database JS file-->
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
+
+
+
     
     <title>TRADAY - CONTACTOS</title>
 </head>
@@ -182,6 +187,12 @@
       </div>
     </footer>
         
+    <script>
+      const database = firebase.database();
+    </script>
  
+    <!-- firebase-database JS file-->
+    <script defer type="text/javascript" src="media/js/contactos-database.js"></script>
+    
 </body>
 </html>
