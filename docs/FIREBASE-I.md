@@ -51,7 +51,7 @@ Como usamos Firebase Hosting, podemos configurar nuestra app para cargar las bib
 
     - Realizamos la implementación con el comando:
 
-        firebase deploy
+            firebase deploy
 
 
 
