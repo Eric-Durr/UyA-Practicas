@@ -225,4 +225,3 @@ formulario.addEventListener("submit", (e) => {
 
 Por último, se mostrará una imagen detallando lo conseguido con este código sobre nuestra web:
 
-
