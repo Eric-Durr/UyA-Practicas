@@ -57,21 +57,36 @@ Sinpromi](https://sinpromi.es/noticias).
     </div>
 
 - Criterio 3.2.3    
+    El orden de los menús de navegación permiten acceder a todos los elementos desde cualquier otro punto de la página sin cambiar su orden, por lo que podemos definir este criterio como cumplido.
 
 - Criterio 3.2.4 
+    Las noticias se identifican todas bajo la misma estr4uctura, por ello los componentes se identifican de manera consistente
+    <div style="display: flex; justify-content: center; align-items: center; ">
+      <img src="../public/media/img/noticias-consistencia.png" width="50%" style="padding:10px">
+    </div>
+
 
 **Pauta 3.3**
 
     Ayuda a los usuarios a evitar y corregir de errores 
 
+> Para estos criterios nos fijaremos ene el modal de inicio de sesión de la página. Se accede pulsando "*ENTRAR*"
+
 - Criterio 3.3.1    
 
+    Se indican los campos que han dado error en el campo seleccionado y de manera textual. Por ejemplo en el usuario.
+
+    <div style="display: flex; justify-content: center; align-items: center; ">
+      <img src="../public/media/img/error-registro.png" width="50%" style="padding:10px">
+    </div>
+
+
 - Criterio 3.3.2    
+    En el mismopp elemento mencionado en el anterior punto se aprecia un ejemplo de este caso, a la hora de introducir los datos rerequeridos hay un ejemplo de lo que se debería de introducir o el tipo de formato que admite:
 
-- Criterio 3.3.3    
-
-- Criterio 3.3.4 
-
+    <div style="display: flex; justify-content: center; align-items: center; ">
+      <img src="../public/media/img/ejemplos-inicio.png" width="50%" style="padding:10px">
+    </div>
 
 ### Criterios relacionados con las pautas de  Robusto:
 
