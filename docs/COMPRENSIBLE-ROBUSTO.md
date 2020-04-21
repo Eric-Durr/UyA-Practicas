@@ -49,17 +49,7 @@ Tomamos como ejemplo el formulario de registro, que nos muestra lo siguiente:
 ***
 ## Análisis de los criterios A, AA de los principios Comprensible y Robusto sobre la web [Noticias Sinpromi](https://sinpromi.es/noticias)
  
-Se explicacarán y analizarán todos los criterios y pautas sobre [Noticias 
-Sinpromi](https://sinpromi.es/noticias).
-
-
-### Criterios relacionados con las pautas de  Comprensible:
-
-**Pauta 3.1**
-
-**Pauta 3.2**
-
-**Pauta 3.3**
+Se explicacarán y analizarán todos los criterios y pautas sobre [Noticias Sinpromi](https://sinpromi.es/noticias).
 
 ### Criterios relacionados con las pautas de  Robusto:
 
