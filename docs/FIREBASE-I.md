@@ -223,5 +223,14 @@ formulario.addEventListener("submit", (e) => {
 
 ```
 
-Por último, se mostrará una imagen detallando lo conseguido con este código sobre nuestra web:
+Por último, se mostrará una imagen detallando lo conseguido con este código sobre nuestra web. Se muestra la página referente a contactos:
 
+![contactos web](../public/media/img/contactos_web.png "Imagen que muestra vista general de la parte de contactos de la web")
+
+Se aprecia en la imagen anterior que se ha impreso por la consola del navegador, la informacion referente al "contacto1".
+
+![paco](../public/media/img/paco.png "Imagen que muestra como se introduce a un nuevo usuario")
+
+En la imagen anterior podemos ver que, tenemos un formulario para introducir nuevos datos. Con anterioridad, en este documento se ha detallado que no nos ha sido posible modificar desde la web los datos, pero estos si son reflejados en la consola del navegador. Podemos ver esto a continuación:
+
+![paco-consola](../public/media/img/paco-consola.png "Imagen que muestra como se refleja en la consola lo introducido")
