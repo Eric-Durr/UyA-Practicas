@@ -26,4 +26,5 @@
  - [Página html sobre el manejo de AJAX con JQuery](public/ajax-page.html)
  - [Archivo JavaScript sobre el manejo de AJAX](public/media/js/api-solitude.js)
  - [Informe acerca de la primera práctica de Firebase](../docs/FIREBASE-I.md)
+ - [Análisis de los criterios Comprensible y Robusto](../docs/COMPRENSIBLE-ROBUSTO.md)
  
