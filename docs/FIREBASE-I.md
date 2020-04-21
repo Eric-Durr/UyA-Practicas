@@ -162,3 +162,22 @@ Esta consola informa de:
 ## Registro de entradas en la base de datos del servidor Firebase
     Se procede a indicar los pasos seguidos en la implementación de la base de datos
     así como el registro de entradas desde la aplicación web.
+
+### Configuración de Firebase 
+
+Antes de comenzar, aclarar que para la realización de este apartado hemos hecho uso de las consultas a tiempo real que nos proporciona Firebase, y se trata de Cloud Firestore. Realiza actualizaciones en tiempo real, consultas poderosas y ajuste de escala automático.
+
+En primer lugar, para poder llevar a cabo el Registro de entradas en la Base de Datos del Servidor Firebase desde nuestra web, procederemos a establecer una "colección". Dentro del apartado de Database de nuestro Servidor Firebase, se nos permitirá crear una colección con los diferentes datos que queramos añadir de forma manual a nuestra Base de Datos. El procedimiento se muestra a continuación: 
+
+![colection-imagen](../public/media/img/colection-imagen.png "Imagen que muestra el procedimiento a llevar a cabo para introducir de forma manual las diferentes imagenes.")
+    
+Como podemos ver en la imagen que se muestra con anterioridad, se nos habilita un espacio donde introducir un ID para nuestra nueva colección. Procederemos a crearla y se nos mostrará a continuación la siguiente ventana, donde rellenaremos los datos correspondiendes a la nueva colección.
+
+![colection2-imagen](../public/media/img/colection2-imagen.png "Imagen que muestra los datos")
+
+Comentar que, además se nos proporciona la posibilidad de establecer unas normas referente a los usuarios. En este caso, no hemos cambiado las líneas de código más allá de modificar la línea para habilitar los permisos de escritura y lectura para todos los usuarios. Esta es una mala práctica, debido a que cualquier usuario que acceda a nuestra web, tendría acceso a la lectura y escritura de la base de datos.
+
+![reglas-image](../public/media/img/reglas-image.png "Imagen que muestra las reglas establecidas para el servidor")
+
+### Fichero JavaScript
+
