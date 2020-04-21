@@ -53,7 +53,6 @@ Sinpromi](https://sinpromi.es/noticias).
 
     <div style="display: flex; justify-content: center; align-items: center; ">
       <img src="../public/media/img/prev-cambio.png" width="50%" style="padding:10px;">
-      :arrow_right:
       <img src="../public/media/img/post-cambio.png" width="50%" style="padding:10px;">
     </div>
 
