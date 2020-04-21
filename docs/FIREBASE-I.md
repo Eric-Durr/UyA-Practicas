@@ -162,3 +162,75 @@ Esta consola informa de:
 ## Registro de entradas en la base de datos del servidor Firebase
     Se procede a indicar los pasos seguidos en la implementación de la base de datos
     así como el registro de entradas desde la aplicación web.
+
+### Configuración de Firebase 
+
+Antes de comenzar, aclarar que para la realización de este apartado hemos hecho uso de las consultas a tiempo real que nos proporciona Firebase, y se trata de Cloud Firestore. Realiza actualizaciones en tiempo real, consultas poderosas y ajuste de escala automático.
+
+En primer lugar, para poder llevar a cabo el Registro de entradas en la Base de Datos del Servidor Firebase desde nuestra web, procederemos a establecer una "colección". Dentro del apartado de Database de nuestro Servidor Firebase, se nos permitirá crear una colección con los diferentes datos que queramos añadir de forma manual a nuestra Base de Datos. El procedimiento se muestra a continuación: 
+
+![colection-imagen](../public/media/img/colection-imagen.png "Imagen que muestra el procedimiento a llevar a cabo para introducir de forma manual las diferentes imagenes.")
+    
+Como podemos ver en la imagen que se muestra con anterioridad, se nos habilita un espacio donde introducir un ID para nuestra nueva colección. Procederemos a crearla y se nos mostrará a continuación la siguiente ventana, donde rellenaremos los datos correspondiendes a la nueva colección.
+
+![colection2-imagen](../public/media/img/colection2-imagen.png "Imagen que muestra los datos")
+
+Comentar que, además se nos proporciona la posibilidad de establecer unas normas referente a los usuarios. En este caso, no hemos cambiado las líneas de código más allá de modificar la línea para habilitar los permisos de escritura y lectura para todos los usuarios. Esta es una mala práctica, debido a que cualquier usuario que acceda a nuestra web, tendría acceso a la lectura y escritura de la base de datos.
+
+![reglas-image](../public/media/img/reglas-image.png "Imagen que muestra las reglas establecidas para el servidor")
+
+### Fichero JavaScript
+
+#### Visualizar en la web del proyecto la Base de Datos
+
+Este apartado se ocupará de explicar con detalle el código utilizado para llevar a cabo la práctica. En primer lugar, explicaremos la parte de código con la que mostramos lso datos contenidos en la Base de Datos en Tiempo Real. Para hacer esto posible, se ha creado un fichero JS llamado **contacto-database.js**, que ha sido asociado al documento HTML **contacts-page.html**. 
+
+El fichero JavaScript se encuentra dividido en dos funciones principales. En la primera se lleva a cabo una solicitud a la base de datos del servidor de Firebase.  
+
+```js
+document.addEventListener("DOMContentLoaded", event => {
+
+    const contacto1 = database.collection("contactos").doc("contacto1");
+    contacto1.onSnapshot(doc => {
+
+        const data = doc.data();
+        const list = document.querySelector("#contactList");
+        list.innerHTML = "";
+        list.innerHTML = `<a href="#!" class="collection-item text-grey center-align">` + data.nombre + data.Apellidos + `</a>`; 
+        console.log(data); 
+
+    });
+
+});
+
+```
+
+Como vemos en el código que se encuentra con anterioridad, creamos una constante que almacenara el dato requerido de la Base de Datos de la Colección "Contactos". Ahora bien, con la constante "data", almacenamos los datos pertinentes, que serán posteriormente mostrados en la web, tanto el nombre como los apellidos del contacto. Por último, se realiza una impresión por consola para una mejor visualización de los mismos.
+
+Por otro lado, hemos intentado realizar una inserción de datos desde nuestra página web. No nos ha sido posible del todo realizar esta tarea, ya que no se ve reflejado como tal en la Base de Datos, pero, fijándonos en la consola de la web, los datos si cambian. El código que realiza esto se encuentra a continuación.
+
+```js
+
+const formulario = document.querySelector("#addContact");
+formulario.addEventListener("submit", (e) => {
+
+    const database = firebase.firestore();
+    const name = formulario["nameToAdd"].value;
+    const contacto1 = database.collection("contactos").doc("contacto1");
+    contacto1.update({nombre: name});
+ 
+});
+
+```
+
+Por último, se mostrará una imagen detallando lo conseguido con este código sobre nuestra web. Se muestra la página referente a contactos:
+
+![contactos web](../public/media/img/contactos_web.png "Imagen que muestra vista general de la parte de contactos de la web")
+
+Se aprecia en la imagen anterior que se ha impreso por la consola del navegador, la informacion referente al "contacto1".
+
+![paco](../public/media/img/paco.png "Imagen que muestra como se introduce a un nuevo usuario")
+
+En la imagen anterior podemos ver que, tenemos un formulario para introducir nuevos datos. Con anterioridad, en este documento se ha detallado que no nos ha sido posible modificar desde la web los datos, pero estos si son reflejados en la consola del navegador. Podemos ver esto a continuación:
+
+![paco-consola](../public/media/img/paco-consola.png "Imagen que muestra como se refleja en la consola lo introducido")
