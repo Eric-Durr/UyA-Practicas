@@ -31,7 +31,7 @@ Sinpromi](https://sinpromi.es/noticias).
 
   Compatible: Maximizar la compatibilidad con las aplicaciones de usuario actuales y futuras, incluyendo las ayudas técnicas.
 
-- **Criterio 4.1.1 (Nivel AA):** La web sí cumple este criterio ya que, podemos encontrar que todos los elementos tienen las etiquetas de apertura y cierre completas, están anidados de acuerdo a sus especificaciones, no contienen atributos duplicados y no hemos encontrado ningún ID repetido. Esto se puede comprobar mediante las técnicas de validadores automáticos, además de que se nota que sigueqs/noticias/) donde se puede observar como se cumple:
+- **Criterio 4.1.1 (Nivel AA):** La web sí cumple este criterio ya que, podemos encontrar que todos los elementos tienen las etiquetas de apertura y cierre completas, están anidados de acuerdo a sus especificaciones, no contienen atributos duplicados y no hemos encontrado ningún ID repetido. Esto se puede comprobar mediante las técnicas de validadores automáticos, además de que se nota que sigue el estándar HTML. A continuación, se puede ver una captura del código de sección de [noticias](https://sinpromi.es/noticias/) de la página de [Sinpromi](https://sinpromi.es/) donde se puede observar como se cumple:
 
 ![criterio411noticias](../public/media/img/criterio411noticias.PNG "Imagen que muestra una sección del código de la zona de noticias de la página de Sinpromi.")
 
