@@ -181,3 +181,48 @@ Comentar que, además se nos proporciona la posibilidad de establecer unas norma
 
 ### Fichero JavaScript
 
+#### Visualizar en la web del proyecto la Base de Datos
+
+Este apartado se ocupará de explicar con detalle el código utilizado para llevar a cabo la práctica. En primer lugar, explicaremos la parte de código con la que mostramos lso datos contenidos en la Base de Datos en Tiempo Real. Para hacer esto posible, se ha creado un fichero JS llamado **contacto-database.js**, que ha sido asociado al documento HTML **contacts-page.html**. 
+
+El fichero JavaScript se encuentra dividido en dos funciones principales. En la primera se lleva a cabo una solicitud a la base de datos del servidor de Firebase.  
+
+```js
+document.addEventListener("DOMContentLoaded", event => {
+
+    const contacto1 = database.collection("contactos").doc("contacto1");
+    contacto1.onSnapshot(doc => {
+
+        const data = doc.data();
+        const list = document.querySelector("#contactList");
+        list.innerHTML = "";
+        list.innerHTML = `<a href="#!" class="collection-item text-grey center-align">` + data.nombre + data.Apellidos + `</a>`; 
+        console.log(data); 
+
+    });
+
+});
+
+```
+
+Como vemos en el código que se encuentra con anterioridad, creamos una constante que almacenara el dato requerido de la Base de Datos de la Colección "Contactos". Ahora bien, con la constante "data", almacenamos los datos pertinentes, que serán posteriormente mostrados en la web, tanto el nombre como los apellidos del contacto. Por último, se realiza una impresión por consola para una mejor visualización de los mismos.
+
+Por otro lado, hemos intentado realizar una inserción de datos desde nuestra página web. No nos ha sido posible del todo realizar esta tarea, ya que no se ve reflejado como tal en la Base de Datos, pero, fijándonos en la consola de la web, los datos si cambian. El código que realiza esto se encuentra a continuación.
+
+```js
+
+const formulario = document.querySelector("#addContact");
+formulario.addEventListener("submit", (e) => {
+
+    const database = firebase.firestore();
+    const name = formulario["nameToAdd"].value;
+    const contacto1 = database.collection("contactos").doc("contacto1");
+    contacto1.update({nombre: name});
+ 
+});
+
+```
+
+Por último, se mostrará una imagen detallando lo conseguido con este código sobre nuestra web:
+
+
