@@ -39,7 +39,6 @@ Se analizarán por separado las evaluaciones automáticas realizadas por cada he
 ### Validadores HTML y CSS del W3C
 
 <br>
-<br>
 
 Resultado general del **Análisis HTML:**
 
@@ -83,20 +82,33 @@ Resultado general del **Análisis CSS:**
     Este podría estar invalidando de manera involuntaria algunas herramientas de control por voz.
 
 
+<br>
+<br>
+
 ### WAVE
 
 Resultado general del **Análisis WAVE** para la accesibilidad según **WCAG:**
 
+    Tras ejecutar el analizador con esta página salen solamente dos errores graves además de 4 errores de contraste. Sin embargo si lo comparamos con los puntos positivos son superados por estos que son 25.
+
+    También cabe destacar que la estructura de jerarquía HTML es limpia, concisa y no redundante en la mayoría de sus puntos. Algunos de los elementos, tal y como lo señalan los avisos, la estrtuctura es redundante en las imágenes dado que presentan el mismo texto alternativo donde, además, este no explica la imágen, no poniéndole título. Esto podría difuminar la imagen de la web si se usase con un explorador por lectura de la misma.
+
+![notitle-warn-img]( ../public/media/img/notitle-warn-img.png)
+
+<br>
+<br>
 
 ### Contraste de colores
 
-Resultado general del **análisis de contraste** de la herramienta **Contrast Analyser:**
+Resultado general del **análisis de contraste** de la herramienta **a11y:**
 
+    Tras ejecutar el análisis de contraste saltan tres errores  en contraposición a los 4 de la anterior herramienta.Se podrían interpretar como graves. No se alejan demasiado del ratio adecuado pero podrían dificultar la lectura de algunos usuarios con disfunción visual.
 
+![contrast-cab-img]( ../public/media/img/contrast-cab-img.png)
 
+    El primer error está principalmente presente en los elementos de botón y algunos títulos
 
-
-
+![contrast-cab-example]( ../public/media/img/contrast-cab-example.png)
 
 
 
