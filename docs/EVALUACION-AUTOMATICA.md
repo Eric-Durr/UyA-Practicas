@@ -15,13 +15,6 @@ Se analizarán por separado las evaluaciones automáticas realizadas por cada he
 ### Validadores HTML y CSS del W3C
 
 - **Validador HTML**
-<<<<<<< HEAD
-
-- **Validador CSS** 
-
-### WAVE
-
-=======
 
 Para analizar el código HTML se ha hecho uso de la herramienta de [validación HTML](http://validator.w3.org) del W3C.
 
@@ -35,16 +28,10 @@ Por otro lado, los errores que se muestran referentes al código HTML de la web,
 ![error-html](../public/media/img/error-html.png)
 
 - **Validador CSS** 
->>>>>>> evaluacionAutomatica-Cermi
 
 Para analizar el código CSS se ha hecho uso de la herramienta de [validación CSS](http://jigsaw.w3.org/css-validator/) del W3C.
 
-<<<<<<< HEAD
-### Contraste de colores
-
-=======
 Por esta parte, también se nos muestran una serie de warnigns y errores. Los errrores encontrados se tratan de dos errores sintáticos y el uso de una propiedad no válida para una función. Éstos se muestran a continuación:
->>>>>>> evaluacionAutomatica-Cermi
 
 ![error-css](../public/media/img/error-css.png "Imagen que muestra ejemplo de warning")
 
