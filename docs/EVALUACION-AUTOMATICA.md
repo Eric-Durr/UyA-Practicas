@@ -31,7 +31,9 @@ Por otro lado, los errores que se muestran referentes al código HTML de la web,
 
 Para analizar el código CSS se ha hecho uso de la herramienta de [validación CSS](http://jigsaw.w3.org/css-validator/) del W3C.
 
-Por esta parte, también se nos muestran una serie de warnigns y errores. 
+Por esta parte, también se nos muestran una serie de warnigns y errores. Los errrores encontrados se tratan de dos errores sintáticos y el uso de una propiedad no válida para una función. Éstos se muestran a continuación:
+
+![warnings-css](../public/media/img/warning-css.png "Imagen que muestra ejemplo de warning")
 
 ### WAVE
 
