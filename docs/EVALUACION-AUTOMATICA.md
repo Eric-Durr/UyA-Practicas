@@ -15,10 +15,15 @@ Se analizarán por separado las evaluaciones automáticas realizadas por cada he
 
 ### Validadores HTML y CSS del W3C
 
+- **Validador HTML**
+
+- **Validador CSS** 
+
 ### WAVE
 
-### Contraste de colores
 
+
+### Contraste de colores
 
 
 
