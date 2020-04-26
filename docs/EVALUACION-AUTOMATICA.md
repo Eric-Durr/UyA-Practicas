@@ -143,7 +143,7 @@ Resultado general del **análisis de contraste** de la herramienta **a11y:**
 
 
 ***
-## Evaluación automática de la web [Cabildo de Tenerife][La Caixa]("https://www.caixabank.es/index_es.html")
+## Evaluación automática de la web [La Caixa]("https://www.caixabank.es/index_es.html")
 
 ***
 
@@ -161,7 +161,7 @@ Respecto al [validador CSS de W3C](http://jigsaw.w3.org/css-validator/) en la p�
 
 ![ErrorCSSCaixa](../public/media/img/ErrorCSSCaixa.PNG "Imagen que muestra los errores de CSS de la página de La Caixa")
 
-Respecto al primer error simplemente nos indica que hay una propiedad no válida para width que han llamado *"device-width"*. Este error no debería suponer un problema muy grande para la accesibilidad aunque si habría que cambiarlo. Respecto al segundo error *"cboxOverlay"* nos dice que hay un "error sintáctico = 90" 
+Respecto al primer error simplemente nos indica que hay una propiedad no válida para width que han llamado *"device-width"*. Este error no debería suponer un problema muy grande para la accesibilidad aunque si habría que cambiarlo.
 
 ### WAVE
 
