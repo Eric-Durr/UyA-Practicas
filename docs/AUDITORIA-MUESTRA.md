@@ -22,9 +22,16 @@ Estos enlaces han sido extraidos por diferentes rutas desde el enlace principal
 
 **Enlaces secundarios a partir del sitio principal**
   
-- 
-- 
-- 
+- [Formulario de Contacto](https://sede.gobcan.es/sede/formulario_contacto)
+- [Certificado digital de la sede](https://sede.gobcan.es/sede/la_sede/requisitos_tecnicos/certificado_digital)
+- [Requisitos técnicos de la sede](https://sede.gobcan.es/sede/la_sede/requisitos_tecnicos)
+- [Requisitos del Sistema Operativo](https://sede.gobcan.es/sede/la_sede/requisitos_tecnicos/sistema_operativo)
+- [Requisitos del Navegador](https://sede.gobcan.es/sede/la_sede/requisitos_tecnicos/navegadores)
+- [Requisitos de Java](https://sede.gobcan.es/sede/la_sede/requisitos_tecnicos/maquina_virtual_java)
+- [Formatos de documentos aceptados](https://sede.gobcan.es/sede/la_sede/requisitos_tecnicos/formatos)
+- [Requisito sobre el visor de documentos](https://sede.gobcan.es/sede/la_sede/requisitos_tecnicos/visor_documentos)
+- [Gestión de datos personales](https://sede.gobcan.es/sede/identificacionmenu)
+
     
 · · ·
 
