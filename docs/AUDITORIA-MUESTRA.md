@@ -50,6 +50,7 @@ Estos enlaces han sido extraidos por diferentes rutas desde el enlace principal
 **Enlaces secundarios a partir del sitio principal**
   
 - [Formulario de ayuda y Contacto](https://sede.gobcan.es/sede/formulario_contacto)
+
 - [Certificado digital de la sede](https://sede.gobcan.es/sede/la_sede/requisitos_tecnicos/certificado_digital)
 - [Requisitos técnicos de la sede](https://sede.gobcan.es/sede/la_sede/requisitos_tecnicos)
 - [Requisitos del Sistema Operativo](https://sede.gobcan.es/sede/la_sede/requisitos_tecnicos/sistema_operativo)
@@ -60,11 +61,11 @@ Estos enlaces han sido extraidos por diferentes rutas desde el enlace principal
 - [Gestión de datos personales](https://sede.gobcan.es/sede/identificacionmenu)
 
     
-· · ·
 
 **Enlaces de puntos desde los que se accede al sitio principal**
   
 - [Portal de Administración Electrónica de la Secretaría General](https://administracionelectronica.gob.es/pae_Home/)
+
 - [Agencia Estatal Boletín Oficial del Estado](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2018-12699)
 - [Carpeta Ciudadana de la Admin General del Estado](https://sede.administracion.gob.es/carpeta/clave.htm)
 - [Sugerencias y reclamaciones del Gobierno de Canarias](https://www.gobiernodecanarias.org/principal/sugrec/)
@@ -75,9 +76,10 @@ Estos enlaces han sido extraidos por diferentes rutas desde el enlace principal
 - [Participación ciudadana en iniciativas normativas](https://www.gobiernodecanarias.org/participacionciudadana/iniciativas/)
 - [Portal del Gobierno de Canarias](https://www.gobiernodecanarias.org/principal/)
 - [Porta EUGO](http://www.eugo.es/)
-
-· · · 
-
+- · · ·
+        
+        Se podrían incluir más links de estetipo, pero con los ejemplos propuestos se pueden intuir el
+        resto de enlaces que componen esta parte de la población
 <br>
 
 ## Enlaces escogidos para la muestra de la auditoría
@@ -86,9 +88,21 @@ Estos enlaces han sido extraidos por diferentes rutas desde el enlace principal
     que puedan suponer una visión variada de las distintas funcionalidades de la 
     página web y de los aspectos de accesibilidad de la misma.
 
-- 
-> Explicación
-- 
-- 
-
-· · ·
+1. 
+> 
+2. 
+>
+3. 
+>
+4. 
+>
+5. 
+>
+6. 
+>
+7. 
+>
+8. 
+>
+9. 
+>
