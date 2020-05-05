@@ -14,7 +14,7 @@ Estos enlaces han sido extraidos por diferentes rutas desde el enlace principal
 
 **Enlaces presentes en el sitio principal**
   
--  [Sede](https://sede.gobcan.es/sede)
+- [Sede](https://sede.gobcan.es/sede)
 - [Utilidades: Accesibilidad](https://sede.gobcan.es/sede/utilidades_web/accesibilidad)
 - [Utilidades: Mapa web](https://sede.gobcan.es/sede/utilidades_web/mapa_web)
 - [Utilidades: Contacto](https://sede.gobcan.es/sede/utilidades_web/contacto)
