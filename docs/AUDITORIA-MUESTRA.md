@@ -59,7 +59,7 @@ Estos enlaces han sido extraidos por diferentes rutas desde el enlace principal
 - [Formatos de documentos aceptados](https://sede.gobcan.es/sede/la_sede/requisitos_tecnicos/formatos)
 - [Requisito sobre el visor de documentos](https://sede.gobcan.es/sede/la_sede/requisitos_tecnicos/visor_documentos)
 - [Gestión de datos personales](https://sede.gobcan.es/sede/identificacionmenu)
-
+- [Sistemas de identificación y firma aceptados](https://sede.gobcan.es/sede/la_sede/sistemas_firma)
     
 
 **Enlaces de puntos desde los que se accede al sitio principal**
@@ -75,7 +75,7 @@ Estos enlaces han sido extraidos por diferentes rutas desde el enlace principal
 - [Contratación Administrativa](http://www.gobiernodecanarias.org/hacienda/dgpatrimonio/)
 - [Participación ciudadana en iniciativas normativas](https://www.gobiernodecanarias.org/participacionciudadana/iniciativas/)
 - [Portal del Gobierno de Canarias](https://www.gobiernodecanarias.org/principal/)
-- [Porta EUGO](http://www.eugo.es/)
+- [Portal EUGO](http://www.eugo.es/)
 - · · ·
         
         Se podrían incluir más links de estetipo, pero con los ejemplos propuestos se pueden intuir el
@@ -88,21 +88,21 @@ Estos enlaces han sido extraidos por diferentes rutas desde el enlace principal
     que puedan suponer una visión variada de las distintas funcionalidades de la 
     página web y de los aspectos de accesibilidad de la misma.
 
-1. 
-> 
-2. 
->
-3. 
->
-4. 
->
-5. 
->
-6. 
->
-7. 
->
-8. 
->
-9. 
->
+1. [Index de Sede](https://sede.gobcan.es/sede) 
+> Se trata del index de la página principal a analizar de la Auditoría y representa el estilo de diseño de algunas otras páginas. 
+2. [Procedimientos y servicios](https://sede.gobcan.es/sede/procedimientos_servicios/tramites)
+> Ha sido elegido ya que queremos comprobar la funcionalidad desde los distintos ámbitos de la accesibilidad, ya que la búsqueda avanzada según se plantee puede ser más o menos intuitiva.
+3. [Calendario Oficial](https://sede.gobcan.es/sede/menu_lateral_f_h/calendario_oficial)
+> El calendario se trata de una herramienta crucial y nos resulta de importancia que sea accesible para todos los usuarios.
+4. [Formulario de ayuda y Contacto](https://sede.gobcan.es/sede/formulario_contacto)
+> Entre tantos otros formularios, hemos elegido este de forma aleatoria para comprobar su funcionamiento.
+5. [Formatos de documentos aceptados](https://sede.gobcan.es/sede/la_sede/requisitos_tecnicos/formatos)
+> Debido a que los usuarios deben de conocer qué tipo de formato es aceptado, se someterá auditoria a ésta por ser referente a las demás-
+6. [Sistemas de identificación y firma aceptados](https://sede.gobcan.es/sede/la_sede/sistemas_firma)
+> Todos los usuarios deberían de poder acceder y ser conocedores de esta información a la hora de hacer trámites.
+7. [Portal del Gobierno de Canarias](https://www.gobiernodecanarias.org/principal/)
+> Se trata del Portal Principal de la web del Gobierno de Canarias, accesible desde nuestra web. Contiene información de importancia para nuestros usuarios. Presenta elementos móviles como es el carrusel que podría llegar a dar conflictos para algunos de nuestros usuarios.
+8. [Buzón de consulta de la Oficina Canaria de Información](https://www.gobiernodecanarias.org/siac/oficinas/buzon/)
+> Se trata de uno de los links externos más importantes incluido sobre nuestra web, ya que, debe de ser usado en múltiples ocasiones por los usuarios. Por otro lado, es una interfaz distinta de consulta respecto a las otras que se pueden ver en los enlaces seleccionados, incluyendo también un proceso que debe ser llevado a cabo a lo largo de varias páginas.
+9. [Portal EUGO](http://www.eugo.es/)
+> Se incluye ya que, dentro de este ámbito, se trata de una viariación de diseño.
