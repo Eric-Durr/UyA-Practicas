@@ -30,10 +30,18 @@ Estos enlaces han sido extraidos por diferentes rutas desde el enlace principal
 
 **Enlaces de puntos desde los que se accede al sitio principal**
   
-- 
-- 
-- 
-    
+- [Portal de Administración Electrónica de la Secretaría General](https://administracionelectronica.gob.es/pae_Home/)
+- [Agencia Estatal Boletín Oficial del Estado](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2018-12699)
+- [Carpeta Ciudadana de la Admin General del Estado](https://sede.administracion.gob.es/carpeta/clave.htm)
+- [Sugerencias y reclamaciones del Gobierno de Canarias](https://www.gobiernodecanarias.org/principal/sugrec/)
+- [Buzón de consulta de la Oficina Canaria de Información](https://www.gobiernodecanarias.org/siac/oficinas/buzon/)
+- [Contacto de la Agencia Tributaria Canaria](https://sede.gobcan.es/tributos/jsf/publico/sede/utilidades_web/contacto.jsp)
+- [Gestión de datos personales](https://sede.gobcan.es/sede/identificacionmenu)
+- [Contratación Administrativa](http://www.gobiernodecanarias.org/hacienda/dgpatrimonio/)
+- [Participación ciudadana en iniciativas normativas](https://www.gobiernodecanarias.org/participacionciudadana/iniciativas/)
+- [Portal del Gobierno de Canarias](https://www.gobiernodecanarias.org/principal/)
+- [Porta EUGO](http://www.eugo.es/)
+
 · · · 
 
 <br>
