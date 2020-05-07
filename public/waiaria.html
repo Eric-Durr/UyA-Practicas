@@ -93,7 +93,40 @@
       </div>
     <!-- Acordeón -->
     <section>
+      <ul class="collapsible">
+        <li>
+          <div class="collapsible-header">
+            <button aria-expanded="true" aria-controls="sect1" id="accordion1id">
+              <i class="material-icons">filter_drama</i>First
+            </button>
+          </div>
+          <div class="collapsible-body" id="sect1" aria-labelledby="accordion1id" aria-hidden="true">
+            <span>Lorem ipsum dolor sit amet.</span>
+          </div>
+        </li>
 
+        <li>
+          <div class="collapsible-header">
+            <button aria-expanded="true" aria-controls="sect2" id="accordion2id">
+              <i class="material-icons">place</i>Second
+            </button>
+          </div>
+          <div class="collapsible-body" id="sect2" aria-labelledby="accordion2id" aria-hidden="true">
+            <span>Lorem ipsum dolor sit amet.</span>
+          </div>
+        </li>
+
+        <li>
+          <div class="collapsible-header">
+            <button aria-expanded="true" aria-controls="sect3" id="accordion3id">
+              <i class="material-icons">whatshot</i>Third
+            </button> 
+          </div>
+          <div class="collapsible-body" id="sect3" aria-labelledby="accordion3id" aria-hidden="true">
+            <span>Lorem ipsum dolor sit amet.</span>
+          </div>
+        </li>
+      </ul>
     </section>
 
     <!-- Carrusel -->
@@ -153,5 +186,8 @@
       </div>
     </footer>
 
+    <script defer src="media/js/acordeon.js"></script>
+
   </body>
 </html>
+
