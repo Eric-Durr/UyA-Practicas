@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -64,7 +64,7 @@
     
     <link rel="stylesheet" href="media/css/style-index.css">
     
-    <title>TRADAY - HOME</title>
+    <title>traday - home</title>
 </head>
 <body class="teal lighten-1">
      
@@ -75,15 +75,18 @@
       <nav>
         <div class="nav-wrapper teal lighten-1">
           <div class="container">
-            <a href="index.html" class="brand-logo">
+            <a href="index.html" class="brand-logo" aria-label="Traday">
               TRADAY
             </a>
             <a href="#" data-target="traday-nav"
-                        class="sidenav-trigger">
+                        class="sidenav-trigger"
+                        aria-expanded="false"
+                        aria-label= "menú de navegación">
               <i class="material-icons">menu</i>          
             </a>
           
-            <ul class="right hide-on-med-and-down">
+            <ul class="right hide-on-med-and-down"
+                role="navigation" aria-label="Barra superior">
               <li><a href="profile.html">Perfil</a></li>
               <li><a href="#">Notificaciones</a></li>
               <li><a href= "contacts-page.html">Mis contactos</a></li>
@@ -94,9 +97,13 @@
         </div>
       </nav>
     </div>
-      
+        
       <!-- responsive menu - hidden in desktop -->
-      <ul class="sidenav" id="traday-nav">
+      <ul class="sidenav" id="traday-nav"
+          role="navigation" aria-label="Menú lateral"
+          aria-expanded="false"
+          aria-hidden="true"
+          >
 
         <li><a href="profile.html" >Perfil</a></li>
         <li><a href="#">Notificaciones</a></li>
