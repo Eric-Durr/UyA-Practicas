@@ -13,6 +13,12 @@ leer los dos menús cuando se explora la página ya que para la herramienta de t
 está presente y no oculta.
 
 
+Otro de los problemas se encontraba en el uso de los botones, los cuales al ser enlaces no funcionaban con la tecla enter.
+Para solucionarlo se ha cambiado a botones. Además estos en lugar de leer su contenido, chromevox debe nombrar su propósito. Por ello se ha editado también esta característica.
+
+
+Lo siguiente a revisar son los modales abiertos por los propios botonoes. A estos se les debe añadir el rol "dialog" para que el foco sepa la región en la que puede y no puede actuar. También se emplea *aria-labeledby* para indicarle, mediante el id, de qué elemento va a tomar el nombre que debe indicar y  *aria-describedby* para proporcionar una descripción de lo que se hace. 
+
 ## Página de perfil
 
 ## Página cambio de monedas
