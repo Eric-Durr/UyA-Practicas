@@ -43,8 +43,8 @@ los códigos quedarían así:
       }
 ```
 Y en el siguiente .gif se confirma su correcto funcionamiento:
-
-![imagenes de captura de modales](./media/img/nav.gif)
+   
+![imagenes de captura de modales](../public/media/img/nav.gif)
 
 Otro de los problemas se encontraba en el uso de los botones, los cuales al ser enlaces no funcionaban con la tecla enter.
 Para solucionarlo se ha cambiado a botones. Además estos en lugar de leer su contenido, chromevox debe nombrar su propósito. Por ello se ha editado también esta característica.
@@ -57,7 +57,8 @@ Se han incluido también las etiquetas correspondientes de nombramiento y requer
 
 
 En el siguiente .gif se muestra su correcto funcionamiento:
-![imagenes de captura de modales](./media/img/modals.gif)
+
+![imagenes de captura de modales](../public/media/img/modals.gif)
 
 ## Página de perfil
 
