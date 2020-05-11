@@ -99,31 +99,38 @@
     </div>
         
       <!-- responsive menu - hidden in desktop -->
-      <ul class="sidenav" id="traday-nav"
-          role="navigation" aria-label="Menú lateral"
-          aria-expanded="false"
-          aria-hidden="true"
-          >
-
-        <li><a href="profile.html" >Perfil</a></li>
-        <li><a href="#">Notificaciones</a></li>
-        <li><a href= "contacts-page.html">Mis contactos</a></li>
-        <li><a href="#">Tareas</a></li>
-        <li><a href="#">Grupos</a></li>
-      </ul>
+      <diva
+      ria-expanded="true"
+      aria-hidden="true"  
+      >
+        <ul class="sidenav" id="traday-nav"
+        tabindex="-1"
+        role="navigation" aria-label="Menú lateral"
+        >
+          <li><a href="profile.html" >Perfil</a></li>
+          <li><a href="#">Notificaciones</a></li>
+          <li><a href= "contacts-page.html">Mis contactos</a></li>
+          <li><a href="#">Tareas</a></li>
+          <li><a href="#">Grupos</a></li>
+         </ul>
+      </div>
+      
       <!-- --- -->
 
-    <section id="hook" style="height: 100%;">
+    <section id="hook" style="height: 100%;" role="menu" >
         <br>
         
         <div class="row">
-          <div class="col s3 m2 l1 offset-s3 offset-m6 offset-l9 center-align">
+          <div class="col s3 m2 l1 offset-s3 offset-m6 offset-l9 center-align"
+              aria-label="registro">
             <a class="waves-effect blue-grey lighten-1 btn modal-trigger" href="#loginModal">signup</a>
           </div>
-          <div class="col s3 m2 l1  center-align">
+          <div class="col s3 m2 l1  center-align"
+                aria-label="inicio de sesión">
             <a class="waves-effect waves-light green accent-2 btn modal-trigger" href="#signInModal">signin</a>
           </div>
-          <div class="col s3 m2 l1  center-align">
+          <div class="col s3 m2 l1  center-align"
+              aria-label="cierre de sesión">
             <button class="waves-effect waves-light red accent-2 btn modal-trigger" id="logout">salir</button>
           </div>
         </div>
