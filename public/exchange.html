@@ -91,7 +91,7 @@
         <div class="row white">
             
             <div class="col s12">
-                <h1 class="center-align">Cambio entre monedas</h1>
+                <h1 tabindex=0 class="center-align">Cambio entre monedas</h1>
             </div>
             
               <form id="currencyConv"class="col s12 m6 ">
@@ -99,7 +99,7 @@
                 <div class="row">
                     <div class="input-field col s12 m6" id="fromCoin">
                         <select name="from_coin">
-                          <option value="" disabled selected>Elige una moneda</option>
+                          <option value="" disabled selected>Selecciona una moneda base</option>
                           <option value="E">Euros</option>
                           <option value="D">Dolares</option>
                           <option value="Y">Yenes</option>
@@ -108,7 +108,7 @@
                     </div>
                     <div class="input-field col s12 m6" id="toCoin">
                         <select name="to_coin">
-                          <option value="" disabled selected>Elige una moneda</option>
+                          <option value="" disabled selected>Selecciona una moneda al cambio</option>
                           <option value="E">Euros</option>
                           <option value="D">Dolares</option>
                           <option value="Y">Yenes</option>
@@ -116,10 +116,10 @@
                         <label>Moneda al cambio</label>
                     </div>
                     <div class="input-field col s12 m6">
-                        <input  placeholder="10" id="coin_value" 
+                        <input  placeholder="Escriba un valor para la moneda base" id="coin_value" 
                                 type="text" class="validate"
                                 name="coin_val">
-                        <label for="coin_value">Valor a determinar</label>
+                        <label>Valor a determinar</label>
                     </div>
                     <div class="col s12 m6">
                         <button class="btn waves-effect waves-light" 
@@ -127,13 +127,12 @@
                                 type="button"
                                 id="myButton"
                                 onclick="convertCurrency(this.form)">Cambiar
-                                
-                            <i class="material-icons right">send</i>
+                            <i class="material-icons right" aria-label="moneda">send</i>
                         </button>
                     </div>
                 </div>
             </form>
-            <div class="col s12 m6" id="result">
+            <div tabindex=0 class="col s12 m6" id="result">
                 <h5 class="center-align teal-text">Resultado:</h5>
                 <h2 class="center-align" id="coin_result">----</h2>
             </div>
@@ -156,8 +155,8 @@
                 <li><a class="grey-text text-lighten-3" href="#!">Más sobre traday</a></li>
                 <li><a class="grey-text text-lighten-3" href="#!">Encuéntranos</a></li>
                 <li><a class="grey-text text-lighten-3" href="#!">Contacta</a></li>
-                <li><a class="grey-text text-lighten-3" href="exchange.html">cambia monedas</a></li>
-                <li><a class="grey-text text-lighten-3" href="ajax-page.html">peticiones AJAX</a></li>
+                <li><a class="grey-text text-lighten-3" href="exchange.html">Cambia monedas</a></li>
+                <li><a class="grey-text text-lighten-3" href="ajax-page.html">Peticiones AJAX</a></li>
             </ul>
           </div>
         </div>
@@ -182,7 +181,7 @@
       <div class="footer-copyright">
         <div class="container">
         © TRADAY 2020 - all rights reserved
-          <a class="grey-text text-lighten-4 right" href="#!">privacy</a>
+          <a class="grey-text text-lighten-4 right" href="#!">Privacy</a>
         </div>
       </div>
     </footer>
