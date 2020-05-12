@@ -1,9 +1,8 @@
 # Ejercicio de WAI-ARIA: Revisón de páginas con formularios:
     El siguiente documento va a registrar el cambio de accesibilidad proporcionado por el etiquetado
     de propiedades WAI-ARIA de la página en algunos de sus elementos de interacción 
-***
+
 ## [Página principal](https://traday-362aa.web.app/index.html)
-***
     En el apartado de la página principal se va a hacer especial hincapié ,pese a que sea 
     un error presente en la mayoría, a la barra de navegación ya que esta ofrece una vista
     lateral responsiva y una superior para dispositivos más grandes. Además se revisará que 
@@ -60,10 +59,8 @@ Se han incluido también las etiquetas correspondientes de nombramiento y requer
 En el siguiente .gif se muestra su correcto funcionamiento:
 
 ![imagenes de captura de modales](../public/media/img/modals.gif)
-***
-## [Página Perfil](https://traday-362aa.web.app/profile.html)
-***
-Haciendo uso de la herramienta Chrome Vox, se ha visto una serie de errores sobre esta página de nuestro sitio web. Todos éstos serán detallados y se les pondrá solución a continuación.
+
+## Página de perfil
 
 ### Primer error detectado - Error en el foco
 
@@ -128,9 +125,9 @@ Y como ejemplo visual, se adjunta a continuación el paso del foco por este bloq
 
 ![gif-5](../public/media/img/gif5.gif)
 
-***
+
+
 ## Página [cambio de monedas](https://traday-362aa.web.app/exchange.html) 
-***
     En esta sección nos vamos a encargar de analizar los problemas que nos encontremos en nuestra página, concretamente en la parte que implementamos del cambio de moneda. Esta parte de la página es de alto riesgo para la accesibilidad ya que contiene formularios que, si no tratamos y etiquetamos de forma correcta, un lector de pantalla como Chrome Vox podría perderse o saltarse algo importante. Por ello, a continuación pondremos los errores que hemos ido encontrando tras usar Chrome Vox y cómo los hemos solucionado mediante el uso de WAI-ARIA.
 
     
@@ -182,3 +179,5 @@ Por último, vamos a comentar algunos "errores" menores que encontramos a la hor
 - Este error menor es muy parecido que el anterior, ya que en valor a determinar teníamos puesto el número 10, para así dar a entender a una persona que tenga buena visión que ahí tenía que poner un número. El problema es que si la persona está usando un lector de pantalla, la voz decía simplemente "diez" y esto era muy poco intuitivo, así que lo modificamos por "Escriba un valor para la moneda base". Con esto, el lector de pantalla diría esa frase y a la persona con falta de visión le quedaría muy claro que ahí era donde tenía que introducir un número.
 
 ![Exchange-error-valor]( ../public/media/img/error-exchange2.PNG "imagen donde se puede ver cómo quedó la página tras la modificación en valor a determinar")
+Haciendo uso de la herramienta Chrome Vox, se ha visto una serie de errores sobre esta página de nuestro sitio web. Todos éstos serán detallados y se les pondrá solución a continuación.
+
