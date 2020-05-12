@@ -28,7 +28,28 @@
 
 
     <!-- JQuery js file -->
-    <script defer src="media/js/jquery.min.js"></script>
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.js"
+			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+			  crossorigin="anonymous"></script>
+    <script type="text/javascript" >
+      $(document).ready(function(){
+
+        $('.carousel').carousel({
+          fullWidth: true,
+          indicators: true
+        });
+        
+        $('.next').click(function(){
+          $('.carousel').carousel('next');
+        });
+
+        $('.prev').click(function(){
+          $('.carousel').carousel('prev');
+        });
+
+      })
+    </script>
 
 
     <!-- Personal CSS file -->
@@ -99,7 +120,7 @@
       <!-- Título -->
       <div class="row">
           <div class="col 12">
-            <h1 class="center-align">Componentes accesibles por WAI-ARIA</h1>
+            <h1 class="center-align" tabindex="0">Componentes accesibles por WAI-ARIA</h1>
           </div>
       </div>
 
@@ -112,9 +133,46 @@
     </section>
 
     <!-- Carrusel -->
-    <section>
+    <div  class="carousel carousel-slider center" 
+          aria-live="assertive"
+          tabindex="0"
+          aria-label="panel de carousel"
+          >
+      
+      <div class="carousel-item red white-text" href="#one!"
+          >
+        <h2 id="pannel">First Panel</h2>
+        <p class="white-text">This is your first panel</p>
+      </div>
+      <div class="carousel-item amber white-text" href="#two!">
+        <h2 id="pannel">Second Panel</h2>
+        <p class="white-text">This is your second panel</p>
+      </div>
+      <div class="carousel-item green white-text" href="#three!">
+        <h2 id="pannel">Third Panel</h2>
+        <p class="white-text">This is your third panel</p>
+      </div>
+      <div class="carousel-item blue white-text" href="#four!">
+        <h2 id="pannel">Fourth Panel</h2>
+        <p class="white-text">This is your fourth panel</p>
+      </div>
+    </div>
+      <br>
+      <div class="row">
+        
+        <div class="col 6 center-align">
+          <button class="btn text-write prev"
+                  aria-label="botón de elemento anterior"><i class="material-icons left">chevron_left</i></button>
+        </div>
 
-    </section>
+        <div class="col 6 center-align">
+          <button class="btn text-write next"
+                  aria-label="botón de elemento anterior"><i class="material-icons right">chevron_right</i></button>
+        </div>
+      </div>
+    </div>
+      
+      
         
     <footer class="page-footer blue-grey darken-4">
       <div class="container">
@@ -131,8 +189,8 @@
                 <li><a class="grey-text text-lighten-3" href="#!">Más sobre traday</a></li>
                 <li><a class="grey-text text-lighten-3" href="#!">Encuéntranos</a></li>
                 <li><a class="grey-text text-lighten-3" href="#!">Contacta</a></li>
-                <li><a class="grey-text text-lighten-3" href="exchange.html">cambia monedas</a></li>
-                <li><a class="grey-text text-lighten-3" href="ajax-page.html">peticiones AJAX</a></li>
+                <li><a class="grey-text text-lighten-3" href="exchange.html" >cambia monedas</a></li>
+                <li><a class="grey-text text-lighten-3" href="ajax-page.html" >peticiones AJAX</a></li>
             </ul>
           </div>
         </div>
@@ -161,6 +219,8 @@
         </div>
       </div>
     </footer>
+
+     <!-- Personal JS file -->
 
   </body>
 </html>
