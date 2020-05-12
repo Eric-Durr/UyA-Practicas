@@ -100,8 +100,8 @@ Estos enlaces han sido extraidos por diferentes rutas desde el enlace principal
 > Debido a que los usuarios deben de conocer qué tipo de formato es aceptado, se someterá auditoria a ésta por ser referente a las demás-
 6. [Sistemas de identificación y firma aceptados](https://sede.gobcan.es/sede/la_sede/sistemas_firma)
 > Todos los usuarios deberían de poder acceder y ser conocedores de esta información a la hora de hacer trámites.
-7. [Utilidades: Accesibilidad](https://sede.gobcan.es/sede/utilidades_web/accesibilidad)
-> Se trata del portal de Accesibilidad de la Sede. Es de importancia que al usuario se le informe de los criterios o pautas que han sido o no cumplidas por la web. Además de posibles observaciones que puedan llegar a ser de utilidad.
+7. [Portal del Gobierno de Canarias](https://www.gobiernodecanarias.org/principal/)
+> Se trata del Portal Principal de la web del Gobierno de Canarias, accesible desde nuestra web. Contiene información de importancia para nuestros usuarios. Presenta elementos móviles como es el carrusel que podría llegar a dar conflictos para algunos de nuestros usuarios.
 8. [Buzón de consulta de la Oficina Canaria de Información](https://www.gobiernodecanarias.org/siac/oficinas/buzon/)
 > Se trata de uno de los links externos más importantes incluido sobre nuestra web, ya que, debe de ser usado en múltiples ocasiones por los usuarios. Por otro lado, es una interfaz distinta de consulta respecto a las otras que se pueden ver en los enlaces seleccionados, incluyendo también un proceso que debe ser llevado a cabo a lo largo de varias páginas.
 9. [Portal EUGO](http://www.eugo.es/)
