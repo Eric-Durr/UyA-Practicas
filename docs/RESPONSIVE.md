@@ -4,5 +4,12 @@ Se va a incluir, en dos pasos, el desarrollo responsive para la página de inici
 
 ## Página de inicio preparada bajo mobile first.
 
+```html
+```
+
 
 ## Página de inicio ya estilizada de forma responsive.
+
+
+```html
+```
