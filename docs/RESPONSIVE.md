@@ -112,6 +112,7 @@ Se va a incluir, en dos pasos, el desarrollo responsive para la página de inici
 
 ```
 
+Explicación
 
 ## Página de inicio ya estilizada de forma responsive.
 
