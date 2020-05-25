@@ -118,3 +118,5 @@ Se va a incluir, en dos pasos, el desarrollo responsive para la página de inici
 
 ```html
 ```
+
+detalles
