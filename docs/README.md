@@ -29,6 +29,8 @@
  - [Análisis de los criterios Comprensible y Robusto](../docs/COMPRENSIBLE-ROBUSTO.md)
  - [Análisis de accesibilidad mediante herramientas](../docs/EVALUACION-AUTOMATICA.md)
  - [Ejercicio WAI-ARIA en la web](../docs/EJERCICIO-WAI-ARIA.md)
+ - [Ejercicio de aplicación de responsive bajo la filosofía mobile first](../docs/RESPONSIVE.md)
+
 
 ## Documentos de la Auditoría de Accesibilidad
  - [Muestra de auditoría](../docs/AUDITORIA-MUESTRA.md)
