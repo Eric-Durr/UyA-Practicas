@@ -2,26 +2,13 @@
 
 Se va a incluir, en dos pasos, el desarrollo responsive para la página de inicio. En primer lugar un análisis sobre los elementos html, bajo la filosofía mobile first acerca de qué elementos deberían incluirse en esta página. El siguiente paso sería completar este HTML con el CSS necesario para que se cumpla un diseño responsive.
 
+Si desea visualizar esta página podrá hacerlo ejecutando, dentro del repositorio, `npm run view`, lo cual le proporcionará una instancia de parcel bundler
+
 ## Página de inicio preparada bajo mobile first.
 
 ```html
 
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>traday - home</title>
-</head>
-<body class="">
-     
-  <!-- inicio de sesión + registro  -->    
-  
-    <!-- Navegación en la web -->    
-
-      <!-- --- -->    
+· · ·
 
       <div>
         <nav>
@@ -103,12 +90,37 @@ Se va a incluir, en dos pasos, el desarrollo responsive para la página de inici
         </div>
 
 
-    <!-- footer --> 
-    <footer class="">
-    </footer>
-  
-</body>
-</html>
+        <div class="slider">
+            <ul class="slides">
+              <li>
+                <img src="https://i.picsum.photos/id/2/600/300.jpg?blur=5">
+                <div class="caption ">
+                  
+                  <h3>Nuestro equipo de desarrollo</h3>
+                </div>
+              </li>
+              <li>
+                <img src="media/img/equipo1.jfif" >
+                <div class="caption ">
+                </div>
+              </li>
+              <li>
+                <img class="" src="media/img/equipo3.jpeg">
+                <div class="caption ">
+                
+                </div>
+              </li>
+              <li>
+
+                <img src="media/img/equipo2.png">
+                <div class="caption ">
+                </div>
+              </li>
+            </ul>
+          </div>
+
+· · ·
+
 
 ```
 Para el diseño de los contenidos, de cara a hacerlo lo más adecuado posible para todos los dispositivos, se ha empleado la metodología ***mobile first***. Con esto pretendemos que el sitio que diseñamos sea lo más usable posible por el dispositivo más limitado.
@@ -121,6 +133,8 @@ Para la navegación hemos empleado una alternativa que incluirá una barra de na
 
 En cuanto a los contenidos de información se ha optado por ponerlo de la manera más condensada posible, por ello un ***carrousel*** será la herramienta que emplearemos para presentarlo paulatinamente en el mismo sitio. De esta manera no forzamos al usuario a tener que estar desplazando mucho contenido en vertical por si los elementos se tuvieran que adaptar a un dispositivo móvil. Ya que en estos penaliza que el usuario tenga que desplazarse de manera vertical, que el contenido esté accesible horizontalmente y de manera escueta es más positivo para la mayoría de las pantallas.
 
+También se ha añadido un slider con las imágenes de los miembros a fin de mostrarlo de forma pasiva en un formato horizontal. De esta manera concentramos la información bajo un elemento que da más visibilidad a la web.
+
 El fóoter será presentado con todos los enlaces a redes sociales y páginas secundarias además de informaciones relativas al copyright y políticas del sitio, ya que por costumbre el usuario suele ubicar estos contenidos en esa zona. Posicionarlo al final de la página, paradógicamente, lo hace más usable y de acceso más rápido.
 
 ## Página de inicio ya estilizada de forma responsive.
@@ -128,34 +142,6 @@ El fóoter será presentado con todos los enlaces a redes sociales y páginas se
 
 ```html
 
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Materialize CSS file -->
-    <link rel="stylesheet" href="media/css/materialize.min.css" 
-    media="screen, projection"/>
-
-    <!-- Materialize JS file -->
-    <script defer type="text/javascript" src="media/js/materialize.min.js"></script>
-
-    <!-- Personal JS file -->
-    <script defer type="text/javascript" src="media/js/index.js"></script>
-
-    <!-- Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" 
-    rel="stylesheet">
-    
-    <title>traday - home</title>
-</head>
-<body class="teal lighten-1">
-     
-  <!-- inicio de sesión + registro  -->    
-  
-    <!-- Navegación en la web -->       
 
     <div class="navbar-fixed hoverable ">
       <nav>
@@ -167,9 +153,7 @@ El fóoter será presentado con todos los enlaces a redes sociales y páginas se
             <a href="#" data-target="traday-nav"
                         class="sidenav-trigger"
                         aria-expanded="false"
-                        aria-label= "accionar menú lateral  "
-                        onclick="changeValues(event)"
-                        onkeydown="changeValues(event)">
+                        aria-label= "accionar menú lateral  ">
               <i class="material-icons">menu</i>          
             </a>
           
@@ -199,137 +183,150 @@ El fóoter será presentado con todos los enlaces a redes sociales y páginas se
           <li ><a tabindex="-1" href="#" aria-label="ir a mis grupos">Grupos</a></li>
           <li ><a tabindex="-1" href="waiaria.html" aria-label="ir a wai aria">WAI</a></li>
           <li ><a tabindex="-1" href="#!" class="sidenav-close btn" aria-label="cerrar menú lateral"
-                onclick="nullValues(event)" onkeydown="nullValues(event)">Cerrar</a></li>
+               >Cerrar</a></li>
         </ul>
     
       <br>
         <!-- Botones de usuario --> 
-        <div class="row center-align">
-          <div class="col s3 m2 l1 offset-s3 offset-m6 offset-l9 center-align" >
-            <button aria-label="registro"
-                    role="button"
-                    class="waves-effect blue-grey lighten-1 btn modal-trigger" 
-                    href="#loginModal">signup
-            </button>
-          </div>
-          <div class="col s3 m2 l1  center-align">
-            <button aria-label="inicio de sesión"
-                    role="button"
-                    class="waves-effect waves-light green accent-2 btn modal-trigger" 
-                    href="#signInModal">signin
-            </button>
-          </div>
-          <div class="col s3 m2 l1  center-align">
-            <button aria-label="cierre de sesión"  
-                    role="button"
-                    class="waves-effect waves-light red accent-2 btn modal-trigger" 
-                    id="logout">salir
-            </button>
-          </div>
-        </div>
+        
 
         <!-- Tablas de secciones informativas --> 
-        
-          <div class="carousel carousel-slider center">
-            <div class="carousel-item teal lighten-1 white-text" href="#one!">
-              <h2>¿Qué es Traday?</h2>
-              <p class="white-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <img src="https://i.picsum.photos/id/5/300/250.jpg" alt="" class="responsive-img">
+        <div class="container">
+
+          <div class="row valign-wrapper">
+            <div class="col s4 m2 l1  offset-m6 offset-l9 center-align" >
+              <button aria-label="registro"
+                      role="button"
+                      class="waves-effect blue-grey lighten-1 btn modal-trigger" 
+                      href="#loginModal">signup
+              </button>
             </div>
-            
-            <div class="carousel-item grey white-text" href="#two!">
-              <h2>Valoraciones</h2>
-              <p class="white-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <img src="https://i.picsum.photos/id/201/300/250.jpg" alt="" class="responsive-img">
-            </div>
-            
-            <div class="carousel-item grey white-text" href="#three!">
-              <h2>Contacto</h2>
-              <p class="white-text">Acceder al contacto</p>
+            <div class="col s4 m2 l1  center-align">
               <button aria-label="inicio de sesión"
-                    role="button"
-                    class="waves-effect waves-light green accent-2 btn modal-trigger" 
-                    href="#signInModal">Aquí
+                      role="button"
+                      class="waves-effect waves-light green accent-2 btn modal-trigger" 
+                      href="#signInModal">signin
+              </button>
+            </div>
+            <div class="col s4 m2 l1  center-align">
+              <button aria-label="cierre de sesión"  
+                      role="button"
+                      class="waves-effect waves-light red accent-2 btn modal-trigger" 
+                      id="logout">salir
               </button>
             </div>
           </div>
-        
 
+          <div class="carousel carousel-slider center ">
+            <div class="carousel-item teal lighten-1 white-text" href="#one!">
+              <h2>¿Qué es Traday?</h2>
 
-    <!-- footer --> 
-    <footer class="page-footer blue-grey darken-4">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Has llegado al final. Pero hay más</h5>
-            <p class="grey-text text-lighten-4">Traday tiene un duro trabajo detrás y un método que no puede pasar desapercibido.</p>
-            <p class="grey-text text-lighten-4">No olvides apoyarnos en las redes sociales y compartir la aplicación con tus amigos.</p>
+              <div class="row valign-wrapper">
+                <div class="col s6 m3">
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente tenetur nesciunt alias officia numquam voluptates saepe porro, minus obcaecati voluptate asperiores facere libero consectetur rem quasi enim, quis quos!</p>
+                </div>
+
+                <div class="col s6 ">
+                  <i class="medium material-icons ">hourglass_empty</i>
+                </div>
+              </div>
+            </div>
             
+            <div class="carousel-item teal lighten-1 white-text " href="#two!">
+              <h2>Cómo empezar:</h2>
+              <div class="row ">
+                <div class="col s4 ">
+                  <i class="medium material-icons">looks_one</i>
+                </div>
+                <div class="col s4 ">
+                  <i class="medium material-icons">looks_two</i>
+                </div>
+                <div class="col s4 ">
+                  <i class="medium material-icons">looks_3</i>
+                </div>
+
+                <div class="col s4 ">
+                  <p>Crea un grupo con el que organizar tu tiempo</p>
+                </div>
+                <div class="col s4 ">
+                  <p>regístrate en unos cuantos pasos</p>
+                </div>
+                <div class="col s4 ">
+                  <p>Mantén la comunicación y mide el tiempo que puedes compartir</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="carousel-item teal lighten-1 white-text center" href="#three!">
+              <h2>Contacto</h2>
+              <p class="white-text ">Podrá encontrarnos en:</p>
+              <p class="white-text ">Camino San Francisco de Paula, s/n, 38271 San Cristóbal de La Laguna, Santa Cruz de Tenerife</p>
+              <p class="white-text ">Llame al: </p>
+              <p class="white-text ">+34 623 455 212</p>
+              <p class="white-text ">O dejenos un mensaje en el siguiente formulario:</p>
+              <br>
+              <button aria-label="inicio de sesión"
+                    role="button"
+                    class="waves-effect waves-light green accent-2 btn modal-trigger" 
+                    href="#signInModal">Dejar mensaje
+              </button>
+            </div>
           </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Otros</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Más sobre traday</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Encuéntranos</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Contacta</a></li>
-              <li><a class="grey-text text-lighten-3" href="exchange.html">cambia monedas</a></li>
-              <li><a class="grey-text text-lighten-3" href="ajax-page.html">peticiones AJAX</a></li>
+
+      <br>
+      <br>
+        <div class="slider">
+            <ul class="slides">
+              <li>
+                <img class="blur" src="https://i.picsum.photos/id/2/600/300.jpg?blur=5">
+                <div class="caption center-align">
+                  <br>
+                  <br>
+                  <br>
+                  
+                  <h3>Nuestro equipo de desarrollo</h3>
+                </div>
+              </li>
+              <li>
+                <img class="blur" src="media/img/equipo1.jfif" >
+                <div class="caption center-align">
+                  <h4>Eric Dürr Sierra</h4>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <h5 class="light grey-text text-lighten-3">Nuestro product manager y apasionado por la UX</h5>
+                </div>
+              </li>
+              <li>
+                <img class="blur" src="media/img/equipo3.jpeg">
+                <div class="caption center-align">
+                  <h4>Alejandro Martín de León</h4>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <h5 class="light grey-text text-lighten-3">Backend Developer, encargado de las interacciones con las bases de datos.</h5>
+
+                </div>
+              </li>
+              <li>
+
+                <img class="blur" src="media/img/equipo2.png">
+                <div class="caption center-align">
+                  <h4>Oscar Cigala Álvarez</h4>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <h5 class="light grey-text text-lighten-3">Frontend Developer, encargado de programar el del diseño y estilo visual del navegador de la web</h5>
+                </div>
+              </li>
             </ul>
           </div>
+
         </div>
-      </div>
-      <div class="row ">
-        <div class="col s2 m1 offset-s1 offset-m1 offset-l2">
-          <a href="#">
-            <img src="media/img/twitter.png" alt="" class="responsive-img">
-          </a>
-        </div>
-        <div class="col s2 m1 ">
-          <a href="#">
-            <img src="media/img/instagram.png" alt="" class="responsive-img">
-          </a>
-        </div>
-        <div class="col s2 m1 ">
-          <a href="#">
-            <img src="media/img/youtube.png" alt="" class="responsive-img">
-          </a>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container">
-        :copyright: TRADAY 2020 - all rights reserved
-          <a class="grey-text text-lighten-4 right" href="#!">privacy</a>
-        </div>
-      </div>
-    </footer>
 
-
-    <script
-              src="https://code.jquery.com/jquery-3.4.1.js"
-              integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-              crossorigin="anonymous"></script>
-    <script type="text/javascript" >
-      $(document).ready(function(){
-
-        $('.carousel').carousel({
-          fullWidth: true,
-          indicators: true
-        });
-
-        $('.next').click(function(){
-          $('.carousel').carousel('next');
-        });
-
-        $('.prev').click(function(){
-          $('.carousel').carousel('prev');
-        });
-
-      })
-    </script>
-
-   
-</body>
-</html>
 
 ```
 En esta sección se pretende analizar la página de inicio de nuestra web con formato responsive ya implementado, haciendo especial incapié en comparar cómo se ve la página en un móvil y cómo se ve en una pantalla grande.
@@ -347,6 +344,7 @@ Como se puede observar, empleamos una cabecera de tipo "hamburger" para que al a
 De esta forma, cuando una pantalla sea mayor de unos píxeles determinados pasará de la forma enseñada anteriormente a una versión expandida del navbar:
 
 ![inicio_grande](../public/media/img/inicio_grande.PNG "Imagen que muestra la sección de inicio en formato pantalla grande.")
+
 
 
 ### Sección del carrusel
@@ -377,3 +375,17 @@ Si comparamos las dos imágenes, se puede ver como en la versión móvil la secc
 
 Con estos tres puntos delicados hemos sido capaces de implementar una página de forma responsive para cualquier tipo tamaño de pantalla. Esto es muy importante ya que, como se había comentado antes, una mala práctica puede llevar a que el usuario se desoriente o pierda parte de la información que le queremos hacer llegar.
 
+
+
+
+////////////////////////////////////              CAMBIOS               //////////////////////////////////// 
+
+- Slider para proporcionar una vista más amplia en cuanto a la página principal
+- - Dentro del slider el center align para el texto centrado
+- Contenido dentro del carrousel, adaptado con columnas para los dispositivos
+- comentar las imágenes responsivas
+- se añade un div container para mejorar la vista en dispositivos móviles despegándolo de los bordes de la pantalla y asegurando un posible corte de imagen
+- - La barra de navegación y el footer quedan fuera para enfatizar el contenido y porque ayuda a delimitar las secciones de inicio, cuerpo y pie del documento
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
