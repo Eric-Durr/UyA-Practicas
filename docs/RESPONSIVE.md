@@ -329,63 +329,33 @@ El fóoter será presentado con todos los enlaces a redes sociales y páginas se
 
 
 ```
-En esta sección se pretende analizar la página de inicio de nuestra web con formato responsive ya implementado, haciendo especial incapié en comparar cómo se ve la página en un móvil y cómo se ve en una pantalla grande.
+En esta sección se pretende analizar la página de inicio de nuestra web con diseño responsive ya implementado mediante los estilos CSS proporcionados por Materialize, haciendo especial incapié en adaptar la vista de la página a todas las pantallas
 
 ### Sección del navbar
 
-Esta es una de las partes más críticas a la hora de hacer una página responsive, ya que si no se hace de forma correcta, cuando cambies de pantalla grande a móvil podrían perderse la mayoría de los enlaces de la cabecera de la página. Para arreglar esto hicimos uso de Wai-aria para conseguir un resultado como el siguiente:
+Esta es una de las partes más críticas a la hora de hacer una página responsive, ya que si no se hace de forma correcta, cuando se cambie del formato de escritorio al móvil o al de tablet podrían dejar de ser usables  los enlaces de la cabecera de la página. Para arreglar esto se aplican dos alternativas:
 
-![inicio_mobile](../public/media/img/inicio_mobile.PNG "Imagen que muestra la sección de inicio en formato móvil.")
+- Una barra de navegación superior que muestra los enlaces disponibles en el caso de los formatos de pantalla que sean más anchos
+- Un menú lateral desplegable (menú hambuerguesa) que permanece oculto hasta que se accede a un formato de pantalla más delgado (como el de los móviles)
 
-Como se puede observar, empleamos una cabecera de tipo "hamburger" para que al acceder a nuestra página desde un dispositivo móvil, se viera todo el navbar correctamente. Además, si la persona presiona sobre este icono se desplegará toda la información que contenía la cabecera:
 
-![header_mobile](../public/media/img/header_mobile.PNG "Imagen que muestra la sección del header en formato móvil.")
-
-De esta forma, cuando una pantalla sea mayor de unos píxeles determinados pasará de la forma enseñada anteriormente a una versión expandida del navbar:
-
-![inicio_grande](../public/media/img/inicio_grande.PNG "Imagen que muestra la sección de inicio en formato pantalla grande.")
+De esta forma, cuando una pantalla sea mayor de unos píxeles determinados cambiará la morfología de navegación para adaptarse lo mejor posible a la resolución de pantalla del dispositivo.
 
 
 
 ### Sección del carrusel
 
-Esta sección de nuestra página también es importante aplicarle responsive de forma correcta, ya que este tipo de formato para enseñar la información, es bastante delicado a cambios de pantalla. Si por ejemplo pasas de una pantalla grande a una pequeña, puede que los botones inferiores que te permiten cambiar de izquierda a derecha se deslicen sobre otra cosa impidiendo así su uso. Por lo tanto, aquí también aplicamos especial atención:
+Esta sección de nuestra página también es importante aplicar un diseño responsive de forma correcta, ya que este tipo de formato para enseñar la información, es bastante delicado a cambios de pantalla. Al pasar de una pantalla a otra podrían no presentarse todos los elementos que el usuario pudiera necesitar. Para ello se aplican las mismas divisiones de columnas y filas del grid de materialize en todos los dispositivos para que se adapte a la pantalla de forma similar. Especialmente cuando se incluyen dos elementos. Para mayor limpieza y mejora del acceso a los recursos en dispositivos más limitados (pensando en el mobile first) se ha optado por suprimir imágenes dentro del carrusel y emplear iconos. 
 
-![carrousel_mobile](../public/media/img/carrousel_mobile.PNG "Imagen que muestra la sección del carrusel en formato móvil.")
+Las columnas, en cuanto a disponer la información, nos permiten adaptar la posición de los elementos según el dispositivo y controlar que no se pierda nada de información.
 
-Aunque no se pueda observar detalladamente por la calidad de la captura del carrusel en formato móvil, sobre la mano de la persona hay 3 puntos que nos indican en qué parte del carrusel nos encontramos. Como se puede ver, incluso estando en formato pantalla pequeña, no hay ningún problema para cambiar de zona. Para compararlo con el carrusel en versión pantalla grande dejo a continuación una captura de este:
+El carrusel permite, al deslizar fácilmente hacia los laterales la información, una usabilidad muy amplia de la información
 
-![carrousel_grande](../public/media/img/carrousel_grande.PNG "Imagen que muestra la sección del carrusel en formato pantalla grande.")
+### Sección del slider
 
-Como esta captura no cae sobre un fondo blanco si que se puede observar mejor los tres puntos que nos permiten movernos por el carrusel.
+Para completar un poco la página de inicio y presentar más contexto sobre la aplicación se disponen también los miembros del equipo de desarrollo. Este componente permite escalar imágenes y contenido por igual, condensando la información y adaptándola a la pantalla a la que se dirige. Este, al no tener información crucial para el uso de la página, se presenta de forma automática, forzando al usuario a visualizarlo de manera pasiva. Esto es positivo de cara a proporcionar información que el usuario no desea pero que si puede ser interesante. Igualmente se puede seleccionar la diapositiva del slider usando un selector inferior.
 
-### Sección del footer
+Para distinguir entre las imágenes y el texto se ha aplicado un filtro de CSS que desenfoca las imágenes que incluyan la clase "blur", de modo que se pueda disponer texto sobre ellas sin perjudicar su lectura.
 
-Esta es la última sección que vamos a comentar, ya que consideramos que también es delicada hacerla responsive, porque como en el navbar, una mala práctica podría hacer que se pierda información valiosa para el usuario. Por ello, en formato móvil hicimos lo siguiente:
+Como último añadido, los elementos centrales que disponen la información han sido envueltos en un contenedor para evitar que estén en contacto con los bordes de la caja en la que están. De esta manera podemos prevenir que en algún dispositivo no se pueda acceder a lementos de manejo o visualizar información. También potencia la usabilidad distinguiendo fácilmente entre el contenido, la cabecera y el pié de la página web.
 
-![footer_mobile](../public/media/img/footer_mobile.PNG "Imagen que muestra la sección del footer en formato móvil.")
-
-Como se puede observar en la imagen anterior, no hay ninguna palabra encima de otra, si no que está todo bien ordenado y colocado aunque accedas a nuestra página desde un dispositivo móvil. Si quisieras entrar con un dispositivo que tenga una pantalla más grande también podrías ver todo correctamente:
-
-![footer_grande](../public/media/img/footer_grande.PNG "Imagen que muestra la sección del footer en formato pantalla grande.")
-
-Si comparamos las dos imágenes, se puede ver como en la versión móvil la sección de "Otros" se ha puesto debajo de la de "Has llegado al final" mientras que en la versión con pantalla grande se ha puesto a su derecha.
-
-### Conclusiones
-
-Con estos tres puntos delicados hemos sido capaces de implementar una página de forma responsive para cualquier tipo tamaño de pantalla. Esto es muy importante ya que, como se había comentado antes, una mala práctica puede llevar a que el usuario se desoriente o pierda parte de la información que le queremos hacer llegar.
-
-
-
-
-////////////////////////////////////              CAMBIOS               //////////////////////////////////// 
-
-- Slider para proporcionar una vista más amplia en cuanto a la página principal
-- - Dentro del slider el center align para el texto centrado
-- Contenido dentro del carrousel, adaptado con columnas para los dispositivos
-- comentar las imágenes responsivas
-- se añade un div container para mejorar la vista en dispositivos móviles despegándolo de los bordes de la pantalla y asegurando un posible corte de imagen
-- - La barra de navegación y el footer quedan fuera para enfatizar el contenido y porque ayuda a delimitar las secciones de inicio, cuerpo y pie del documento
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
