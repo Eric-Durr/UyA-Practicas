@@ -17,6 +17,7 @@
     "cssnano": "^4.1.10",
     "gh-pages": "^2.2.0",
     "parcel-bundler": "^1.12.4"
+    
   },
   "repository": {
     "type": "git",
@@ -29,7 +30,7 @@
   "dependencies": {
     "canvas": "^2.6.1",
     "firebase": "^7.2.3",
-    "jquery": "^3.4.1",
+    "jquery": ">=3.5.0",
     "jsdom": "^16.2.2"
   }
 }
