@@ -2,13 +2,13 @@
 
 ## Parte de Alejandro
 > Introduce tu nombre y apellidos
-Eric Dürr Sierra 
 
-## Parte de Oscarr 
+## Parte de Oscar
 > Introduce tu fecha de nacimiento
-13/09/1800
 
 ## Parte de Eric
 >Introduce tus datos de tarjeta bancaria
-
-No jajajajaja :D
+000000000000000
+6/66
+123
+:D
