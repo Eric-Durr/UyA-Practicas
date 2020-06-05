@@ -57,35 +57,61 @@
       <nav>
         <div class="nav-wrapper teal lighten-1">
           <div class="container">
-            <a href="index.html" class="brand-logo">
+            <a href="index.html" class="brand-logo" aria-label="Traday">
               TRADAY
             </a>
             <a href="#" data-target="traday-nav"
-                        class="sidenav-trigger">
+                        class="sidenav-trigger"
+                        aria-expanded="false"
+                        aria-label= "accionar menú lateral  "
+                        onclick="changeValues(event)"
+                        onkeydown="changeValues(event)">
               <i class="material-icons">menu</i>          
             </a>
           
-            <ul class="right hide-on-med-and-down">
-              <li class="active"><a href="profile.html" class="active">Perfil</a></li>
+            <ul class="right hide-on-med-and-down"
+                role="navigation" aria-label="Barra superior">
+              <li><a href="profile.html">Perfil</a></li>
               <li><a href="#">Notificaciones</a></li>
               <li><a href= "contacts-page.html">Mis contactos</a></li>
               <li><a href="#">Tareas</a></li>
               <li><a href="#">Grupos</a></li>
+              <li ><a href="waiaria.html">WAI</a></li>
+          
             </ul>
           </div>
         </div>
       </nav>
     </div>
-      
+        
       <!-- responsive menu - hidden in desktop -->
-      <ul class="sidenav" id="traday-nav">
 
-        <li class="active"><a href="profile.html" class="active">Perfil</a></li>
-        <li><a href="#">Notificaciones</a></li>
-        <li><a href= "contacts-page.html">Mis contactos</a></li>
-        <li><a href="#">Tareas</a></li>
-        <li><a href="#">Grupos</a></li>
-      </ul>
+      
+        <ul 
+          class="sidenav" id="traday-nav"
+          aria-label="Menú de navegación lateral">
+          <li ><a tabindex="-1" href="profile.html" aria-label="ir al perfil">Perfil</a></li>
+          <li ><a tabindex="-1" href="#" aria-label="ir a notificaciones">Notificaciones</a></li>
+          <li ><a tabindex="-1" href= "contacts-page.html" aria-label="ir a mis contactos"> Mis contactos</a></li>
+          <li ><a tabindex="-1" href="#" aria-label="ir a mis tareas">Tareas</a></li>
+          <li ><a tabindex="-1" href="#" aria-label="ir a mis grupos">Grupos</a></li>
+          <li ><a tabindex="-1" href="waiaria.html" aria-label="ir a wai aria">WAI</a></li>
+          <li ><a tabindex="-1" href="#!" class="sidenav-close btn" aria-label="cerrar menú lateral"
+                onclick="nullValues(event)" onkeydown="nullValues(event)">Cerrar</a></li>
+        </ul>
+      
+      <!-- --- -->
+
+          <!-- BreadCrumb -->
+      <nav aria-label="breadcrumbs">
+        <div class="nav-wrapper teal darken-3">
+          <div class="col s12 container">
+            <a href="index.html" class="breadcrumb" >Home</a>
+            <a href="profile.html" class="breadcrumb" aria-current="location">Perfil</a>
+          
+          </div>
+        </div>
+       </nav>
       <!-- --- -->
       <section  id="userpage">        
         <div class="row">
@@ -95,45 +121,51 @@
                         <div class="row valign-wrapper">
                           <div class="col s6">
         
-                            <img src="media/img/equipo1.jfif" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+                            <img tabindex="0" aria-label="Imagen de usuario" src="media/img/equipo1.jfif" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
                           </div>
                           <div class="col s6">
-                            <span class="black-text">
+                            <span tabindex="0" class="black-text">
                               Lorem ipsum dolor sit amet consectetur.
                             </span>
                           </div>
                         </div>
                         <div class="row valign-wrapper">
-                            <div class="col s12 center-align">
-                                <h4>Usuario</h4>
+                            <div class="col s12 center-align" aria-label="Usuario">
+                                <h4 tabindex="0"  >Usuario</h4>
                             </div>
                         </div>
                     </div>
                 </div>                
             </div>
             <div class="col s12 m4">
-                <h5 class="white-text">Grupos</h5>
+              <div tabindex="0" aria-labelledby="Grupos">
+                <h5 class="white-text"> Grupos </h5>
+              </div>
                 <div class="collection">
-                    <a href="#!" class="collection-item">Oficina</a>
-                    <a href="#!" class="collection-item ">Piso</a>
-                    <a href="#!" class="collection-item">Universidad</a>
+                    <a href="#!" class="collection-item" aria-label="Oficina">Oficina</a>
+                    <a href="#!" class="collection-item" aria-label="Piso">Piso</a>
+                    <a href="#!" class="collection-item" aria-label="Universidad">Universidad</a>
                 </div>
-            </div>
+              </div>
+            
             <div class="col s12 m4">
-
+              <div tabindex="0" aria-label="Contactos Favoritos">
                 <h5 class="white-text">Contactos Favoritos</h5>
+              </div>
                 <div class="collection">
-                    <a href="#!" class="collection-item">Juan</a>
-                    <a href="#!" class="collection-item ">Miguel</a>
-                    <a href="#!" class="collection-item">Antonio</a>
-                </div>
+                    <a href="#!" class="collection-item" aria-label="Juan">Juan</a>
+                    <a href="#!" class="collection-item" aria-label="Miguel">Miguel</a>
+                    <a href="#!" class="collection-item" aria-label="Antonio">Antonio</a>
+                </div>  
             </div>
         </div>
       </section>
       <section id="muro" class="container">
           <div class="row">
               <div class="col s12">
+                <div tabindex="0" aria-label="Actividad Recientes">
                   <h5 class="center-align white-text">Actividad reciente</h5>
+                </div>
               </div>
               <div class="col s12">
                 <ul class="collapsible">
@@ -142,42 +174,42 @@
                         <i class="material-icons">filter_drama</i>
                         First
                         <span class="new badge">4</span></div>
-                      <div class="collapsible-body blue-grey lighten-4"><p>Lorem ipsum dolor sit amet.</p></div>
+                      <div tabindex="0" aria-label="Lorem ipsum dolor sit amet." class="collapsible-body blue-grey lighten-4"><p>Lorem ipsum dolor sit amet.</p></div>
                     </li>
                     <li>
                       <div class="collapsible-header">
                         <i class="material-icons">place</i>
                         Second
                         <span class="badge">1</span></div>
-                      <div class="collapsible-body blue-grey lighten-4"><p>Lorem ipsum dolor sit amet.</p></div>
+                      <div tabindex="0" aria-label="Lorem ipsum dolor sit amet." class="collapsible-body blue-grey lighten-4"><p>Lorem ipsum dolor sit amet.</p></div>
                     </li>
                     <li>
                       <div class="collapsible-header">
                         <i class="material-icons">filter_drama</i>
                         First
                         <span class="new badge">4</span></div>
-                      <div class="collapsible-body blue-grey lighten-4"><p>Lorem ipsum dolor sit amet.</p></div>
+                      <div tabindex="0" aria-label="Lorem ipsum dolor sit amet." class="collapsible-body blue-grey lighten-4"><p>Lorem ipsum dolor sit amet.</p></div>
                     </li>
                     <li>
                       <div class="collapsible-header">
                         <i class="material-icons">place</i>
                         Second
                         <span class="badge">1</span></div>
-                      <div class="collapsible-body blue-grey lighten-4"><p>Lorem ipsum dolor sit amet.</p></div>
+                      <div tabindex="0" aria-label="Lorem ipsum dolor sit amet." class="collapsible-body blue-grey lighten-4"><p>Lorem ipsum dolor sit amet.</p></div>
                     </li>
                     <li>
                       <div class="collapsible-header">
                         <i class="material-icons">filter_drama</i>
                         First
                         <span class="new badge">4</span></div>
-                      <div class="collapsible-body blue-grey lighten-4"><p>Lorem ipsum dolor sit amet.</p></div>
+                      <div tabindex="0" aria-label="Lorem ipsum dolor sit amet." class="collapsible-body blue-grey lighten-4"><p>Lorem ipsum dolor sit amet.</p></div>
                     </li>
                     <li>
                       <div class="collapsible-header">
                         <i class="material-icons">place</i>
                         Second
                         <span class="badge">1</span></div>
-                      <div class="collapsible-body blue-grey lighten-4"><p>Lorem ipsum dolor sit amet.</p></div>
+                      <div tabindex="0" aria-label="Lorem ipsum dolor sit amet." class="collapsible-body blue-grey lighten-4"><p>Lorem ipsum dolor sit amet.</p></div>
                     </li>
                 </ul>
               </div>
@@ -232,7 +264,37 @@
       </div>
     </footer>
         
- 
+    <script>
+
+
+function changeValues(e)  
+      {
+        if(e.keyCode==13)
+        {
+          list = document.getElementById("traday-nav").getElementsByTagName("LI");
+          console.log(list);
+          for (let i = 0; i < list.length; i++)
+          {
+            list[i].childNodes[0].tabIndex=0;
+          }
+        }
+      }
+
+      function nullValues(e)  
+      {
+        if(e.keyCode==13)
+        {
+          list = document.getElementById("traday-nav").getElementsByTagName("LI");
+          console.log(list);
+          for (let i = 0; i < list.length; i++)
+          {
+            list[i].childNodes[0].tabIndex=-1;
+          }
+        }
+      }
+
+    </script>
+
   <!-- Z dog scripts CDNs -->
   <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
   <script src="media/js/cloud.js"></script>
