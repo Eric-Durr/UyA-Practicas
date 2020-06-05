@@ -1,0 +1,14 @@
+.blur {  
+    -webkit-filter: blur(4px);  
+    filter: blur(4px);  
+}  
+
+.presentation{
+    background-image: url(../img/time-bg.jpeg);
+    background-size: cover;
+    
+    height: auto;
+}
+nav .logo-margin{
+    margin-left: 2em;
+}
