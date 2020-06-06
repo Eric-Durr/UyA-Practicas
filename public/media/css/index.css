@@ -12,3 +12,7 @@
 nav .logo-margin{
     margin-left: 2em;
 }
+
+.nav-colored { background-color: #000; }
+
+.nav-transparent { background-color: transparent; }
