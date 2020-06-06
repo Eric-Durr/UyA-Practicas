@@ -3,66 +3,58 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+  <!-- Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" 
           rel="stylesheet">
 
-   <!-- Materialize CSS file -->
-    <link rel="stylesheet" href="media/css/materialize.min.css" 
+  <!-- Materialize CSS file -->
+  <link rel="stylesheet" href="media/css/materialize.min.css" 
           media="screen, projection"/>
-
-   <!-- Personal CSS files  -->
-
-    <link rel="stylesheet" href="media/css/mat-header.css" 
-          media="screen, projection"/>
-
-    <link rel="stylesheet" href="media/css/index.css" 
-          media="screen, projection"/>
-
-
-   
+  
   <!-- Materialize JS file -->
-    <script defer type="text/javascript" src="media/js/materialize.min.js"></script>
+  <script defer type="text/javascript" src="media/js/materialize.min.js"></script>
+  
+
+  <!-- Personal CSS files  -->
+  <link rel="stylesheet" href="media/css/mat-header.css" 
+        media="screen, projection"/>
+  <link rel="stylesheet" href="media/css/index.css" 
+        media="screen, projection"/>
+  <link rel="stylesheet" href="media/css/style-index.css"> 
    
   <!-- Personal JS file -->
-    <script defer type="text/javascript" src="media/js/index.js"></script>
+  <script defer type="text/javascript" src="media/js/index.js"></script>
 
   <!-- JQuery -->
-  <script
-          src="https://code.jquery.com/jquery-3.4.1.js"
+  <script src="https://code.jquery.com/jquery-3.4.1.js"
           integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
           crossorigin="anonymous">
   </script>
-    
-    <!-- FIREBASE HEAD -->
-      <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-      <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
 
-      <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
-      <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-      <!-- Add Firebase products that you want to use -->
-      <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- ------------- -->
+  <!-- FIREBASE HEAD -->
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+  <!-- ------------- -->
 
-    <!-- Personal CSS file -->
-    <script defer type="text/css" src="media/css/index.css"></script>
+  
+  <!-- FAVICON -->
+  <link rel="icon" href="media/img/traday-logo_black.ico">   
+  <title>traday - home</title>
 
-    <!-- browser info -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-   <!-- ICON -->
-    <link rel="icon" href="media/img/traday-logo_black.ico">
-
-    <!-- Personal CSS file -->
-    <link rel="stylesheet" type="text/css" href="media/css/index.css">
-    
-    <link rel="stylesheet" href="media/css/style-index.css">
-    
-    <title>traday - home</title>
 </head>
 <body class="teal lighten-1">
      
@@ -73,13 +65,13 @@
       <nav >
         <div class="nav-wrapper teal lighten-1" >
           
-            <!-- logo para escritorio y tablet -->
-            <a href="index.html" class="brand-logo logo-margin hide-on-small-only" aria-label="Traday">
+            <!-- logo para escritorio-->
+            <a href="index.html" class="brand-logo logo-margin hide-on-small-only hide-on-med-only" aria-label="Traday">
               <img class="responsive-img " width="150px"src="media/img/traday-logo_long-white.png" alt="">
             </a>
 
             <!-- logo para móvil -->
-            <a href="index.html" class="brand-logo hide-on-med-only hide-on-large-only" aria-label="Traday">
+            <a href="index.html" class="brand-logo hide-on-large-only" aria-label="Traday">
               <img class="responsive-img " width="150px"src="media/img/traday-logo_long-white.png" alt="">
             </a>
 
@@ -133,10 +125,9 @@
       
   <!-- --- -->
 
-  <!-- --- -->
 
   <!-- imagen de bienvenida--> 
-  <section class="slider">
+  <section class="slider" id="frontmessage">
     <ul class="slides">
       <li>
         <img class="blur"src="./media/img/bg.jpg"> 
@@ -174,179 +165,273 @@
         </div>
       </li>
     </ul>
+    
   </section>
+  <!-- --- -->
+  <br>
+  <br>
+  <br>
 
+  <!-- sección de información -->
+  <section  class="row center-align white-text aos-init aos-animate" id="information"  
+            data-aos="fade-down" data-aos-easing="ease-in"
+            data-aos-offset="400">
+  <br>
+  <br>
+  <br>
+          
+    <div class="col s12 m4 offset-l2 l2 " >
+      <i class="material-icons large">access_time</i>
+      <p>Se consciente del tiempo del que dispones y aprende a organizarte con nuestras herramnientas, usa traday para organizar tu tiempo de la manera más eficiente posible</p>
+    </div>
+    <div class="col s12 m4 offset-l1 l2 ">
+      <i class="material-icons large">group</i>
+      <p>Crea grupos y organiza por fin todas esas tareas que debiste repartir mejor. Ofrece tu tiempo libre y serás recompensado con otros momentos que los demás puedan compartir contigo.</p>
+    </div>
+    <div class="col s12 m4 offset-l1 l2 ">
+      <i class="material-icons large">playlist_add_check</i>
+      <p>Termina por fin tu rutina con todas las tareas pendientes que nunca pudiste completar. Con el sistemma de compartición de tiempo de traday completar tus objetivos será cosa de una comunidad.</p>
+    </div>
+    <br>
+    <br>
+    <br>
+  </section>
+  <!-- --- -->
   
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 
+  <!-- opiniones de usuarios -->
+  <div class="row " id="information"  
+    data-aos="fade-down" data-aos-easing="ease-in"
+    data-aos-offset="600" data-aos-delay="50">
+      <br>
+      <br>
+      <br>
+      <div class="col s6 offset-s3  ">
+        <h2 class="center-align white-text">Descubre lo que nuestros usuarios piensan de nosotros</h2>
+      </div>
+      <div class="col s12 offset-m1 m4 white-text">
+        <h4>Nos comprometemos con una mejora continua</h4>
+        <p class="left-align">
+          Todas las pruebas se basan en una plantilla fijada para los distintos usuarios que conforman el nicho objetivo de la página. Se prioriza la calidad del producto final, por ello seguimos abiertos a que participes en las pruebas y nos aportes una valiosa opinión.
+        </p>
+      </div>
+      <div class="col s12 offset-m1 m6 ">
+        <br><br><br><br><br>
+        <div class="row valign-wrapper left-align">
+          <div class="col s6 m6 "><a class="waves-effect waves-light btn-large blue-grey darken-2"><i class="material-icons left">plus_one</i>quiero participar</a></div>
+          <div class="col s6 m6 "><a class="waves-effect waves-light btn-large blue-grey darken-2"><i class="material-icons left">book</i>informe de pruebas</a></div>
+        </div>
+        <br><br><br>
+       </div>
+       
+    </div>
+   
+  <!-- --- -->
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- Miembros del equipo de desarrollo -->
+  
+  <!-- --- -->
   <!-- Botón de acciones -->
 
 <div class="fixed-action-btn">
-  <a class="btn-floating btn-large teal lighten-2">
+  <a class="btn-floating btn-large teal darken-2">
     <i class="large material-icons">settings</i>
   </a>
   <ul>
-    <li><a class="btn-floating teal tooltipped" data-position="left" data-tooltip="Registrarse"><i class="material-icons">insert_chart</i></a></li>
-    <li><a class="btn-floating blue-grey tooltipped" data-position="left" data-tooltip="Iniciar sesión"><i class="material-icons">chevron_right</i></a></li>
-    <li><a class="btn-floating black tooltipped" data-position="left" data-tooltip="Cerrar sesión"><i class="material-icons">clear</i></a></li>
+    <li>
+      <button  class="btn-floating teal tooltipped modal-trigger" 
+          data-position="left" 
+          data-tooltip="Registrarse"
+          aria-label="registro"
+          role="button"
+          data-target="loginModal"><i class="material-icons">add</i>
+      </button>
+    </li>
+    <li>
+      <button  class="btn-floating blue-grey tooltipped modal-trigger" 
+          data-position="left" 
+          data-tooltip="Iniciar sesión"
+          aria-label="inicio de sesión"
+          role="button"
+          data-target="signInModal"><i class="material-icons">chevron_right</i>
+      </button>
+    </li>
+    <li>
+      <button  class="btn-floating black tooltipped" 
+          data-position="left" 
+          data-tooltip="Cerrar sesión"
+          aria-label="cierre de sesión"  
+          role="button"
+          id="logout"><i class="material-icons">clear</i>
+      </button>
+    </li>
   </ul>
 </div>
-      
+
+
+
+  <!-- modals -->
+    
+    <!-- Login modal -->
+    <div id="loginModal" class="modal" role="dialog" 
+         aria-labelledby="loginTitle" aria-describedby="loginDescript">
+      <div class="modal-content">  
+        <div class="row white">
+          <div class="col s12">
+            <h1 class="center-align" id="loginTitle">¡Únete cuanto antes!</h1>
+            <p id="loginDescript"> Introduce tus datos de usuario y tu nueva contraseña para registrarte, luego acciona el botón de unirse</p>
+          
+          </div>
+          <form id="signUp" class="col s12 m6 ">
+            <br>
+            <div class="row">
+              <div class="input-field col s12 m6" id="username">
+                <input id="userName" type="text" class="validate" aria-label="Nombre de usuario" aria-required="true">
+                <label for="userName">nombre de usuario</label>
+              </div>
+
+              <div class="input-field col s12 m6" id="email">
+                <input id="userMail" type="email" class="validate" aria-label="Email del usuario" aria-required="true">
+                <label for="userMail">correo electrónico</label>
+              </div>
+
+              <div class="input-field col s12 m6" id="pass">
+                <input id="password" type="password" class="validate" aria-label="Contraseña" aria-required="true">
+                <label for="password">contraseña</label>
+              </div>
+
+              <div class="input-field col s12 m6" id="passTrue">
+                <input id="passwordTrue" type="password" class="validate" aria-label="repetir contraseña" aria-required="true">
+                <label for="passwordTrue">verificar contraseña</label>
+              </div>
+            </div>
+
+            <div class="col s12 m6">
+              <button class="btn waves-effect waves-light" 
+                      value="click"
+                      type="submit"
+                      aria-label="unirse"
+                      >unirse
+                      <i class="material-icons right">send</i>
+              </button>
+          </div>
+          </form>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button href="#!" class="modal-close waves-effect waves-grey btn-flat" aria-label="cerrar">cerrar</button>
+      </div>
+    </div>
+
+    <!-- Sign in modal -->
+    <div id="signInModal" class="modal" role="dialog" 
+        aria-labelledby="welcomeTitle" aria-describedby="welcomeDescript"> 
+      <div class="modal-content">  
+        <div class="row white">
+          <div class="col s12">
+            <h1 class="center-align" id="welcomeTitle">¡Bienvenido!</h1>
+            <p id="welcomeDescript"> Introduce tus datos de usuario y tu nueva contraseña para registrarte, luego acciona el botón de unirse</p>
+          
+          </div>
+          <form id="signIn"class="col s12 m6 ">
+            <br>
+            <div class="row">
+              <div class="input-field col s12 m6" aria-label="Email de usuario" aria-required="true">
+                <input id="signEmail" type="email" class="validate">
+                <label for="signEmail">correo electrónico</label>
+              </div>
+              <div class="input-field col s12 m6" id="signPass">
+                <input id="signPassword" type="password" class="validate" aria-label="contraseña de usuario" aria-required="true">
+                <label for="signPassword">contraseña</label>
+              </div>
+            </div>
+
+            <div class="col s12 m6">
+              <button class="btn waves-effect waves-light" 
+                      value="click"
+                      type="submit"
+                      aria-label="Entrar"
+                      >entrar
+                      <i class="material-icons right">send</i>
+              </button>
+          </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-grey btn-flat" aria-label="cerrar">cerrar</a>
+      </div>
+    </div>
+  
+  <!-- --- -->
   
   <!-- heavy duty footer -->
-    <footer class="page-footer blue-grey darken-4">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Has llegado al final. Pero hay más</h5>
-            <p class="grey-text text-lighten-4">Traday tiene un duro trabajo detrás y un método que no puede pasar desapercibido.</p>
-            <p class="grey-text text-lighten-4">No olvides apoyarnos en las redes sociales y compartir la aplicación con tus amigos.</p>
-            
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Otros</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Más sobre traday</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Encuéntranos</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Contacta</a></li>
-              <li><a class="grey-text text-lighten-3" href="exchange.html">cambia monedas</a></li>
-              <li><a class="grey-text text-lighten-3" href="ajax-page.html">peticiones AJAX</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="row center-align">
-        <div class="col s4 l2 offset-l3  right-align">
-          <a href="#">
-            <img src="media/img/twitter.png" class="hide-on-med-only hide-on-large-only" alt="twitter logo" width="40%" class="responsive-img">
-            <img src="media/img/twitter.png" class="hide-on-small-only hide-on-large-only" alt="twitter logo" width="20%" class="responsive-img">
-            <img src="media/img/twitter.png" class="hide-on-small-only hide-on-med-only" alt="twitter logo" width="20%" class="responsive-img">
+  <footer class="page-footer blue-grey darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Has llegado al final. Pero hay más</h5>
+          <p class="grey-text text-lighten-4">Traday tiene un duro trabajo detrás y un método que no puede pasar desapercibido.</p>
+          <p class="grey-text text-lighten-4">No olvides apoyarnos en las redes sociales y compartir la aplicación con tus amigos.</p>
           
-          </a>
         </div>
-        <div class="col s4 l2">
-          <a href="#">
-            <img src="media/img/instagram.png"  class="hide-on-med-only hide-on-large-only" alt="instagram logo" width="40%" class="responsive-img">
-            <img src="media/img/instagram.png"  class="hide-on-small-only hide-on-large-only" alt="instagram logo" width="20%" class="responsive-img">
-            <img src="media/img/instagram.png"  class="hide-on-small-only hide-on-med-only" alt="instagram logo" width="20%" class="responsive-img">
-          
-          </a>
-        </div>
-        <div class="col s4 l2 left-align">
-          <a href="#">
-
-            <img src="media/img/youtube.png"  class="hide-on-med-only hide-on-large-only" alt="youtube logo" width="40%" class="responsive-img">
-            <img src="media/img/youtube.png"  class="hide-on-small-only hide-on-large-only" alt="youtube logo" width="20%" class="responsive-img">
-            <img src="media/img/youtube.png"  class="hide-on-small-only hide-on-med-only" alt="youtube logo" width="20%" class="responsive-img">
-          </a>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Otros</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Más sobre traday</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Encuéntranos</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Contacta</a></li>
+            <li><a class="grey-text text-lighten-3" href="exchange.html">cambia monedas</a></li>
+            <li><a class="grey-text text-lighten-3" href="ajax-page.html">peticiones AJAX</a></li>
+          </ul>
         </div>
       </div>
-      <div class="footer-copyright center-align">
+    </div>
+    <!-- social -->
+    <div class="row center-align">
+      <div class="col s4 l2 offset-l3  right-align">
+        <a href="#">
+          <img src="media/img/twitter.png" class="hide-on-med-only hide-on-large-only" alt="twitter logo" width="40%" class="responsive-img">
+          <img src="media/img/twitter.png" class="hide-on-small-only hide-on-large-only" alt="twitter logo" width="20%" class="responsive-img">
+          <img src="media/img/twitter.png" class="hide-on-small-only hide-on-med-only" alt="twitter logo" width="20%" class="responsive-img">
+        </a>
+      </div>
+      <div class="col s4 l2">
+        <a href="#">
+          <img src="media/img/instagram.png"  class="hide-on-med-only hide-on-large-only" alt="instagram logo" width="40%" class="responsive-img">
+          <img src="media/img/instagram.png"  class="hide-on-small-only hide-on-large-only" alt="instagram logo" width="20%" class="responsive-img">
+          <img src="media/img/instagram.png"  class="hide-on-small-only hide-on-med-only" alt="instagram logo" width="20%" class="responsive-img">
         
+        </a>
       </div>
-        <div class="row">
-          <div class="col s12 center-align">copyright  TRADAY 2020  
-          </div>
-          <div class="col s6 center-align"><a class="grey-text text-lighten-4 right" href="#!"> política de privacidad</a></div>
-          <div class="col s6 center-align"><a class="grey-text text-lighten-4 left" href="#!"> política de cookies</a></div>
-        </div>
-
-    </footer>
-
-<!-- modals -->
-
-  <!-- Login modal -->
-  <div id="loginModal" class="modal" role="dialog" 
-       aria-labelledby="loginTitle" aria-describedby="loginDescript">
-    <div class="modal-content">  
-      <div class="row white">
-        <div class="col s12">
-          <h1 class="center-align" id="loginTitle">¡Únete cuanto antes!</h1>
-          <p id="loginDescript"> Introduce tus datos de usuario y tu nueva contraseña para registrarte, luego acciona el botón de unirse</p>
-        
-        </div>
-        <form id="signUp" class="col s12 m6 ">
-          <br>
-          <div class="row">
-            <div class="input-field col s12 m6" id="username">
-              <input id="userName" type="text" class="validate" aria-label="Nombre de usuario" aria-required="true">
-              <label for="userName">Username</label>
-            </div>
-            
-            <div class="input-field col s12 m6" id="email">
-              <input id="userMail" type="email" class="validate" aria-label="Email del usuario" aria-required="true">
-              <label for="userMail">User email</label>
-            </div>
-
-            <div class="input-field col s12 m6" id="pass">
-              <input id="password" type="password" class="validate" aria-label="Contraseña" aria-required="true">
-              <label for="password">Password</label>
-            </div>
-            
-            <div class="input-field col s12 m6" id="passTrue">
-              <input id="passwordTrue" type="password" class="validate" aria-label="repetir contraseña" aria-required="true">
-              <label for="passwordTrue">Repeat password</label>
-            </div>
-          </div>
-
-          <div class="col s12 m6">
-            <button class="btn waves-effect waves-light" 
-                    value="click"
-                    type="submit"
-                    aria-label="unirse"
-                    >unirse
-                    
-                    <i class="material-icons right">send</i>
-            </button>
-        </div>
-        </form>
-      </div>
-      
-    </div>
-    <div class="modal-footer">
-      <button href="#!" class="modal-close waves-effect waves-grey btn-flat" aria-label="cerrar">close</button>
-    </div>
-  </div>
-
-  <!-- Sign in modal -->
-  <div id="signInModal" class="modal" role="dialog" 
-      aria-labelledby="welcomeTitle" aria-describedby="welcomeDescript"> 
-    <div class="modal-content">  
-      <div class="row white">
-        <div class="col s12">
-          <h1 class="center-align" id="welcomeTitle">¡Bienvenido!</h1>
-          <p id="welcomeDescript"> Introduce tus datos de usuario y tu nueva contraseña para registrarte, luego acciona el botón de unirse</p>
-        
-        </div>
-        <form id="signIn"class="col s12 m6 ">
-          <br>
-          <div class="row">
-            <div class="input-field col s12 m6" aria-label="Email de usuario" aria-required="true">
-              <input id="signEmail" type="email" class="validate">
-              <label for="signEmail">User email</label>
-            </div>
-            <div class="input-field col s12 m6" id="signPass">
-              <input id="signPassword" type="password" class="validate" aria-label="contraseña de usuario" aria-required="true">
-              <label for="signPassword">Password</label>
-            </div>
-          </div>
-
-          <div class="col s12 m6">
-            <button class="btn waves-effect waves-light" 
-                    value="click"
-                    type="submit"
-                    aria-label="Entrar"
-                    >entrar
-                    
-                    <i class="material-icons right">send</i>
-            </button>
-        </div>
-        </form>
+      <div class="col s4 l2 left-align">
+        <a href="#">
+          <img src="media/img/youtube.png"  class="hide-on-med-only hide-on-large-only" alt="youtube logo" width="40%" class="responsive-img">
+          <img src="media/img/youtube.png"  class="hide-on-small-only hide-on-large-only" alt="youtube logo" width="20%" class="responsive-img">
+          <img src="media/img/youtube.png"  class="hide-on-small-only hide-on-med-only" alt="youtube logo" width="20%" class="responsive-img">
+        </a>
       </div>
     </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-grey btn-flat" aria-label="cerrar">close</a>
+    <div class="footer-copyright center-align">
+      <div class="row">
+        <div class="col s12 center-align">copyright TRADAY 2020 | todos los derechos reservados 
+        </div>
+        <div class="col s6 center-align"><a class="grey-text text-lighten-4 right" href="#!"> política de privacidad</a></div>
+        <div class="col s6 center-align"><a class="grey-text text-lighten-4 left" href="#!"> política de cookies</a></div>
+      </div>
     </div>
-  </div>
+  </footer>
+
 
 
 
@@ -370,11 +455,17 @@
       const auth = firebase.auth();
       
       
-     
+      AOS.init();
+
     </script>
     <script src="media/js/firebase-auth.js"></script>
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
+    
 
 </body>
 </html>
