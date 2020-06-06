@@ -1,105 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+  <!-- Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" 
           rel="stylesheet">
 
-   <!-- Materialize CSS file -->
-    <link rel="stylesheet" href="media/css/materialize.min.css" 
+  <!-- Materialize CSS file -->
+  <link rel="stylesheet" href="media/css/materialize.min.css" 
           media="screen, projection"/>
+  
+  <!-- Materialize JS file -->
+  <script defer type="text/javascript" src="media/js/materialize.min.js"></script>
+  
 
-   <!-- Personal CSS files  -->
-
-    <link rel="stylesheet" href="media/css/mat-header.css" 
-          media="screen, projection"/>
-
-          <link rel="stylesheet" 
-                type="text/css" 
-                href="https://csshake.surge.sh/csshake.min.css">
+  <!-- Personal CSS files  -->
+  <link rel="stylesheet" href="media/css/mat-header.css" 
+        media="screen, projection"/>
+  <link rel="stylesheet" href="media/css/index.css" 
+        media="screen, projection"/>
+  <link rel="stylesheet" href="media/css/style-index.css"> 
    
-   <!-- Materialize JS file -->
-    <script defer type="text/javascript" src="media/js/materialize.min.js"></script>
-   
-   <!-- Personal JS file -->
-    <script defer type="text/javascript" src="media/js/index.js"></script>
+  <!-- Personal JS file -->
+  <script defer type="text/javascript" src="media/js/index.js"></script>
 
-    <!-- Chart JS file-->
-    <script defer src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"
+          integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+          crossorigin="anonymous">
+  </script>
 
-    <!-- Personal JS file-->
-    <script defer type="text/javascript" src="media/js/chart.js"></script>
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Personal CSS file -->
-    <script defer type="text/css" src="media/css/index.css"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- browser info -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- FIREBASE HEAD -->
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+  <!-- ------------- -->
 
-   <!-- ICON -->
-    <link rel="icon" href="media/img/2.ico">
+  
+  <!-- FAVICON -->
+  <link rel="icon" href="media/img/traday-logo_black.ico">   
+  <title>traday - perfil</title>
 
-    <!-- Personal CSS file -->
-    <link rel="stylesheet" type="text/css" href="media/css/index.css">
-    
-    <link rel="stylesheet" href="media/css/style-index.css">
-    
-    <title>TRADAY - HOME</title>
 </head>
 <body class="teal lighten-1">
      
   <!-- inicio de sesión + registro  -->    
   
-    <!-- Navegación en la web -->    
-    <div class="navbar-fixed hoverable ">
-      <nav>
-        <div class="nav-wrapper teal lighten-1">
-          <div class="container">
-            <a href="index.html" class="brand-logo" aria-label="Traday">
-              TRADAY
-            </a>
-            <a href="#" data-target="traday-nav"
-                        class="sidenav-trigger"
-                        aria-expanded="false"
-                        aria-label= "accionar menú lateral  "
-                        onclick="changeValues(event)"
-                        onkeydown="changeValues(event)">
-              <i class="material-icons">menu</i>          
-            </a>
-          
-            <ul class="right hide-on-med-and-down"
-                role="navigation" aria-label="Barra superior">
-              <li><a href="profile.html">Perfil</a></li>
-              <li><a href="#">Notificaciones</a></li>
-              <li><a href= "contacts-page.html">Mis contactos</a></li>
-              <li><a href="#">Tareas</a></li>
-              <li><a href="#">Grupos</a></li>
-              <li ><a href="waiaria.html">WAI</a></li>
-          
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
+  <!-- Navegación en la web -->    
+  <div class="navbar-fixed hoverable ">
+    <nav >
+      <div class="nav-wrapper teal lighten-1" >
         
-      <!-- responsive menu - hidden in desktop -->
+          <!-- logo para escritorio-->
+          <a href="index.html" class="brand-logo logo-margin hide-on-small-only hide-on-med-only" aria-label="Traday">
+            <img class="responsive-img " width="150px"src="media/img/traday-logo_long-white.png" alt="">
+          </a>
 
+          <!-- logo para móvil -->
+          <a href="index.html" class="brand-logo hide-on-large-only" aria-label="Traday">
+            <img class="responsive-img " width="150px"src="media/img/traday-logo_long-white.png" alt="">
+          </a>
+
+          <a href="#" data-target="traday-nav"
+                      class="sidenav-trigger"
+                      aria-expanded="false"
+                      aria-label= "accionar menú lateral  "
+                      onclick="changeValues(event)"
+                      onkeydown="changeValues(event)">
+            <i class="material-icons">menu</i>          
+          </a>
+        
+          <ul class="right hide-on-med-and-down"
+              role="navigation" aria-label="Barra superior">
+            <li class="active"><a href="profile.html">Perfil</a></li>
+            <li><a href="#">Notificaciones</a></li>
+            <li><a href= "contacts-page.html">Mis contactos</a></li>
+            <li><a href="#">Tareas</a></li>
+            <li><a href="#">Grupos</a></li>
+            
+        
+          </ul>
+        
+      </div>
+    </nav>
+  </div>
+  <!-- --- -->    
+  <!-- responsive menu - hidden in desktop -->    
+      <ul 
+        class="sidenav" id="traday-nav"
+        aria-label="Menú de navegación lateral">
+        <li class="active" ><a tabindex="-1" href="profile.html" aria-label="ir al perfil">Perfil</a></li>
+        <li ><a tabindex="-1" href="#" aria-label="ir a notificaciones">Notificaciones</a></li>
+        <li ><a tabindex="-1" href= "contacts-page.html" aria-label="ir a mis contactos"> Mis contactos</a></li>
+        <li ><a tabindex="-1" href="#" aria-label="ir a mis tareas">Tareas</a></li>
+        <li ><a tabindex="-1" href="#" aria-label="ir a mis grupos">Grupos</a></li>
       
-        <ul 
-          class="sidenav" id="traday-nav"
-          aria-label="Menú de navegación lateral">
-          <li ><a tabindex="-1" href="profile.html" aria-label="ir al perfil">Perfil</a></li>
-          <li ><a tabindex="-1" href="#" aria-label="ir a notificaciones">Notificaciones</a></li>
-          <li ><a tabindex="-1" href= "contacts-page.html" aria-label="ir a mis contactos"> Mis contactos</a></li>
-          <li ><a tabindex="-1" href="#" aria-label="ir a mis tareas">Tareas</a></li>
-          <li ><a tabindex="-1" href="#" aria-label="ir a mis grupos">Grupos</a></li>
-          <li ><a tabindex="-1" href="waiaria.html" aria-label="ir a wai aria">WAI</a></li>
-          <li ><a tabindex="-1" href="#!" class="sidenav-close btn" aria-label="cerrar menú lateral"
-                onclick="nullValues(event)" onkeydown="nullValues(event)">Cerrar</a></li>
-        </ul>
-      
+        <br>
+        <br>
+        <li class="center-align">
+          <a href="index.html" >               
+            <img class="responsive-img " width="150px"src="media/img/traday-logo_long-black.png" alt="">
+          </a>
+        </li>
+        <br>
+        <li ><a tabindex="-1" href="#!" class="sidenav-close btn" aria-label="cerrar menú lateral"
+              onclick="nullValues(event)" onkeydown="nullValues(event)"> <i class="material-icons white-text">arrow_back</i> Cerrar</a></li>
+      </ul>
+    
+  <!-- --- -->
+   
       <!-- --- -->
 
           <!-- BreadCrumb -->
@@ -216,87 +237,98 @@
           </div>
       </section>
       <!-- --- -->    
-  
-    <footer class="page-footer blue-grey darken-4">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Has llegado al final. Pero hay más</h5>
-            <p class="grey-text text-lighten-4">Traday tiene un duro trabajo detrás y un método que no puede pasar desapercibido.</p>
-            <p class="grey-text text-lighten-4">No olvides apoyarnos en las redes sociales y compartir la aplicación con tus amigos.</p>
-            
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Otros</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Más sobre traday</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Encuéntranos</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Contacta</a></li>
-              <li><a class="grey-text text-lighten-3" href="exchange.html">cambia monedas</a></li>
-              <li><a class="grey-text text-lighten-3" href="ajax-page.html">peticiones AJAX</a></li>
-            
-            </ul>
-          </div>
+    
+  <!-- heavy duty footer -->
+  <footer class="page-footer blue-grey darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Has llegado al final. Pero hay más</h5>
+          <p class="grey-text text-lighten-4">Traday tiene un duro trabajo detrás y un método que no puede pasar desapercibido.</p>
+          <p class="grey-text text-lighten-4">No olvides apoyarnos en las redes sociales y compartir la aplicación con tus amigos.</p>
+          
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Otros</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Más sobre traday</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Encuéntranos</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Contacta</a></li>
+            <li><a class="grey-text text-lighten-3" href="exchange.html">cambia monedas</a></li>
+            <li><a class="grey-text text-lighten-3" href="ajax-page.html">peticiones AJAX</a></li>
+          </ul>
         </div>
       </div>
-      <div class="row ">
-        <div class="col s2 m1 offset-s1 offset-m1 offset-l2">
-          <a href="#">
-            <img src="media/img/twitter.png" alt="" class="responsive-img">
-          </a>
-        </div>
-        <div class="col s2 m1 ">
-          <a href="#">
-            <img src="media/img/instagram.png" alt="" class="responsive-img">
-          </a>
-        </div>
-        <div class="col s2 m1 ">
-          <a href="#">
-            <img src="media/img/youtube.png" alt="" class="responsive-img">
-          </a>
-        </div>
+    </div>
+    <!-- social -->
+    <div class="row center-align">
+      <div class="col s4 l2 offset-l3  right-align">
+        <a href="#">
+          <img src="media/img/twitter.png" class="hide-on-med-only hide-on-large-only" alt="twitter logo" width="40%" class="responsive-img">
+          <img src="media/img/twitter.png" class="hide-on-small-only hide-on-large-only" alt="twitter logo" width="20%" class="responsive-img">
+          <img src="media/img/twitter.png" class="hide-on-small-only hide-on-med-only" alt="twitter logo" width="20%" class="responsive-img">
+        </a>
       </div>
-      <div class="footer-copyright">
-        <div class="container">
-        © TRADAY 2020 - all rights reserved
-          <a class="grey-text text-lighten-4 right" href="#!">privacy</a>
-        </div>
-      </div>
-    </footer>
+      <div class="col s4 l2">
+        <a href="#">
+          <img src="media/img/instagram.png"  class="hide-on-med-only hide-on-large-only" alt="instagram logo" width="40%" class="responsive-img">
+          <img src="media/img/instagram.png"  class="hide-on-small-only hide-on-large-only" alt="instagram logo" width="20%" class="responsive-img">
+          <img src="media/img/instagram.png"  class="hide-on-small-only hide-on-med-only" alt="instagram logo" width="20%" class="responsive-img">
         
+        </a>
+      </div>
+      <div class="col s4 l2 left-align">
+        <a href="#">
+          <img src="media/img/youtube.png"  class="hide-on-med-only hide-on-large-only" alt="youtube logo" width="40%" class="responsive-img">
+          <img src="media/img/youtube.png"  class="hide-on-small-only hide-on-large-only" alt="youtube logo" width="20%" class="responsive-img">
+          <img src="media/img/youtube.png"  class="hide-on-small-only hide-on-med-only" alt="youtube logo" width="20%" class="responsive-img">
+        </a>
+      </div>
+    </div>
+    <div class="footer-copyright center-align">
+      <div class="row">
+        <div class="col s12 center-align">copyright TRADAY 2020 | todos los derechos reservados 
+        </div>
+        <div class="col s6 center-align"><a class="grey-text text-lighten-4 right" href="#!"> política de privacidad</a></div>
+        <div class="col s6 center-align"><a class="grey-text text-lighten-4 left" href="#!"> política de cookies</a></div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+    <!-- Config -->
     <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyCoG_bLk_nf5NANQFEZUMm3afDyBchQqw8",
+        authDomain: "traday-362aa.firebaseapp.com",
+        databaseURL: "https://traday-362aa.firebaseio.com",
+        projectId: "traday-362aa",
+        storageBucket: "traday-362aa.appspot.com",
+        messagingSenderId: "21208239294",
+        appId: "1:21208239294:web:9ef96f415affe9f730a2ef",
+        measurementId: "G-BR9CEK41TT"
+      };
 
 
-function changeValues(e)  
-      {
-        if(e.keyCode==13)
-        {
-          list = document.getElementById("traday-nav").getElementsByTagName("LI");
-          console.log(list);
-          for (let i = 0; i < list.length; i++)
-          {
-            list[i].childNodes[0].tabIndex=0;
-          }
-        }
-      }
-
-      function nullValues(e)  
-      {
-        if(e.keyCode==13)
-        {
-          list = document.getElementById("traday-nav").getElementsByTagName("LI");
-          console.log(list);
-          for (let i = 0; i < list.length; i++)
-          {
-            list[i].childNodes[0].tabIndex=-1;
-          }
-        }
-      }
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const auth = firebase.auth();
+      
+      
+      AOS.init();
 
     </script>
+    <script src="media/js/firebase-auth.js"></script>
 
-  <!-- Z dog scripts CDNs -->
-  <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
-  <script src="media/js/cloud.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
+    
+
 </body>
 </html>
