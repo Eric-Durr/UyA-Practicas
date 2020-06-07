@@ -35,6 +35,7 @@
   </script>
 
 
+
   <!-- FIREBASE HEAD -->
     <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
@@ -47,6 +48,8 @@
   <!-- firebase database JS file-->
   <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
+
+  <script type="text/javascript" src="angular.min.js"></script>
 
   <!-- FAVICON -->
   <link rel="icon" href="media/img/2.ico">  
@@ -159,7 +162,13 @@
               <div class="input-field col 12 " id="userName">
                 <input type="text" class="validate" id="nameToAdd">
                 <label>Nombre del usuario</label>
-              </div>     
+              </div> 
+      
+              <div class="input-field col 12 " id="email">
+                <input type="text" class="validate" id="nameToAdd">
+                <label>Correo electrónico</label>
+              </div>
+        
               <div class="input-field col 12 " id="send">
                 <button class="btn waves-effect waves-light" 
                         value="click"
@@ -171,12 +180,28 @@
           </form>
         </div>
       </div>
+
+  
+
       <div class="modal-footer">
         <a  class="modal-close waves-effect waves-grey btn-flat">cerrar</a>
       </div>
     </div>
     <!-- --- -->
   </section>
+
+    <br>
+    <h2>Contactos de usuario</h2>
+    <section id="listaContactos">
+      <div>
+        <div class="row">
+          <div class="container">
+          
+          </div>
+        </div>
+      </div>
+    </section>
+
   <!-- --- -->    
   <br><br><br><br><br><br><br>
     <!-- heavy duty footer -->
@@ -283,9 +308,10 @@
       }
 
     </script>
- 
+   
     <!-- firebase-database JS file-->
-    <script defer type="text/javascript" src="media/js/contactos-database.js"></script>
+    <!-- <script defer type="text/javascript" src="media/js/contactos-database.js"></script> -->
+    <script defer type="text/javascript" src="media/js/contactos-Ale.js"></script>
     
 </body>
 </html>
