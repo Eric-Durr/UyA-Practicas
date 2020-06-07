@@ -9,9 +9,7 @@ document.addEventListener("DOMContentLoaded", event => {
         list.innerHTML = "";
         list.innerHTML = `<a href="#!" class="collection-item text-grey center-align">` + data.nombre + data.Apellidos + `</a>`; 
         console.log(data); 
-
     });
-
 });
 
 
@@ -22,7 +20,6 @@ formulario.addEventListener("submit", (e) => {
     const name = formulario["nameToAdd"].value;
     const contacto1 = database.collection("contactos").doc("contacto1");
     contacto1.update({nombre: name});
- 
 });
 
    
