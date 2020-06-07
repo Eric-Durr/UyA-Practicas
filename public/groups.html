@@ -28,6 +28,7 @@
    
   <!-- Personal JS file -->
   <script defer type="text/javascript" src="media/js/index.js"></script>
+  <script defer type="text/javascript" src="media/js/group-database.js"></script>
 
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.4.1.js"
@@ -49,6 +50,10 @@
     <!-- Add Firebase products that you want to use -->
     <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
   <!-- ------------- -->
+
+
+  <!-- firebase database JS file-->
+  <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
 
   
   <!-- FAVICON -->
@@ -159,9 +164,7 @@
     <div id="modalGroup" class="modal">
       <div class="modal-content">
         <div class="row white">
-          <form id="addGroup"
-                class="col s12 ">
-            <br>
+ 
             <div class="row">
               <div class="input-field col s12 " id="groupName" >
                 <input type="text"  id="groupNameInput"  aria-label="Nombre del grupo">
@@ -169,21 +172,20 @@
               </div>     
               <div class="input-field col s12 " id="groupMembers" >
                 <p class="range-field">
-                  <label>Número de miembros</label>
+                  <label for="members">Número de miembros</label>
                   <input type="range" id="members" min="2" max="30" aria-label="Número de miembros del grupo" />
                   
                 </p>
               </div>
-              <div class="input-field col s12 " id="send">
+              <div class=" col s12 " id="send">
                 <button class="btn waves-effect waves-light" 
                         value="click"
-                        type="submit"
-                        id="myButton"
-                        aria-label="crear grupo">crear grupo<i class="material-icons right">send</i>
+                        id="mySubmit"
+                        aria-label="crear grupo">
+                        crear grupo<i class="material-icons right">send</i>
                 </button>
               </div>
             </div>
-          </form>
         </div>
       </div>
       <div class="modal-footer">
@@ -272,20 +274,10 @@
 
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
-      const auth = firebase.auth();
-      
-      
-      AOS.init();
+      const firestore = firebase.firestore();
+
 
     </script>
-    <script src="media/js/firebase-auth.js"></script>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    
-    
 
 </body>
 </html>
