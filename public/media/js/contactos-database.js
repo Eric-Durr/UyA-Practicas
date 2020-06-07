@@ -15,13 +15,23 @@ document.addEventListener("DOMContentLoaded", event => {
 });
 
 
-const formulario = document.querySelector("#addContact");
-formulario.addEventListener("submit", (e) => {
+const boton = document.querySelector("#myButton");
+boton.addEventListener("click", () => {
 
-    const database = firebase.firestore();
-    const name = formulario["nameToAdd"].value;
-    const contacto1 = database.collection("contactos").doc("contacto1");
-    contacto1.update({nombre: name});
+    const name = document.querySelector("#userName").value;
+    const email = document.querySelector("#userEmail").value;
+
+    database.collection("contactos").add({
+        email: email,
+        nombre: name
+        
+    })
+    .then((docRef) => {
+        console.log("Contacto añadido a la BD con ID: ", docRef.id)
+    })
+    .catch((docRef) => {
+        console.log("Error añadiendo el contacto: ", error)
+    })
  
 });
 

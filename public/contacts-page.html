@@ -46,13 +46,11 @@
   <!-- ------------- -->
 
   <!-- firebase database JS file-->
-  <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+  
   <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
 
-  <script type="text/javascript" src="angular.min.js"></script>
-
   <!-- FAVICON -->
-  <link rel="icon" href="media/img/2.ico">  
+  <link rel="icon" href="media/img/traday-logo_black.ico">  
   <title>traday - contactos</title>
 
 </head>
@@ -155,29 +153,25 @@
     <div id="modalContact" class="modal">
       <div class="modal-content">
         <div class="row white">
-          <form id="addContact"
-                class="col s12 m6 ">
-            <br>
-            <div class="row">
-              <div class="input-field col 12 " id="userName">
-                <input type="text" class="validate" id="nameToAdd">
-                <label>Nombre del usuario</label>
-              </div> 
-      
-              <div class="input-field col 12 " id="email">
-                <input type="text" class="validate" id="nameToAdd">
-                <label>Correo electrónico</label>
-              </div>
-        
-              <div class="input-field col 12 " id="send">
-                <button class="btn waves-effect waves-light" 
-                        value="click"
-                        type="submit"
-                        id="myButton">solicitar<i class="material-icons right">send</i>
-                </button>
-              </div>
+          <div class="row">
+            <div class="input-field col 12 ">
+              <input type="text" class="validate" id="userName">
+              <label>Nombre del usuario</label>
+            </div> 
+    
+            <div class="input-field col 12 ">
+              <input type="text" class="validate" id="userEmail">
+              <label>Correo electrónico</label>
             </div>
-          </form>
+      
+            <div class="input-field col 12 " id="send">
+              <button class="btn waves-effect waves-light" 
+                      value="click"
+                      type="submit"
+                      id="myButton">solicitar<i class="material-icons right">send</i>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -189,18 +183,6 @@
     </div>
     <!-- --- -->
   </section>
-
-    <br>
-    <h2>Contactos de usuario</h2>
-    <section id="listaContactos">
-      <div>
-        <div class="row">
-          <div class="container">
-          
-          </div>
-        </div>
-      </div>
-    </section>
 
   <!-- --- -->    
   <br><br><br><br><br><br><br>
@@ -310,8 +292,8 @@
     </script>
    
     <!-- firebase-database JS file-->
-    <!-- <script defer type="text/javascript" src="media/js/contactos-database.js"></script> -->
-    <script defer type="text/javascript" src="media/js/contactos-Ale.js"></script>
+    <script defer type="text/javascript" src="media/js/contactos-database.js"></script>
+   
     
 </body>
 </html>
