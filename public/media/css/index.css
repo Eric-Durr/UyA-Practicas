@@ -1,0 +1,69 @@
+.blur {  
+    -webkit-filter: blur(4px);  
+    filter: blur(4px);  
+}  
+
+.presentation{
+    background-image: url(../img/time-bg.jpeg);
+    background-size: cover;
+    
+    height: auto;
+}
+nav .logo-margin{
+    margin-left: 2em;
+}
+
+.nav-colored { background-color: #000; }
+
+.nav-transparent { background-color: transparent; }
+
+
+/*Info animation*/
+.fade-in-left {
+	animation: fade-in-left 0.9s ease-in-out both;
+}
+
+/* animation fade-in-left */
+ @keyframes fade-in-left {
+    0% {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+
+.fade-in-up {
+	animation: fade-in-up 0.9s ease-in-out both;
+}
+
+/* animation fade-in-left */
+@keyframes fade-in-up {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fade-in-right {
+	animation: fade-in-right 0.9s ease-in-out both;
+}
+
+/* animation fade-in-left */
+@keyframes fade-in-right {
+  0% {
+    transform: translateX(+50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
