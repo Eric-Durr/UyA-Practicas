@@ -71,13 +71,13 @@
         <div class="nav-wrapper teal lighten-1" >
           
             <!-- logo para escritorio-->
-            <a href="index.html" class="brand-logo logo-margin hide-on-small-only hide-on-med-only" aria-label="Traday">
-              <img class="responsive-img " width="150px"src="media/img/traday-logo_long-white.png" alt="">
+            <a href="index.html" tabindex="1" class="brand-logo logo-margin hide-on-small-only hide-on-med-only" aria-label="Traday">
+              <img class="responsive-img " width="150px"src="media/img/traday-logo_long-white.png" alt="logo blanco de traday">
             </a>
 
             <!-- logo para móvil -->
-            <a href="index.html" class="brand-logo hide-on-large-only" aria-label="Traday">
-              <img class="responsive-img " width="150px"src="media/img/traday-logo_long-white.png" alt="">
+            <a href="index.html" tabindex="1"class="brand-logo hide-on-large-only" aria-label="Traday">
+              <img class="responsive-img " width="150px"src="media/img/traday-logo_long-white.png" alt="logo blanco de traday">
             </a>
 
             <a href="#" data-target="traday-nav"
@@ -141,25 +141,30 @@
    </nav>
   <!-- --- -->
       
-  <h2 tabindex="0"class ="center-align white-text" aria-label="Tus grupos">Tus grupos</h2>
-  <section class="row center-align" id="groupsList">
-    <div class="col s12"> 
-      <div class="collection" id="contactList">
+  <h2 tabindex="0" class ="center-align white-text" aria-label="Tus grupos">  Tus grupos</h2>
+  <section  id="groupsList">        
+    <div class="collection" id="contactList">
         <a href="#!" class="collection-item text-grey center-align">No hay grupos aún</a>        
-      </div>
-    </div>        
+    </div>
   </section>
 
   <!-- añadir grupo -->
-  <div id="add" class="center-align" >
+  <div id="add" class="" >
     <br>
-    <div class="row">
-        <div class="col s12 m12 l12">
-            <button  href="#modalGroup" 
-                class="btn-floating btn-large waves-effect waves-light grey modal-trigger"
-                aria-label="Añadir un grupo">
-                <i class="material-icons">add</i>
-        </button>
+    <div class="row ">
+        <div class="col s12 m6 right-align">
+          <button tabindex="0" href="#modalGroup" 
+              class="btn-floating btn-large waves-effect waves-light grey modal-trigger"
+              aria-label="Añadir un grupo">
+              <i class="material-icons">add</i>
+          </button>
+        </div>
+        <div class="col s12 m6 left-align">
+          <button tabindex="0" id="clearButton" 
+              class="btn-floating btn-large waves-effect waves-light black "
+              aria-label="Añadir un grupo">
+              <i class="material-icons">delete</i>
+          </button>
         </div>
     </div>
     <!-- modal -->
@@ -169,7 +174,7 @@
  
             <div class="row">
               <div class="input-field col s12 " id="groupName" >
-                <input type="text"  id="groupNameInput"  aria-label="Nombre del grupo">
+                <input type="text" class="validate" id="groupNameInput"  aria-label="Nombre del grupo">
                 <label>Nombre del grupo</label>
               </div>     
               <div class="input-field col s12 " id="groupMembers" >
@@ -283,36 +288,36 @@
 
     <!-- WAI HANDLE -->
     <script>
-      function close()
-      {
-        const side = M.Sidenav.getInstance(elem);
-      }
-    
-      function changeValues(e)  
-      {
-        if(e.keyCode==13)
-        {
-          list = document.getElementById("traday-nav").getElementsByTagName("LI");
-          console.log(list);
-          for (let i = 0; i < list.length; i++)
+          function close()
           {
-            list[i].childNodes[0].tabIndex=0;
+            const side = M.Sidenav.getInstance(elem);
           }
-        }
-      }
-    
-      function nullValues(e)  
-      {
-        if(e.keyCode==13)
-        {
-          list = document.getElementById("traday-nav").getElementsByTagName("LI");
-          console.log(list);
-          for (let i = 0; i < list.length; i++)
+        
+          function changeValues(e)  
           {
-            list[i].childNodes[0].tabIndex=-1;
+            if(e.keyCode==13)
+            {
+              list = document.getElementById("traday-nav").getElementsByTagName("LI");
+              console.log(list);
+              for (let i = 0; i < list.length; i++)
+              {
+                list[i].childNodes[0].tabIndex=0;
+              }
+            }
           }
-        }
-      }
+        
+          function nullValues(e)  
+          {
+            if(e.keyCode==13)
+            {
+              list = document.getElementById("traday-nav").getElementsByTagName("LI");
+              console.log(list);
+              for (let i = 0; i < list.length; i++)
+              {
+                list[i].childNodes[0].tabIndex=-1;
+              }
+            }
+          }
 
     </script>
 
