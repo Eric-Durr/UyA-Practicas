@@ -85,10 +85,9 @@
           <ul class="right hide-on-med-and-down"
               role="navigation" aria-label="Barra superior">
             <li class="active"><a href="profile.html">Perfil</a></li>
-            <li><a href="#">Notificaciones</a></li>
             <li><a href= "contacts-page.html">Mis contactos</a></li>
             <li><a href="#">Tareas</a></li>
-            <li><a href="#">Grupos</a></li>
+            <li><a href="groups.html">Grupos</a></li>
             
         
           </ul>
@@ -102,15 +101,14 @@
         class="sidenav" id="traday-nav"
         aria-label="Menú de navegación lateral">
         <li class="active" ><a tabindex="-1" href="profile.html" aria-label="ir al perfil">Perfil</a></li>
-        <li ><a tabindex="-1" href="#" aria-label="ir a notificaciones">Notificaciones</a></li>
         <li ><a tabindex="-1" href= "contacts-page.html" aria-label="ir a mis contactos"> Mis contactos</a></li>
         <li ><a tabindex="-1" href="#" aria-label="ir a mis tareas">Tareas</a></li>
-        <li ><a tabindex="-1" href="#" aria-label="ir a mis grupos">Grupos</a></li>
+        <li ><a tabindex="-1" href="groups.html" aria-label="ir a mis grupos">Grupos</a></li>
       
         <br>
         <br>
         <li class="center-align">
-          <a href="index.html" >               
+          <a  tabindex="-1" href="index.html" >               
             <img class="responsive-img " width="150px"src="media/img/traday-logo_long-black.png" alt="">
           </a>
         </li>
@@ -121,19 +119,18 @@
     
   <!-- --- -->
    
-      <!-- --- -->
-
-          <!-- BreadCrumb -->
-      <nav aria-label="breadcrumbs">
-        <div class="nav-wrapper teal darken-3">
-          <div class="col s12 container">
-            <a href="index.html" class="breadcrumb" >Home</a>
-            <a href="profile.html" class="breadcrumb" aria-current="location">Perfil</a>
-          
-          </div>
-        </div>
-       </nav>
-      <!-- --- -->
+      
+  <!-- BreadCrumb -->
+  <nav aria-label="breadcrumbs">
+    <div class="nav-wrapper teal darken-3">
+      <div class="col s12 container">
+        <a href="index.html" class="breadcrumb" >Home</a>
+        <a href="profile.html" class="breadcrumb" aria-current="location">Perfil</a>
+      
+      </div>
+    </div>
+   </nav>
+  <!-- --- -->
       <section  id="userpage">        
         <div class="row">
             <div class="col s12 m4">
@@ -329,6 +326,40 @@
     </script>
     
     
+    <!-- WAI HANDLE -->
+    <script>
+      function close()
+      {
+        const side = M.Sidenav.getInstance(elem);
+      }
+    
+      function changeValues(e)  
+      {
+        if(e.keyCode==13)
+        {
+          list = document.getElementById("traday-nav").getElementsByTagName("LI");
+          console.log(list);
+          for (let i = 0; i < list.length; i++)
+          {
+            list[i].childNodes[0].tabIndex=0;
+          }
+        }
+      }
+    
+      function nullValues(e)  
+      {
+        if(e.keyCode==13)
+        {
+          list = document.getElementById("traday-nav").getElementsByTagName("LI");
+          console.log(list);
+          for (let i = 0; i < list.length; i++)
+          {
+            list[i].childNodes[0].tabIndex=-1;
+          }
+        }
+      }
+
+    </script> 
 
 </body>
 </html>

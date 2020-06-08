@@ -1,3 +1,5 @@
+
+
 console.log("hello world")
 
 // Estas lineas de código inicializa las 
@@ -46,7 +48,4 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
-
-// WAI-ARIA index management
-
 
