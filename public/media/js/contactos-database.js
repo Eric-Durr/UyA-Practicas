@@ -1,19 +1,16 @@
-/*
-document.addEventListener("DOMContentLoaded", event => {
 
-    const contacto1 = database.collection("contactos").doc("contacto1");
-    contacto1.onSnapshot(doc => {
+document.addEventListener("DOMContentLoaded", (event) => {
 
-        const data = doc.data();
-        const list = document.querySelector("#contactList");
-        list.innerHTML = "";
-        list.innerHTML = `<a href="#!" class="collection-item text-grey center-align">` + data.nombre + data.Apellidos + `</a>`; 
-        console.log(data); 
-
-    });
-
+    const list = document.querySelector("#contactList");
+    list.innerHTML = "";
+    
+    database.collection("contactos").get().then((snapshot) => {
+        snapshot.forEach( (doc) => {
+            list.innerHTML += `<a href="#!" class="collection-item text-grey center-align"> Nombre: ` + doc.data().nombre + " <br> Email: "+ doc.data().email + ` </a>`; 
+        });
+    })
 });
-*/
+
 
 // Lectura de documento de CONTACTOS
 const boton = document.querySelector("#myButton");
@@ -29,11 +26,29 @@ boton.addEventListener("click", () => {
     })
     .then((docRef) => {
         console.log("Contacto añadido a la BD con ID: ", docRef.id);
-        document.querySelector('userName').value = '';
-        document.querySelector('userEmail').value = '';
+        document.querySelector('#userName').value = '';
+        document.querySelector('#userEmail').value = '';
+        const contactModal = document.querySelector("#modalContact");
+        const instance = M.Modal.getInstance(contactModal);
+        instance.close()
+        M.toast({
+            html: `Contacto añadido con éxito`,
+            classes: "rounded blue-grey darken-2",
+            displayLength: 50000
+        })
     })
-    .catch((docRef) => {
-        console.log("Error añadiendo el contacto: ", error)
+    .catch( (docRef) => {
+        console.log("Error añadiendo contacto: ",error);
+        document.querySelector('#userName').value = '';
+        document.querySelector('#userEmail').value = '';
+        const contactModal = document.querySelector("#modalContact");
+        const instance = M.Modal.getInstance(contactModal);
+        instance.close()
+        M.toast({
+            html: `Error añadiendo contacto`,
+            classes: "rounded blue-grey darken-2",
+            displayLength: 50000
+        })
     })
  
 });

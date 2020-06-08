@@ -132,7 +132,7 @@
     </nav>
   <!-- --- -->
 
-  <h2 class ="center-align white-text">Página de contactos</h2>
+  <h2 tabindex="0" class ="center-align white-text">Página de contactos</h2>
   <section  id="userpage">        
     <div class="collection" id="contactList">
         <a href="#!" class="collection-item text-grey center-align">No hay contactos aún</a>    
@@ -144,7 +144,7 @@
     <br>
     <div class="row">
         <div class="col s12 m12 l12">
-            <a href="#modalContact" class="btn-floating btn-large waves-effect waves-light grey modal-trigger">
+            <a  tabindex="0" href="#modalContact" class="btn-floating btn-large waves-effect waves-light grey modal-trigger">
                 <i class="material-icons">add</i>
             </a>
         </div>
@@ -153,7 +153,6 @@
     <div id="modalContact" class="modal">
       <div class="modal-content">
         <div class="row white">
-          <div class="row">
             <div class="input-field col 12 ">
               <input type="text" class="validate" id="userName">
               <label>Nombre del usuario</label>
@@ -173,9 +172,6 @@
             </div>
           </div>
         </div>
-      </div>
-
-
       <div class="modal-footer">
         <a  class="modal-close waves-effect waves-grey btn-flat">cerrar</a>
       </div>
