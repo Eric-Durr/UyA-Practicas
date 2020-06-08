@@ -31,7 +31,7 @@ mySubmit.addEventListener("click", () => {
         const instance = M.Modal.getInstance(groupModal)
         instance.close()
         M.toast({html: 'Grupo añadido con éxito',
-                 classes: 'rounded teal lighten-2 ',
+                 classes: 'rounded blue-grey darken-2 ',
                 displayLength:5000})
     })
     .catch( (docRef) => {
