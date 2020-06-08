@@ -1,3 +1,5 @@
+
+
 console.log("hello world")
 
 // Estas lineas de código inicializa las 
@@ -46,37 +48,4 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
-
-// WAI-ARIA index management
-
-  function close()
-  {
-    const side = M.Sidenav.getInstance(elem);
-  }
-
-  function changeValues(e)  
-  {
-    if(e.keyCode==13)
-    {
-      list = document.getElementById("traday-nav").getElementsByTagName("LI");
-      console.log(list);
-      for (let i = 0; i < list.length; i++)
-      {
-        list[i].childNodes[0].tabIndex=0;
-      }
-    }
-  }
-
-  function nullValues(e)  
-  {
-    if(e.keyCode==13)
-    {
-      list = document.getElementById("traday-nav").getElementsByTagName("LI");
-      console.log(list);
-      for (let i = 0; i < list.length; i++)
-      {
-        list[i].childNodes[0].tabIndex=-1;
-      }
-    }
-  }
 
