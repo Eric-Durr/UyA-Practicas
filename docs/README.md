@@ -34,3 +34,7 @@
 
 ## Documentos de la Auditoría de Accesibilidad
  - [Muestra de auditoría](../docs/AUDITORIA-MUESTRA.md)
+
+
+## Proyecto de banco de tiempo
+- [Enlace al prototipo](https://traday-362aa.web.app/)
