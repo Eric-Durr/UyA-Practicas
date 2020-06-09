@@ -34,6 +34,12 @@
           crossorigin="anonymous">
   </script>
 
+ <!-- AOS CSS -->
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+ <!-- AOS JS -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
   <!-- FIREBASE HEAD -->
     <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
@@ -84,7 +90,6 @@
           <ul class="right hide-on-med-and-down"
               role="navigation" aria-label="Barra superior">
             <li><a href="profile.html">Perfil</a></li>
-            <li><a href="#">Notificaciones</a></li>
             <li><a href= "contacts-page.html">Mis contactos</a></li>
             <li class="active"><a href="tareas.html">Tareas</a></li>
             <li><a href="#">Grupos</a></li>
@@ -101,7 +106,6 @@
     class="sidenav" id="traday-nav"
     aria-label="Menú de navegación lateral">
     <li ><a tabindex="-1" href="profile.html" aria-label="ir al perfil">Perfil</a></li>
-    <li ><a tabindex="-1" href="#" aria-label="ir a notificaciones">Notificaciones</a></li>
     <li ><a tabindex="-1" href= "contacts-page.html" aria-label="ir a mis contactos"> Mis contactos</a></li>
     <li class="active"><a tabindex="-1" href="tareas.html" aria-label="ir a mis tareas">Tareas</a></li>
     <li ><a tabindex="-1" href="#" aria-label="ir a mis grupos">Grupos</a></li>
@@ -141,12 +145,14 @@
             </div>
             <div id="test-swipe-1" class="col s12 center-align">
               <ul class="collection" id="lista-tareas-pendientes">
-                <li class="collection-item"><p>
-                  <label>
-                    <input type="checkbox" disabled="disabled" />
-                    <span class="teal-text darken-4">No hay tareas pendientes</span>
-                  </label>
-                </p></li>
+                <li class="collection-item">
+                  <p>
+                    <label>
+                      <input type="checkbox" disabled="disabled" />
+                      <span class="teal-text darken-4">No hay tareas pendientes</span>
+                    </label>
+                  </p>
+              </li>
               </ul>
             </div>
     
@@ -155,17 +161,15 @@
                 <li class="collection-item darken-4"><span class="teal-text darken-4">No hay tareas propuestas</span></li>
               </ul>
     
-              <section id="add" class="center-align">
-                <br>
                   <div class="row">
                     <div class="col s12 m12 l12">
-                      <a href="#modalContact" class="btn-floating btn-large waves-effect waves-light grey modal-trigger">
+                      <a href="#modalTask" class="btn-floating btn-large waves-effect waves-light grey modal-trigger">
                         <i class="material-icons">add</i>
                       </a>
                     </div>
                   </div>
                   
-                  <div id="modalContact" class="modal">
+                  <div id="modalTask" class="modal">
                     <div class="modal-content">
                       <div class="row white">
                         <div class="row">
@@ -193,7 +197,6 @@
                       <a class="modal-close waves-effect waves-grey btn-flat">cerrar</a>
                   </div>
                 </div>
-              </section> 
             </div>
           </div>
     
