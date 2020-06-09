@@ -62,14 +62,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
             innElem +=
             `
                   <span class="teal-text darken-4">
-                  <span>
+                  <span tabindex="0">
                   `
                   +
                   doc.data().Titulo
                   +
                   `
                   </span>
-                  <p>
+                  <p tabindex="0">
                   `
                   +
                   doc.data().Descripcion
@@ -100,11 +100,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
             <p>
               <label>
                   <span class="teal-text darken-4">
-                    <span>
+                    <span tabindex="0">
                     `
                     if (doc.data().Hecho == true)
                     {
-                      innElem += `<strike>`
+                      innElem += `<strike aria-label="Tarea`
+                      innElem += doc.data().Titulo
+                      innElem += `realizada">`
                     }
                     innElem += doc.data().Titulo
                     if (doc.data().Hecho == true)
