@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "view": "parcel ./public/index.html ",
     "dev": "firebase serve --port 8080 ",
     "deploy": "firebase deploy"
   },
@@ -16,6 +17,7 @@
     "cssnano": "^4.1.10",
     "gh-pages": "^2.2.0",
     "parcel-bundler": "^1.12.4"
+    
   },
   "repository": {
     "type": "git",
@@ -27,7 +29,7 @@
   "homepage": "https://github.com/EricDS-INFO/UyA-Practicas#readme",
   "dependencies": {
     "canvas": "^2.6.1",
-    "firebase": "^7.2.3",
+    "firebase": "^7.15.0",
     "jquery": "^3.4.1",
     "jsdom": "^16.2.2"
   }

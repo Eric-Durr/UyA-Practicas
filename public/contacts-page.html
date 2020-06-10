@@ -3,189 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" 
+    
+
+  <!-- Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" 
           rel="stylesheet">
 
-   <!-- Materialize CSS file -->
-    <link rel="stylesheet" href="media/css/materialize.min.css" 
+  <!-- Materialize CSS file -->
+  <link rel="stylesheet" href="media/css/materialize.min.css" 
           media="screen, projection"/>
+  
+  <!-- Materialize JS file -->
+  <script defer type="text/javascript" src="media/js/materialize.min.js"></script>
+  
+  <!-- Personal CSS files  -->
+  <link rel="stylesheet" href="media/css/mat-header.css" 
+  media="screen, projection"/>
+  
+  <link rel="stylesheet" href="media/css/index.css" 
+  media="screen, projection"/>
 
-   <!-- Personal CSS files  -->
-
-    <link rel="stylesheet" href="media/css/mat-header.css" 
-          media="screen, projection"/>
-
-          <link rel="stylesheet" 
-                type="text/css" 
-                href="https://csshake.surge.sh/csshake.min.css">
+  <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
    
-   <!-- Materialize JS file -->
-    <script defer type="text/javascript" src="media/js/materialize.min.js"></script>
-   
-   <!-- Personal JS file -->
-    <script defer type="text/javascript" src="media/js/index.js"></script>
+  <!-- Personal JS file -->
+  <script defer type="text/javascript" src="media/js/index.js"></script>
 
-    <!-- Chart JS file-->
-    <script defer src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-
-    <!-- Personal CSS file -->
-    <script defer type="text/css" src="media/css/index.css"></script>
-
-    <!-- browser info -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-   <!-- ICON -->
-    <link rel="icon" href="media/img/2.ico">
-
-    <!-- Personal CSS file -->
-    <link rel="stylesheet" type="text/css" href="media/css/index.css">
-    
-    <link rel="stylesheet" href="media/css/style-index.css">
-
-    <!-- firebase database JS file-->
-
-    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"
+          integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+          crossorigin="anonymous">
+  </script>
 
 
 
-    
-    <title>TRADAY - CONTACTOS</title>
+  <!-- FIREBASE HEAD -->
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+  <!-- ------------- -->
+
+  <!-- firebase database JS file-->
+  
+  <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
+
+  <!-- FAVICON -->
+  <link rel="icon" href="media/img/traday-logo_black.ico">  
+  <title>traday - contactos</title>
+
 </head>
 <body class="teal lighten-1">
      
+     
   <!-- inicio de sesión + registro  -->    
   
-    <!-- Navegación en la web -->    
-    <div class="navbar-fixed hoverable ">
-      <nav>
-        <div class="nav-wrapper teal lighten-1">
-          <div class="container">
-            <a href="index.html" class="brand-logo">
-              TRADAY
+  <!-- Navegación en la web -->    
+  <div class="navbar-fixed hoverable ">
+    <nav >
+      <div class="nav-wrapper teal lighten-1" >
+        
+          <!-- logo para escritorio-->
+          <a href="index.html" class="brand-logo logo-margin hide-on-small-only hide-on-med-only" aria-label="Traday">
+            <img class="responsive-img " width="150px"src="media/img/traday-logo_long-white.png" alt="">
+          </a>
+
+          <!-- logo para móvil -->
+          <a href="index.html" class="brand-logo hide-on-large-only" aria-label="Traday">
+            <img class="responsive-img " width="150px"src="media/img/traday-logo_long-white.png" alt="">
+          </a>
+
+          <a href="#" data-target="traday-nav"
+                      class="sidenav-trigger"
+                      aria-expanded="false"
+                      aria-label= "accionar menú lateral  "
+                      onclick="changeValues(event)"
+                      onkeydown="changeValues(event)">
+            <i class="material-icons">menu</i>          
+          </a>
+        
+          <ul class="right hide-on-med-and-down"
+              role="navigation" aria-label="Barra superior">
+            <li><a href="profile.html">Perfil</a></li>
+            <li class="active"><a href= "contacts-page.html">Mis contactos</a></li>
+            <li><a href="groups.html">Grupos</a></li>
+            <li><a href="tareas.html">Tareas</a></li>
+          </ul>
+        
+      </div>
+    </nav>
+  </div>
+      
+  <!-- responsive menu - hidden in desktop -->    
+  <ul 
+    class="sidenav" id="traday-nav"
+    aria-label="Menú de navegación lateral">
+    <li ><a tabindex="-1" href="profile.html" aria-label="ir al perfil">Perfil</a></li>
+    <li class="active"><a tabindex="-1" href= "contacts-page.html" aria-label="ir a mis contactos"> Mis contactos</a></li>
+    <li ><a tabindex="-1" href="groups.html" aria-label="ir a mis grupos">Grupos</a></li>
+    <li ><a tabindex="-1" href="tareas.html" aria-label="ir a mis tareas">Tareas</a></li>
+    <br>
+    <br>
+    <li class="center-align">
+      <a  tabindex="-1" href="index.html" >               
+        <img class="responsive-img " width="150px"src="media/img/traday-logo_long-black.png" alt="">
+      </a>
+    </li>
+    <br>
+    <li ><a tabindex="-1" href="#!" class="sidenav-close btn" aria-label="cerrar menú lateral"
+          onclick="nullValues(event)" onkeydown="nullValues(event)"> <i class="material-icons white-text">arrow_back</i> Cerrar</a></li>
+  </ul>
+  <!-- --- -->
+
+  <!-- BreadCrumb -->
+    <nav aria-label="breadcrumbs">
+      <div class="nav-wrapper teal darken-3">
+        <div class="col s12 container">
+          <a href="index.html" class="breadcrumb" >Home</a>
+          <a href="contacts-page.html" class="breadcrumb" aria-current="location">Contactos</a>
+        </div>
+      </div>
+    </nav>
+  <!-- --- -->
+
+  <h2 tabindex="0" class ="center-align white-text">Página de contactos</h2>
+  <section  id="userpage">        
+    <div class="collection" id="contactList">
+        <a href="#!" class="collection-item text-grey center-align">No hay contactos aún</a>    
+    </div>
+  </section>
+
+  <!-- añadir contacto -->
+  <div id="add" class="center-align">
+    <br>
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <a aria-label="Añadir contacto" tabindex="0" href="#modalContact" class="btn-floating btn-large waves-effect waves-light grey modal-trigger">
+                <i class="material-icons">add</i>
             </a>
-            <a href="#" data-target="traday-nav"
-                        class="sidenav-trigger">
-              <i class="material-icons">menu</i>          
-            </a>
-          
-            <ul class="right hide-on-med-and-down">
-              <li><a href="profile.html" class="active">Perfil</a></li>
-              <li><a href="#">Notificaciones</a></li>
-              <li class="active"><a href= "contacts-page.html">Mis contactos</a></li>
-              <li><a href="#">Tareas</a></li>
-              <li><a href="#">Grupos</a></li>
-            </ul>
+        </div>
+    </div>
+    <!-- modal -->
+    <div id="modalContact" class="modal">
+      <div class="modal-content">
+        <div class="row white">
+            <div class="input-field col 12 ">
+              <label tabindex="0">Nombre del usuario</label>
+              <input type="text" class="validate" id="userName">
+              
+            </div> 
+    
+            <div class="input-field col 12 ">
+              <label tabindex="0">Correo electrónico</label>
+              <input type="text" class="validate" id="userEmail">
+              
+            </div>
+      
+            <div class="input-field col 12 " id="send">
+              <button class="btn waves-effect waves-light" 
+                      value="click"
+                      type="submit"
+                      id="myButton">solicitar<i class="material-icons right">send</i>
+              </button>
+            </div>
           </div>
         </div>
-      </nav>
-    </div>
       
-      <!-- responsive menu - hidden in desktop -->
-      <ul class="sidenav" id="traday-nav">
-
-        <li ><a href="profile.html" class="active">Perfil</a></li>
-        <li><a href="#">Notificaciones</a></li>
-        <li class="active"><a href= "contacts-page.html">Mis contactos</a></li>
-        <li><a href="#">Tareas</a></li>
-        <li><a href="#">Grupos</a></li>
-      </ul>
-      <!-- --- -->
-      <h2 class ="center-align text-white">Página de contactos</h1>
-      <section  id="userpage">        
-        <div class="collection" id="contactList">
-            <a href="#!" class="collection-item text-grey center-align">No hay contactos aún</a>        
+        <div class="modal-footer">
+          <button tabindex="0" class="modal-close waves-effect waves-grey btn-flat">cerrar</button>
         </div>
-      </section>
-      <section id="add" class="center-align">
-          <br>
-            <div class="row">
-                <div class="col s12 m12 l12">
-                    <a href="#modalContact" class="btn-floating btn-large waves-effect waves-light grey modal-trigger">
-                        <i class="material-icons">add</i>
-                    </a>
-                </div>
-            </div>
+    </div>
+    <!-- --- -->
+  </divn>
 
-            <div id="modalContact" class="modal">
-                <div class="modal-content">
-                    <div class="row white">
-                        <form   id="addContact"
-                                class="col s12 m6 ">
-                            <br>
-                            <div class="row">
-                                <div class="input-field col 12 " id="userName">
-                                    <input type="text" class="validate" id="nameToAdd">
-                                    <label>Nombre del usuario</label>
-                                </div>     
-                                <div class="input-field col 12 " id="send">
-                                    <button class="btn waves-effect waves-light" 
-                                            value="click"
-                                            type="submit"
-                                            id="myButton"
-                                            >solicitar
-                                
-                                    <i class="material-icons right">send</i>
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <a  class="modal-close waves-effect waves-grey btn-flat">cerrar</a>
-                </div>
-            </div>
-      </section>
-      <!-- --- -->    
-  
+  <!-- --- -->    
+  <br><br><br><br><br><br><br>
+    <!-- heavy duty footer -->
     <footer class="page-footer blue-grey darken-4">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
-            <h5 class="white-text">Has llegado al final. Pero hay más</h5>
-            <p class="grey-text text-lighten-4">Traday tiene un duro trabajo detrás y un método que no puede pasar desapercibido.</p>
-            <p class="grey-text text-lighten-4">No olvides apoyarnos en las redes sociales y compartir la aplicación con tus amigos.</p>
+            <h5 tabindex="0" class="white-text">Has llegado al final. Pero hay más</h5>
+            <p tabindex="0" class="grey-text text-lighten-4">Traday tiene un duro trabajo detrás y un método que no puede pasar desapercibido.</p>
+            <p tabindex="0" class="grey-text text-lighten-4">No olvides apoyarnos en las redes sociales y compartir la aplicación con tus amigos.</p>
             
           </div>
           <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Otros</h5>
+            <h5 tabindex="0" class="white-text">Otros</h5>
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Más sobre traday</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Encuéntranos</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Contacta</a></li>
-              <li><a class="grey-text text-lighten-3" href="exchange.html">cambia monedas</a></li>
-              <li><a class="grey-text text-lighten-3" href="ajax-page.html">peticiones AJAX</a></li>
-            
+              <li><a tabindex="0" class="grey-text text-lighten-3" href="#!">Más sobre traday</a></li>
+              <li><a tabindex="0" class="grey-text text-lighten-3" href="#!">Encuéntranos</a></li>
+              <li><a tabindex="0" class="grey-text text-lighten-3" href="#!">Contacta</a></li>
+              <li><a tabindex="0" class="grey-text text-lighten-3" href="exchange.html">cambia monedas</a></li>
+              <li><a tabindex="0" class="grey-text text-lighten-3" href="ajax-page.html">peticiones AJAX</a></li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="row ">
-        <div class="col s2 m1 offset-s1 offset-m1 offset-l2">
+      <!-- social -->
+      <div class="row center-align">
+        <div class="col s4 l2 offset-l3  right-align">
           <a href="#">
-            <img src="media/img/twitter.png" alt="" class="responsive-img">
+            <img src="media/img/twitter.png" class="hide-on-med-only hide-on-large-only" alt="twitter logo" width="40%" class="responsive-img">
+            <img src="media/img/twitter.png" class="hide-on-small-only hide-on-large-only" alt="twitter logo" width="20%" class="responsive-img">
+            <img src="media/img/twitter.png" class="hide-on-small-only hide-on-med-only" alt="twitter logo" width="20%" class="responsive-img">
           </a>
         </div>
-        <div class="col s2 m1 ">
+        <div class="col s4 l2">
           <a href="#">
-            <img src="media/img/instagram.png" alt="" class="responsive-img">
+            <img src="media/img/instagram.png"  class="hide-on-med-only hide-on-large-only" alt="instagram logo" width="40%" class="responsive-img">
+            <img src="media/img/instagram.png"  class="hide-on-small-only hide-on-large-only" alt="instagram logo" width="20%" class="responsive-img">
+            <img src="media/img/instagram.png"  class="hide-on-small-only hide-on-med-only" alt="instagram logo" width="20%" class="responsive-img">
+          
           </a>
         </div>
-        <div class="col s2 m1 ">
+        <div class="col s4 l2 left-align">
           <a href="#">
-            <img src="media/img/youtube.png" alt="" class="responsive-img">
+            <img src="media/img/youtube.png"  class="hide-on-med-only hide-on-large-only" alt="youtube logo" width="40%" class="responsive-img">
+            <img src="media/img/youtube.png"  class="hide-on-small-only hide-on-large-only" alt="youtube logo" width="20%" class="responsive-img">
+            <img src="media/img/youtube.png"  class="hide-on-small-only hide-on-med-only" alt="youtube logo" width="20%" class="responsive-img">
           </a>
         </div>
       </div>
-      <div class="footer-copyright">
-        <div class="container">
-        © TRADAY 2020 - all rights reserved
-          <a class="grey-text text-lighten-4 right" href="#!">privacy</a>
+      <div class="footer-copyright center-align">
+        <div class="row">
+          <div tabindex="0" class="col s12 center-align">copyright TRADAY 2020 | todos los derechos reservados 
+          </div>
+          <div class="col s6 center-align"><a class="grey-text text-lighten-4 right" href="#!"> política de privacidad</a></div>
+          <div class="col s6 center-align"><a class="grey-text text-lighten-4 left" href="#!"> política de cookies</a></div>
         </div>
       </div>
     </footer>
+  
         
     <script>
     
@@ -202,10 +252,41 @@
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
       const database = firebase.firestore();
+
+
+
+
+      function changeValues(e)  
+      {
+        if(e.keyCode==13)
+        {
+          list = document.getElementById("traday-nav").getElementsByTagName("LI");
+          console.log(list);
+          for (let i = 0; i < list.length; i++)
+          {
+            list[i].childNodes[0].tabIndex=0;
+          }
+        }
+      }
+
+      function nullValues(e)  
+      {
+        if(e.keyCode==13)
+        {
+          list = document.getElementById("traday-nav").getElementsByTagName("LI");
+          console.log(list);
+          for (let i = 0; i < list.length; i++)
+          {
+            list[i].childNodes[0].tabIndex=-1;
+          }
+        }
+      }
+
     </script>
- 
+   
     <!-- firebase-database JS file-->
     <script defer type="text/javascript" src="media/js/contactos-database.js"></script>
+   
     
 </body>
 </html>

@@ -28,3 +28,13 @@
  - [Informe acerca de la primera práctica de Firebase](../docs/FIREBASE-I.md)
  - [Análisis de los criterios Comprensible y Robusto](../docs/COMPRENSIBLE-ROBUSTO.md)
  - [Análisis de accesibilidad mediante herramientas](../docs/EVALUACION-AUTOMATICA.md)
+ - [Ejercicio WAI-ARIA en la web](../docs/EJERCICIO-WAI-ARIA.md)
+ - [Ejercicio de aplicación de responsive bajo la filosofía mobile first](../docs/RESPONSIVE.md)
+
+
+## Documentos de la Auditoría de Accesibilidad
+ - [Muestra de auditoría](../docs/AUDITORIA-MUESTRA.md)
+
+
+## Proyecto de banco de tiempo
+- [Enlace al prototipo](https://traday-362aa.web.app/)
