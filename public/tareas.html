@@ -91,8 +91,8 @@
               role="navigation" aria-label="Barra superior">
             <li><a href="profile.html">Perfil</a></li>
             <li><a href= "contacts-page.html">Mis contactos</a></li>
+            <li><a href="groups.html">Grupos</a></li>
             <li class="active"><a href="tareas.html">Tareas</a></li>
-            <li><a href="#">Grupos</a></li>
             
         
           </ul>
@@ -107,9 +107,9 @@
     aria-label="Menú de navegación lateral">
     <li ><a tabindex="-1" href="profile.html" aria-label="ir al perfil">Perfil</a></li>
     <li ><a tabindex="-1" href= "contacts-page.html" aria-label="ir a mis contactos"> Mis contactos</a></li>
+    <li ><a tabindex="-1" href="groups.html" aria-label="ir a mis grupos">Grupos</a></li>
     <li class="active"><a tabindex="-1" href="tareas.html" aria-label="ir a mis tareas">Tareas</a></li>
-    <li ><a tabindex="-1" href="#" aria-label="ir a mis grupos">Grupos</a></li>
-  
+    
     <br>
     <br>
     <li class="center-align">
@@ -163,7 +163,7 @@
     
                   <div class="row">
                     <div class="col s12 m12 l12">
-                      <a href="#modalTask" class="btn-floating btn-large waves-effect waves-light grey modal-trigger">
+                      <a tabindex="0" aria-label="Añadir Tarea" href="#modalTask" class="btn-floating btn-large waves-effect waves-light grey modal-trigger">
                         <i class="material-icons">add</i>
                       </a>
                     </div>
@@ -174,12 +174,14 @@
                       <div class="row white">
                         <div class="row">
                           <div class="input-field col s12 " id="title">
+                            <label tabindex="0">Título de la tarea</label>
                             <input type="text" class="validate" id="taskTitle">
-                            <label>Título de la tarea</label>
+                            
                           </div>
                           <div class="input-field col s12">
+                            <label tabindex="0" for="taskDescripion">Descripción de la tarea</label>
                             <textarea id="taskDescription" class="materialize-textarea"></textarea>
-                            <label for="taskDescripion">Descripción de la tarea</label>
+                            
                           </div>
                           <div class="input-field col s12 " id="send">
                             <button class="btn waves-effect waves-light" 
@@ -195,7 +197,7 @@
                       </div>
                     </div>
                     <div class="modal-footer">
-                      <a class="modal-close waves-effect waves-grey btn-flat">cerrar</a>
+                      <button tabindex="0" class="modal-close waves-effect waves-grey btn-flat">cerrar</button>
                   </div>
                 </div>
             </div>
@@ -207,19 +209,19 @@
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
-            <h5 class="white-text">Has llegado al final. Pero hay más</h5>
-            <p class="grey-text text-lighten-4">Traday tiene un duro trabajo detrás y un método que no puede pasar desapercibido.</p>
-            <p class="grey-text text-lighten-4">No olvides apoyarnos en las redes sociales y compartir la aplicación con tus amigos.</p>
+            <h5 tabindex="0" class="white-text">Has llegado al final. Pero hay más</h5>
+            <p tabindex="0" class="grey-text text-lighten-4">Traday tiene un duro trabajo detrás y un método que no puede pasar desapercibido.</p>
+            <p tabindex="0" class="grey-text text-lighten-4">No olvides apoyarnos en las redes sociales y compartir la aplicación con tus amigos.</p>
             
           </div>
           <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Otros</h5>
+            <h5 tabindex="0" class="white-text">Otros</h5>
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Más sobre traday</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Encuéntranos</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Contacta</a></li>
-              <li><a class="grey-text text-lighten-3" href="exchange.html">cambia monedas</a></li>
-              <li><a class="grey-text text-lighten-3" href="ajax-page.html">peticiones AJAX</a></li>
+              <li><a tabindex="0" class="grey-text text-lighten-3" href="#!">Más sobre traday</a></li>
+              <li><a tabindex="0" class="grey-text text-lighten-3" href="#!">Encuéntranos</a></li>
+              <li><a tabindex="0" class="grey-text text-lighten-3" href="#!">Contacta</a></li>
+              <li><a tabindex="0" class="grey-text text-lighten-3" href="exchange.html">cambia monedas</a></li>
+              <li><a tabindex="0" class="grey-text text-lighten-3" href="ajax-page.html">peticiones AJAX</a></li>
             </ul>
           </div>
         </div>
@@ -251,7 +253,7 @@
       </div>
       <div class="footer-copyright center-align">
         <div class="row">
-          <div class="col s12 center-align">copyright TRADAY 2020 | todos los derechos reservados 
+          <div tabindex="0" class="col s12 center-align">copyright TRADAY 2020 | todos los derechos reservados 
           </div>
           <div class="col s6 center-align"><a class="grey-text text-lighten-4 right" href="#!"> política de privacidad</a></div>
           <div class="col s6 center-align"><a class="grey-text text-lighten-4 left" href="#!"> política de cookies</a></div>
@@ -267,7 +269,7 @@
         authDomain: "traday-362aa.firebaseapp.com",
         databaseURL: "https://traday-362aa.firebaseio.com",
         projectId: "traday-362aa",
-        storageBucket: "traday-362aa.appspot.com",
+        storageBucket: "traday-362aa.appspot.c  om",
         messagingSenderId: "21208239294",
         appId: "1:21208239294:web:9ef96f415affe9f730a2ef",
         measurementId: "G-BR9CEK41TT"

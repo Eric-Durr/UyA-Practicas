@@ -135,11 +135,11 @@
   </section>
 
   <!-- añadir contacto -->
-  <section id="add" class="center-align">
+  <div id="add" class="center-align">
     <br>
     <div class="row">
         <div class="col s12 m12 l12">
-            <a  tabindex="0" href="#modalContact" class="btn-floating btn-large waves-effect waves-light grey modal-trigger">
+            <a aria-label="Añadir contacto" tabindex="0" href="#modalContact" class="btn-floating btn-large waves-effect waves-light grey modal-trigger">
                 <i class="material-icons">add</i>
             </a>
         </div>
@@ -149,13 +149,15 @@
       <div class="modal-content">
         <div class="row white">
             <div class="input-field col 12 ">
+              <label tabindex="0">Nombre del usuario</label>
               <input type="text" class="validate" id="userName">
-              <label>Nombre del usuario</label>
+              
             </div> 
     
             <div class="input-field col 12 ">
+              <label tabindex="0">Correo electrónico</label>
               <input type="text" class="validate" id="userEmail">
-              <label>Correo electrónico</label>
+              
             </div>
       
             <div class="input-field col 12 " id="send">
@@ -167,12 +169,13 @@
             </div>
           </div>
         </div>
-      <div class="modal-footer">
-        <a  class="modal-close waves-effect waves-grey btn-flat">cerrar</a>
-      </div>
+      
+        <div class="modal-footer">
+          <button tabindex="0" class="modal-close waves-effect waves-grey btn-flat">cerrar</button>
+        </div>
     </div>
     <!-- --- -->
-  </section>
+  </divn>
 
   <!-- --- -->    
   <br><br><br><br><br><br><br>
@@ -181,19 +184,19 @@
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
-            <h5 class="white-text">Has llegado al final. Pero hay más</h5>
-            <p class="grey-text text-lighten-4">Traday tiene un duro trabajo detrás y un método que no puede pasar desapercibido.</p>
-            <p class="grey-text text-lighten-4">No olvides apoyarnos en las redes sociales y compartir la aplicación con tus amigos.</p>
+            <h5 tabindex="0" class="white-text">Has llegado al final. Pero hay más</h5>
+            <p tabindex="0" class="grey-text text-lighten-4">Traday tiene un duro trabajo detrás y un método que no puede pasar desapercibido.</p>
+            <p tabindex="0" class="grey-text text-lighten-4">No olvides apoyarnos en las redes sociales y compartir la aplicación con tus amigos.</p>
             
           </div>
           <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Otros</h5>
+            <h5 tabindex="0" class="white-text">Otros</h5>
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Más sobre traday</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Encuéntranos</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Contacta</a></li>
-              <li><a class="grey-text text-lighten-3" href="exchange.html">cambia monedas</a></li>
-              <li><a class="grey-text text-lighten-3" href="ajax-page.html">peticiones AJAX</a></li>
+              <li><a tabindex="0" class="grey-text text-lighten-3" href="#!">Más sobre traday</a></li>
+              <li><a tabindex="0" class="grey-text text-lighten-3" href="#!">Encuéntranos</a></li>
+              <li><a tabindex="0" class="grey-text text-lighten-3" href="#!">Contacta</a></li>
+              <li><a tabindex="0" class="grey-text text-lighten-3" href="exchange.html">cambia monedas</a></li>
+              <li><a tabindex="0" class="grey-text text-lighten-3" href="ajax-page.html">peticiones AJAX</a></li>
             </ul>
           </div>
         </div>
@@ -225,7 +228,7 @@
       </div>
       <div class="footer-copyright center-align">
         <div class="row">
-          <div class="col s12 center-align">copyright TRADAY 2020 | todos los derechos reservados 
+          <div tabindex="0" class="col s12 center-align">copyright TRADAY 2020 | todos los derechos reservados 
           </div>
           <div class="col s6 center-align"><a class="grey-text text-lighten-4 right" href="#!"> política de privacidad</a></div>
           <div class="col s6 center-align"><a class="grey-text text-lighten-4 left" href="#!"> política de cookies</a></div>
