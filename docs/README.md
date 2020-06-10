@@ -32,12 +32,10 @@
  - [Ejercicio de aplicación de responsive bajo la filosofía mobile first](../docs/RESPONSIVE.md)
 
 
-## Documentos de la Auditoría de Accesibilidad
+## Documentos de la Auditoría de Accesibilidad | Sede Gobierno de Canarias
  - [Muestra de auditoría](../docs/AUDITORIA-MUESTRA.md)
-
+ - [Informe Auditoría SEDE](../docs/AUDITORIA-SEDEGOBIERNOCAN.md)
+ - [Herramienta AuditTool](https://docs.google.com/spreadsheets/d/11YB6fI61_7LUyHGOOw-4Rsf9SkNu2JEBc_CkVW9P7ok/edit#gid=1208405059)
 
 ## Proyecto de banco de tiempo
 - [Enlace al prototipo](https://traday-362aa.web.app/)
-
-## Informe Auditoria Sede Gobierno de Canarias 
-- [Informe Auditoría SEDE](../docs/AUDITORIA-SEDEGOBIERNOCAN.md)
