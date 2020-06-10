@@ -65,4 +65,5 @@ En el caso del error de cumplimiento, es bastante menor a los éxitos. En concre
 ## Sugerencias para la mejora de la accesibilidad
 ***
 
-Como se ha visto en los puntos anteriores, y apoyandonos en AudiTool WCAG 2.1, herramienta con la que hemos realizado el estudio, se encuentra un bajo porcentaje de errores de accesibilidad. La gran mayoria de dichos errores son relativos a las dimensiones de la pantalla, no se considera una web responsiva. Para ello podría hacerse uso de  
+Como se ha visto en los puntos anteriores, y apoyándonos en AudiTool WCAG 2.1, herramienta con la que hemos realizado el estudio, se encuentra un bajo porcentaje de errores de accesibilidad. La gran mayoria de dichos errores son relativos a las dimensiones de la pantalla, no se considera una web responsiva. Para poder solucionar esto, se podría realizar varias técnicas, como puede ser **Mobile-first**. Ésta consiste en pensar y diseñar la web en primer lugar para el dispositivo más limitado y, a partir de ahí, crear los diseños para una mayor dimensión, priorizando contenidos y funcionalidades.
+Como posible sugerencia, sería además, en la medidada de lo posible liberar de carga de links y elementos la página principal de la web. Sintetizar elementos e ideas podría ayudar a que el usuario no perdiera demasiado tiempo en acceder a los elementos que le interesa.
