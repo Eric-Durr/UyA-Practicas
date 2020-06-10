@@ -19,6 +19,28 @@ El backend viene implementado por Firebase y la funcionalidad lógica de la pág
 
 ## Justificación del grado de usabilidad | Método Sirius
 
+En este apartado hemos aplicado la checklist de revisión Heurisitica del Método Sirius a la página web [TRADAY](https://traday-362aa.web.app/index.html) con el fin de evaluar cuán usable es. 
+
+Por lo general, la web cumple los Requerimientos Heurísticos de Aspectos Generales satisfactoriamente con la excepción de que los objetivos de la web no son tan concretos o están definidos como podría esperarse, además de que no se da soporte a otros idiomas.
+
+En cuanto a la Identidad e Información de la web, todos los aaspectos se cumplen sastisfactoriamente, salvo el punto de ofrecer información sobre autor, fuentes y fechas de creación que no aplican en nuestra web.
+
+Por otro lado, en el apartado de Estructura y Navegación, la web cumple de manera adecuada mucho de los puntos que se proponen como requerimiento, en excepción de algunos como es que no existen enlaces que lleven a la misma página en la que nos encontramos.
+
+Ademas, por parte del Rotulado, la mayoría de requerimientos se cumplen satisfactoriamente en lo referente al diseño de la web, como son el logotipo de identidad de marca y el uso de títulos sencillos. Sin embargo, los apartados referentes a las URLs no se aplican ya que no poseemos un dominio propio ni un backend suficiente como para administrar URLs.
+
+El Layout de la página se cumple satisfactoriamente y con alta puntuación en casi todos sus apartados, salvo en la versión impresa que ene este caso no aplica.
+
+Para el apartado de Entendibilidad y Facilidad, al igual que mucho de los apartados anteriores, se cumple casi a la perfección, de no ser por el criterio de la selección de campo en lugar de la escritura, que no se cumple en todo el sitio.
+
+En el Apartado Control y Retroalimentación, hay algunos apartados que no se aplican. La información al usuario sobre lo que estrá pasando no tiene relevancia porque no hay procesos que se realicen en vivo, ni que dichos procesos tengan una interacción que requiera varios pasos.
+
+Con respecto al apartado Multimedia, prácticamente todos los requerimientos se cumplen correctamente, exceptuando que no se hace uso de sonidos en la página, no se aplica.
+
+Por último, al no tener secciones de Ayuda o bloques de Búsqueda en la web no se aplican.
+
+Con todo esto, el porcentaje de accesibilidad de la web cae en un 91.04%.
+
 ## Documentación de pruebas de usuarios
 
 En este apartado se hablará acerca de las pruebas de usuarios que hemos aplicado en nuestra web. Como los casos de uso no difieren mucho de tipo de usuario que va a usar la aplicación hemos optado por generalizar una tarea que puede ser común a cualquier tipo de usuario, siendo aún así registrado el ámbito de uso de la web para el usuario. 
@@ -38,6 +60,7 @@ En general, tal y como muestra el [informe](https://docs.google.com/forms/d/1TNG
 
 ## Justificación del trabajo en grupo | reparto de tareas
 
+<<<<<<< HEAD
 Dado que todo el desarrollo del proyecto se ha empleado la plataforma GitHub hemos decidido usar la misma para llevar el trabajo colaborativo. Las herramientas que github brinda son suficientes para el reparto de tareas, el control de las aportaciones de los miembros  y la coordinación entre las partes que componen el desarrollo. 
 
 Para asignar las tareas se ha usado la herramienta "GitHub Projects" que permite establecer una serie de tablas que simbolizan el estado de las tareas, entre estas se moverán unas tareas que compondrán partes de los distintos apartados del desarrollo, nuestra disposiciṕn es la siguiente:
@@ -52,3 +75,7 @@ Al menos dos veces a la semana se han hecho reuniones para valorar el estado act
 
 
 ## Enlaces a documentos de soporte de las justificaciones | checklist
+=======
+## Enlaces a documentos de soporte de las justificaciones | checklist
+
+>>>>>>> UyA-Practicas/informeProyecto-checklist
