@@ -38,3 +38,6 @@
 
 ## Proyecto de banco de tiempo
 - [Enlace al prototipo](https://traday-362aa.web.app/)
+
+## Informe Auditoria Sede Gobierno de Canarias 
+- [Informe Auditoría SEDE](../docs/AUDITORIA-SEDEGOBIERNOCAN.md)
