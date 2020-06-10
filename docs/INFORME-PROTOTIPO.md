@@ -153,3 +153,6 @@ Al menos dos veces a la semana se han hecho reuniones para valorar el estado act
 
 
 ## Enlaces a documentos de soporte de las justificaciones | checklist
+
+- [Enlace a la evaluación de los criterios de accesibilidad](https://drive.google.com/file/d/1boCzVjNc-cQNNq7KeejJevmiZ-FiIU3K/view)
+- [Enlace a la checklist de evaluación eurística de la usabilidad por método Sirius](https://docs.google.com/spreadsheets/d/19i7cUVeM8vY54Upn0yEndSkUn_Ic39AO/edit#gid=1230955148)
