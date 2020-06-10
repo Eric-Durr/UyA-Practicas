@@ -42,3 +42,11 @@ Cuando finalice la prueba, le haremos varias preguntas para analizar cómo fue s
 - Comentarios de la página durante la realización:
 - Sorpresas durante la realización:
 - Disgustos durante la realización:
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br>
+
+
+[Volver al informe](INFORME-PROTOTIPO.md)
