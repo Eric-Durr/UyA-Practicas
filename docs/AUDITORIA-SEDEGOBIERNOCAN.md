@@ -52,5 +52,6 @@ Para un usuario con una visión reducida o nula que el orden del foco no siga un
 
 Otro problema que reside en la accesibilidad del sitio, que podría afectar gravemente a los usuarios que accedan desde un dispositivo móvil, es  que esta no es responsive e impide el acceso a elementos desde ciertos dispositivos, perdiendo un sector de usuarios muy crucial, ya que hoy en día es impensable no acceder a una página desde un dispositivo móvil o similar.
 
+Dado que es una página que tiene que cubrir un nicho muy amplio al estar dedicado en la ciudadanía debería renovarse en estos aspectos para cumplir el valor cívico que implica este tipo de servicios. La amplitud de medios de acceso es crucial (sobre todo en casos de urgencia) a la hora de acceder a los servicios gubernamentales.
 
 ## Sugerencias para la mejora de la accesibilidad
