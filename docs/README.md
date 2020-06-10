@@ -37,5 +37,9 @@
  - [Informe Auditoría SEDE](../docs/AUDITORIA-SEDEGOBIERNOCAN.md)
  - [Herramienta AuditTool](https://docs.google.com/spreadsheets/d/11YB6fI61_7LUyHGOOw-4Rsf9SkNu2JEBc_CkVW9P7ok/edit#gid=1208405059)
 
-## Proyecto de banco de tiempo
-- [Enlace al prototipo](https://traday-362aa.web.app/)
+## Proyecto de banco de tiempo | Traday
+ - [Enlace al prototipo](https://traday-362aa.web.app/)
+ - [Enlace al informe](./INFORME-PROTOTIPO)
+ - [Enlace al modelo de pruebas de usuario](./PRUEBAS-USUARIO)
+ - [Resultados del formulario de pruebas de usuario](https://docs.google.com/forms/d/1TNGVwlrxmyuZ6fTtKtwjjY2ktNqsoqDNm5Z4GNP2Fv0/viewanalytics)
+
