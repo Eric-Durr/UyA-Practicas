@@ -13,6 +13,42 @@ El backend viene implementado por Firebase y la funcionalidad lógica de la pág
 
 ## Justificación de los criterios de conformidad AA según WCAG 2.1
 
+Haciendo uso de la herramienta **AUDIT-TOOL WCAG 2.1** se ha realizado una evaluación de los criterios de conformidad de nivel AA sobre la web [Evaluación de Criterios](https://drive.google.com/file/d/1boCzVjNc-cQNNq7KeejJevmiZ-FiIU3K/view?usp=sharing)
+Al finalizar la evaluación, podemos observar que el criterio AA se ha cumplido en un 72%, que no se ha cumplido en un 4%, y que no se ha aplicado en un 24% de Pautas. 
+La gran parte de criterios que no se aplican vienen dados a que el contenido de la web no incluye en absoluto vídeos ni reproductores de sonido.
+
+![img-Criterio-Conformidad](../public/media/img/criterio-conformidad.png)
+
+### Éxitos
+
+Tal y como se observa, el número de criterios de la valuación que se cumple es realmente elevado, debido al interés y esfuerzo que se ha dado para que la web sea lo mas accesible posible. Ejemplos de cumplimiento están, sobretodo en su mayoría relacionados con la limprieza y orden de los elementos de la web, además del uso correcto del dimensionado de imagenes.
+Se ha llevado a cabo, además, teniendo bastante en cuenta que el sitio sea responsive, pudiendo ser dimensionada practicdamne para cualquier dimensión. Para ello, se ha tenido en cuenta el uso de la técnica **Mobile-First**, teniendo como primer objetivo el diseño en primer lugar del dispositivo más limitado. Se han priorizado contenidos y funcionalidades, eliminando todos aquellos elementos que no son útiles, dando un formato sencillo, legible y minimalista.
+Ademaś, se ha tenido muy en cuenta el uso del "foco" para el manejo de la web desde teclado.
+### Éxitos
+
+Tal y como se observa, el número de criterios de la valuación que se cumple es realmente elevado, debido al interés y esfuerzo que se ha dado para que la web sea lo mas accesible posible. Ejemplos de cumplimiento están, sobretodo en su mayoría relacionados con la limprieza y orden de los elementos de la web, además del uso correcto del dimensionado de imagenes.
+Se ha llevado a cabo, además, teniendo bastante en cuenta que el sitio sea responsive, pudiendo ser dimensionada practicdamne para cualquier dimensión. Para ello, se ha tenido en cuenta el uso de la técnica **Mobile-First**, teniendo como primer objetivo el diseño en primer lugar del dispositivo más limitado. Se han priorizado contenidos y funcionalidades, eliminando todos aquellos elementos que no son útiles, dando un formato sencillo, legible y minimalista.
+Ademaś, se ha tenido muy en cuenta el uso del "foco" para el manejo de la web desde teclado.
+
+### Errores
+
+Como único error que se encuentra en la web, que propiamente podría considerarse como error leve, se trata del Criterio: 
+
+- **Ayuda 3.3.3:** Si se encuentra un error al introducir un dato, deberáde explicar y proporcionar sugerencias en formato de texto para solucionar de forma oportuna y accesible.
+
+No se ha llevado el control de dicho criterio en la web, por ejemplo en el apartado de "Añadir Contacto", uno de los campos que se solicitan se trata del email del contacto a añadir. En este caso, no se ha puesto restricción de ningún tipo, por lo que el usuario podría ingresar un formato de correo no correcto y aún así, se añadiría a la base de datos de Firebase. Una mejor implementación permitiría conocer que dirección de correo electrónico es correcta y cuál no. En caso de no ser correcta, se le debería de mostrar un error junto con un ejemplo una ayuda al usuario, indicando el formato de email aceptado o posible.
+
+### Errores
+
+Como único error que se encuentra en la web, que propiamente podría considerarse como error leve, se trata del Criterio: 
+
+- **Ayuda 3.3.3:** Si se encuentra un error al introducir un dato, deberáde explicar y proporcionar sugerencias en formato de texto para solucionar de forma oportuna y accesible.
+
+No se ha llevado el control de dicho criterio en la web, por ejemplo en el apartado de "Añadir Contacto", uno de los campos que se solicitan se trata del email del contacto a añadir. En este caso, no se ha puesto restricción de ningún tipo, por lo que el usuario podría ingresar un formato de correo no correcto y aún así, se añadiría a la base de datos de Firebase. Una mejor implementación permitiría conocer que dirección de correo electrónico es correcta y cuál no. En caso de no ser correcta, se le debería de mostrar un error junto con un ejemplo una ayuda al usuario, indicando el formato de email aceptado o posible.
+
+
+
+
 ## Mockups de diseño responsive de la web
 
 En este apartado realizaremos un Mockup para mostrar como se ve nuestra web en distintos formatos de pantalla. Las resoluciones empleadas han sido la de una pantalla de un portátil y la de un teléfono móvil Iphone X. Además, usamos como referencia la página principal de Traday y la sección de contactos.
@@ -82,7 +118,6 @@ Con todo esto, el porcentaje de accesibilidad de la web cae en un 91.04%.
 
 ## Documentación de pruebas de usuarios
 
-<<<<<<< HEAD
 En este apartado se hablará acerca de las pruebas de usuarios que hemos aplicado en nuestra web. Como los casos de uso no difieren mucho de tipo de usuario que va a usar la aplicación hemos optado por generalizar una tarea que puede ser común a cualquier tipo de usuario, siendo aún así registrado el ámbito de uso de la web para el usuario. 
 
 En el siguiente documento se le presenta un formato textual que representa las pruebas de usuarios aplicadas a la página:
@@ -96,12 +131,8 @@ Sin embargo para la recopilación de los datos de esta prueba se ha habilitado u
 En general, tal y como muestra el [informe](https://docs.google.com/forms/d/1TNGVwlrxmyuZ6fTtKtwjjY2ktNqsoqDNm5Z4GNP2Fv0/viewanalytics), los usuarios han sido capaces de ralizar la tarea sin la mayor de las dificultades. En este caso la mayoría de los usuarios han sido estudiantes (un 66,7%). Sin embargo las acciones dentro de la propia web podrían verse mejor explicadas pese a que encontrarlas ha sido sencillo para la mayoría de los casos. El tiempo de realización de la tarea propuesta no ha llevado más de 15 minutos en ninguno de los casos.
 
 
-=======
-***
->>>>>>> UyA-Practicas/informeProyecto-conclusion
 ## Conclusiones del prototipo
 
-***
 En valoración con los objetivos propuestos en un principio con este prototipo, se han conseguido muchos de ellos, además de incluso proponer e implementar nuevos en el transcurso de la creación del mismo. A lo largo del desarrollo del proyecto, se han tenido una serie de dificultades las cuales han sido tomadas propiamente como retos en sí mismas. Un ejemplo de esto fue la implementación de una base de datos haciendo uso de la herramienta que nos proporciona Firebase. Tras leer documentación y llegar a errores, ha sido posible la lectura y escritura en la base de datos a través de algunas de las páginas de la web.
 Otro punto muy importante a destacar en lo que ha sido el desarrollo del proyecto, es la importancia que se le ha dado a hacer uso de las herramientas que se nos ha proporcionado a lo largo del curso en la asignatura, teniendo muy encuenta los criterios aprendidos sobre la accesibilidad y la usabilidad. Se ha intentado ser bastante detallista en este sentido, comprobando que absolutamnte todo fuera útil y accesible por diferentes medios, como es vía táctil, ratón y teclado. 
 
