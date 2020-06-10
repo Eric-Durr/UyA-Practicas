@@ -21,7 +21,13 @@ El backend viene implementado por Firebase y la funcionalidad lógica de la pág
 
 ## Documentación de pruebas de usuarios
 
+***
 ## Conclusiones del prototipo
+
+***
+En valoración con los objetivos propuestos en un principio con este prototipo, se han conseguido muchos de ellos, además de incluso proponer e implementar nuevos en el transcurso de la creación del mismo. A lo largo del desarrollo del proyecto, se han tenido una serie de dificultades las cuales han sido tomadas propiamente como retos en sí mismas. Un ejemplo de esto fue la implementación de una base de datos haciendo uso de la herramienta que nos proporciona Firebase. Tras leer documentación y llegar a errores, ha sido posible la lectura y escritura en la base de datos a través de algunas de las páginas de la web.
+Otro punto muy importante a destacar en lo que ha sido el desarrollo del proyecto, es la importancia que se le ha dado a hacer uso de las herramientas que se nos ha proporcionado a lo largo del curso en la asignatura, teniendo muy encuenta los criterios aprendidos sobre la accesibilidad y la usabilidad. Se ha intentado ser bastante detallista en este sentido, comprobando que absolutamnte todo fuera útil y accesible por diferentes medios, como es vía táctil, ratón y teclado. 
+
 
 ## Justificación del trabajo en grupo | reparto de tareas
 
