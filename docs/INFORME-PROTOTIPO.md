@@ -139,7 +139,6 @@ Otro punto muy importante a destacar en lo que ha sido el desarrollo del proyect
 
 ## Justificación del trabajo en grupo | reparto de tareas
 
-<<<<<<< HEAD
 Dado que todo el desarrollo del proyecto se ha empleado la plataforma GitHub hemos decidido usar la misma para llevar el trabajo colaborativo. Las herramientas que github brinda son suficientes para el reparto de tareas, el control de las aportaciones de los miembros  y la coordinación entre las partes que componen el desarrollo. 
 
 Para asignar las tareas se ha usado la herramienta "GitHub Projects" que permite establecer una serie de tablas que simbolizan el estado de las tareas, entre estas se moverán unas tareas que compondrán partes de los distintos apartados del desarrollo, nuestra disposiciṕn es la siguiente:
@@ -154,7 +153,3 @@ Al menos dos veces a la semana se han hecho reuniones para valorar el estado act
 
 
 ## Enlaces a documentos de soporte de las justificaciones | checklist
-=======
-## Enlaces a documentos de soporte de las justificaciones | checklist
-
->>>>>>> UyA-Practicas/informeProyecto-checklist
