@@ -17,6 +17,15 @@ El backend viene implementado por Firebase y la funcionalidad lógica de la pág
 
 ## Informe de usos mediante lectores de pantalla | muestra de uso con Chrome Vox
 
+En este apartado examinaremos como ha reaccionado nuestra página del banco de tiempo a un lector de pantalla como es Chrome Vox. Los problemas encontrados no fueron muy grandes, la mayoría pudieron ser solucionados con **aria-label=""** para aquellos errores que ocurrieron en los botones y **tabindex="0"** para aquellos errores en los que el foco se saltaba un elemento.
+
+### Muestra del uso de Chrome Vox
+
+Para finalizar, en el siguiente vídeo pueden ver una muestra de cómo reacciona Chrome Vox a nuestra web:
+
+[![Vídeo que muestra como reacciona nuestra página a Chrome Vox](http://img.youtube.com/vi/SB1E5v0A_Vw/0.jpg)](http://www.youtube.com/watch?v=SB1E5v0A_Vw "ChomeVox-Traday")
+
+
 ## Justificación del grado de usabilidad | Método Sirius
 
 En este apartado hemos aplicado la checklist de revisión Heurisitica del Método Sirius a la página web [TRADAY](https://traday-362aa.web.app/index.html) con el fin de evaluar cuán usable es. 
