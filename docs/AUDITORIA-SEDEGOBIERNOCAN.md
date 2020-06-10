@@ -44,6 +44,13 @@ Estos autores pertenecen al prupo 02 de la asignatura de Usabilidad y Accesibili
 ## Errores encontrados por criterio de conformidad analizado
 > Resumen de los errores por temas
 
-## Ejemplo e impacto de de los problemas encontrados en los usuarios
+## Ejemplos de impacto de los problemas encontrados en los usuarios
+    En base a los problemas mencionados anteriormente se ejemplificará como podría 
+    afectar a los usuarios de la web.
+
+Para un usuario con una visión reducida o nula que el orden del foco no siga un orden correcto podría hacer que este se perdiera por completo y errar en su navegación. confundiría el uso de la web para este usuario, por ello se le haría tedioso y lento el acceso y uso de la plataforma.
+
+Otro problema que reside en la accesibilidad del sitio, que podría afectar gravemente a los usuarios que accedan desde un dispositivo móvil, es  que esta no es responsive e impide el acceso a elementos desde ciertos dispositivos, perdiendo un sector de usuarios muy crucial, ya que hoy en día es impensable no acceder a una página desde un dispositivo móvil o similar.
+
 
 ## Sugerencias para la mejora de la accesibilidad
