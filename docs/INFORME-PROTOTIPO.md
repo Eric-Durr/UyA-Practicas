@@ -21,6 +21,19 @@ El backend viene implementado por Firebase y la funcionalidad lógica de la pág
 
 ## Documentación de pruebas de usuarios
 
+En este apartado se hablará acerca de las pruebas de usuarios que hemos aplicado en nuestra web. Como los casos de uso no difieren mucho de tipo de usuario que va a usar la aplicación hemos optado por generalizar una tarea que puede ser común a cualquier tipo de usuario, siendo aún así registrado el ámbito de uso de la web para el usuario. 
+
+En el siguiente documento se le presenta un formato textual que representa las pruebas de usuarios aplicadas a la página:
+
+- [pruebas de usuario](./PRUEBAS-USUARIO.md)
+
+Sin embargo para la recopilación de los datos de esta prueba se ha habilitado un formulario de Google que es accesible desde la página principal de la web. Ya que la tarea puede adecuarse a cualquier usuario registramos el tipo de usuario para tenerlo en cuenta en las métricas. De la misma manera se puede acceder al informe de resultados desde la misma página web.
+
+- [acceso a la web](https://traday-362aa.web.app/)
+
+En general, tal y como muestra el [informe](https://docs.google.com/forms/d/1TNGVwlrxmyuZ6fTtKtwjjY2ktNqsoqDNm5Z4GNP2Fv0/viewanalytics), los usuarios han sido capaces de ralizar la tarea sin la mayor de las dificultades. En este caso la mayoría de los usuarios han sido estudiantes (un 66,7%). Sin embargo las acciones dentro de la propia web podrían verse mejor explicadas pese a que encontrarlas ha sido sencillo para la mayoría de los casos. El tiempo de realización de la tarea propuesta no ha llevado más de 15 minutos en ninguno de los casos.
+
+
 ## Conclusiones del prototipo
 
 ## Justificación del trabajo en grupo | reparto de tareas
