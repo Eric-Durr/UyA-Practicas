@@ -66,11 +66,11 @@ En el caso del error de cumplimiento, es bastante menor a los éxitos. En concre
 Bajo un vistazo general, si atendemos al sitio (que auna todas las páginas) se puede observar que menos del 50% de los criterios
 en este análisis han sido cumplidos tal como muestra el gráfico para el nivel AA:
 
-![imagen de gráfico AA](../public/media/img/estadistica-a.png)
+![imagen de gráfico AA](../public/media/img/estadistica-aa.png)
 
 Sin embargo la balanza se torna más positiva respecto a los criterios de conformidad de nivel A:
 
-![imagen de gráfico A](../public/media/img/estadistica-aa.png)
+![imagen de gráfico A](../public/media/img/estadistica-a.png)
 Se puede denotar que se alcanza entorno al 60% de criterios cumplidos.
 
 Si atanedemos a las páginas, en un análisis más centrado en un nivel individual se puede observar que aquellas que suponen servicios más cruciales para los usuarios y que están estrechamente vinculados a algún tipo de procedimiento suelen tener mejor puntuación de criterios como es el caso de :
