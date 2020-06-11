@@ -39,7 +39,7 @@
 
 ## Proyecto de banco de tiempo | Traday
  - [Enlace al prototipo](https://traday-362aa.web.app/)
- - [Enlace al informe](./INFORME-PROTOTIPO)
- - [Enlace al modelo de pruebas de usuario](./PRUEBAS-USUARIO)
+ - [Enlace al informe](./INFORME-PROTOTIPO.md)
+ - [Enlace al modelo de pruebas de usuario](./PRUEBAS-USUARIO.md)
  - [Resultados del formulario de pruebas de usuario](https://docs.google.com/forms/d/1TNGVwlrxmyuZ6fTtKtwjjY2ktNqsoqDNm5Z4GNP2Fv0/viewanalytics)
 
